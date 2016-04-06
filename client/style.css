@@ -4,9 +4,22 @@ body {
 h1 {
 	text-align: center;
 }
-div {
+div[type=description] {
+	width: 800px;
 	margin: auto;
 	text-align: justify;
 	-moz-text-align-last: center;
 	text-align-last: center;
+}
+div[type=form] {
+	width: 275px; 
+	border: 1px solid black; 
+	padding: 25px;
+	margin: auto;
+	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
+}
+select {
+	text-align: left;
 }
