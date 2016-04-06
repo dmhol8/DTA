@@ -12,14 +12,9 @@ div[type=description] {
 	text-align-last: center;
 }
 div[type=form] {
-	width: 275px; 
+	width: 317px; 
 	border: 1px solid black; 
 	padding: 25px;
 	margin: auto;
-	text-align: justify;
-	-moz-text-align-last: center;
-	text-align-last: center;
-}
-select {
 	text-align: left;
 }
