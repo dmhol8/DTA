@@ -1,11 +1,12 @@
 body {
 	font-family: Helvetica;
+	background-color: #E6EAFF;
 }
 h1 {
 	text-align: center;
 }
 div[type=description] {
-	width: 800px;
+	width: 1000px;
 	margin: auto;
 	text-align: justify;
 	-moz-text-align-last: center;
@@ -16,5 +17,15 @@ div[type=form] {
 	border: 1px solid black; 
 	padding: 25px;
 	margin: auto;
+	text-align: center;
+	background-color: #B7C3FF;
+}
+div[type=signandlog] {
+	text-align: center;
+}
+button[type=sign] {
+	width:103px;
+}
+select[type=drop] {
 	text-align: left;
 }
