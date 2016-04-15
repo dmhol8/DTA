@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en-US">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Dance Teaching Aid</title>
+
+</head>
+
+<body ng-controller="MyController">
+
+  <br>
+  <h1>Dance Teaching Aid</h1>
+  <br>
+
+  <div id="figureSelect">
+
+    <div id="selSearch">
+      <div id="inst">
+        Number of Bars:
+      </div>
+
+      <input type="text" id="numIn"></input>
+      <button id="dif">S</button>
+      <button id="dif">A</button>
+    </div>
+
+    <div id="selSearch">
+
+      <div id="inst">
+        Number of Steps:
+      </div>
+
+      <input type="text" id="numIn"></input>
+      <button id="dif">L</button>
+      <button id="dif">F</button>
+    </div>
+
+    <input type="text" placeholder="Search..." id="srch"></input>
+
+    <ul id="figs">
+      <li id="lfigs">Temporary One</li>
+      <li id="lfigs">Temporary Two</li>
+      <li id="lfigs">Temporary Three</li>
+      <li id="lfigs">Temporary Four</li>
+    </ul>
+  </div>
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

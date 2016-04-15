@@ -1,47 +1,45 @@
-<html ng-app="myApp">
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en-US">
+
 <head>
 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Dance Teaching Aid</title>
 
 </head>
 
 <body ng-controller="MyController">
-<div type=body>
-<br>
+
+  <br>
   <h1>Dance Teaching Aid</h1>
-<br>
-  <div type=description>
-    <p>This interactive website is designed to help teachers to create a ballroom dance routine in a more efficient manner than is possible with the existing recourses. Once you finish making a routine you will be able to see all the technical details in tabular form. While this website's main focus is on syllabus figures, there's also an option for account holders to add their own figures into the mix! Happy dance-making!</p>
+  <br>
+  <p>This interactive website is designed to help teachers to create a ballroom dance routine in a more efficient manner than is possible with the existing recourses. Once you finish making a routine you will be able to see all the technical details in tabular form. While this website's main focus is on syllabus figures, there's also an option for account holders to add their own figures into the mix! Happy dance-making!</p>
+  <div id="b1">
+    <button ng-click="signUp()" id="sign">Sign Up</button>
+    <button ng-click="logIn()" id="sign">Log In</button>
   </div>
-  <br><br>
-  <div type=form>
-
-    <div type=dances>
-      Select a dance:&nbsp
-      <select type=drop ng-model="danceSelect" name="dance">
-        <option value="waltz">Waltz</option>
-        <option value="foxtrot">Foxtrot</option>
-        <option value="tango">Tango</option>
-        <option value="quickstep">Quickstep</option>
-        <option value="vWaltz">Viennese Waltz</option>
-        <option value="rumba">Rumba</option>
-        <option value="cha">Cha Cha Cha</option>
-        <option value="jive">Jive</option>
-        <option value="samba">Samba</option>
-        <option value="pasoDoble">Paso Doble</option>
-      </select>
-      <br><br>
-    <div type=signandlog>
-      <button type=sign ng-click="signUp()">Sign Up</button>
-      <button type=sign ng-click="logIn()">Log In</button>
-      <button type=sign ng-click="beginDance()">Begin</button>
-    </div>
-    </div>
-  </div>
-
+  <form action="main_page.html" method="post">
+    Select a dance:&nbsp
+    <select ng-model="danceSelect" name="dance">
+      <option value="waltz">Waltz</option>
+      <option value="foxtrot">Foxtrot</option>
+      <option value="tango">Tango</option>
+      <option value="quickstep">Quickstep</option>
+      <option value="vWaltz">Viennese Waltz</option>
+      <option value="rumba">Rumba</option>
+      <option value="cha">Cha Cha Cha</option>
+      <option value="jive">Jive</option>
+      <option value="samba">Samba</option>
+      <option value="pasoDoble">Paso Doble</option>
+    </select>
+    <input type="submit" value="Begin">
+  </form>
   <script src="node_modules/angular/angular.js"></script>
   <script src="index.js"></script>
-</div>
+
 </body>
+
 </html>
+<!--This is a comment-->
