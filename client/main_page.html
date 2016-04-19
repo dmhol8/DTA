@@ -16,37 +16,62 @@
   <h1>Dance Teaching Aid</h1>
   <br>
 
-  <div id="figureSelect">
+  <div id="groupedSections">
 
-    <div id="selSearch">
-      <div id="inst">
-        Number of Bars:
+    <!-- SECTION 1: Figure Selection -->
+    <div id="figureSelection"> 
+
+      <div id="search">
+        <div id="textInstructions">
+          Number of Bars:
+        </div>
+        <input type="text" id="numberSearchInput"></input>
+        <button id="difficultyButton">S</button>
+        <button id="difficultyButton">A</button>
       </div>
 
-      <input type="text" id="numIn"></input>
-      <button id="dif">S</button>
-      <button id="dif">A</button>
-    </div>
-
-    <div id="selSearch">
-
-      <div id="inst">
-        Number of Steps:
+      <div id="search">
+        <div id="textInstructions">
+          Number of Steps:
+        </div>
+        <input type="text" id="numberSearchInput"></input>
+        <button id="difficultyButton">L</button>
+        <button id="difficultyButton">F</button>
       </div>
 
-      <input type="text" id="numIn"></input>
-      <button id="dif">L</button>
-      <button id="dif">F</button>
+      <input type="text" placeholder="Search..." id="textSearch"></input>
+
+      <ul id="figureList">
+        <li id="figure">Temporary One</li>
+        <li id="figure">Temporary Two</li>
+        <li id="figure">Temporary Three</li>
+        <li id="figure">Temporary Four</li>
+      </ul>
+
     </div>
 
-    <input type="text" placeholder="Search..." id="srch"></input>
+    <!-- SECTION 2: The Routine Skeleton -->
+    <div id="routineSkeleton">
 
-    <ul id="figs">
-      <li id="lfigs">Temporary One</li>
-      <li id="lfigs">Temporary Two</li>
-      <li id="lfigs">Temporary Three</li>
-      <li id="lfigs">Temporary Four</li>
-    </ul>
+      <div id="figureBlocks">
+
+        <form>
+          <!--<button id="addFigure"></button>-->
+          <button name="figureBlock" id="figureBlock">Starting Figure</input>
+          <!--<button id="addFigure"></button>-->
+        </form>
+
+      </div>
+
+    </div>
+
+    <!-- SECTION 3: Options -->
+    <div id="options">
+
+
+
+    </div>
+
   </div>
 
   <script src="node_modules/angular/angular.js"></script>

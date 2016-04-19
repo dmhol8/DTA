@@ -21,75 +21,109 @@ form {
 	text-align: center;
 	background-color: #B7C3FF;
 }
-#b1 {
+#logInButtons {
 	max-width: 340px;  
 	padding: 25px;
 	margin: auto;
 	text-align: center;
 }
-#figureSelect {
-	width: 260px;
-	float: left;
-	height: 800px;
-	background-color: #B7C3FF;
-	padding: 10px;
-	margin-left: 10px;
-	margin-bottom: 20px;
+#button1, #submitDanceType {
+	width: 80px;
 }
-#sign, input {
-	width:80px;
-}
-#sign {
+#button1 {
 	background-color: #18366b;
 	color: white;
 	padding: 5px;
 	border: none;
 	border-radius: 6px;
 }
-select {
+#selectDanceType {
 	text-align: left;
 }
-#numIn {
-	max-width: 30px;
+
+/* main_page.html */
+
+#groupedSections {
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	text-align: center;
 }
-#inst {
+#figureSelection, #routineSkeleton, #options {
+	height: 300px;
+	display: inline-block;
+	background-color: #B7C3FF;
+	padding: 10px;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+/* SECTION 1: Figure Selection */
+#figureSelection {
+	width: 260px;
+}
+#search {
+	width: 260px;
+	margin-bottom: 5px;
+}
+#textInstructions {
 	display: inline-block;
 	width: 150px;
 	font-style: italic;
 	text-align: left;
 }
-#dif {
+#numberSearchInput {
+	max-width: 30px;
+}
+#difficultyButton {
 	width: 30px;
 }
-#srch {
+#textSearch {
 	width:250px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
-#selSearch {
-	width: 260px;
-	margin-bottom: 5px;
-}
-#figs {
+#figureList {
 	display: block;
 	max-width: 259px;
 	line-height: 25px;
 	list-style-type: none;
 	text-transform: uppercase;
+	text-align: left;
 	font-size: 13px;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
 	overflow-x: auto;
 }
-#lfigs {
+#figure {
 	padding-left: 5px;
 }
-#lfigs:nth-child(odd) {
+#figure:nth-child(odd) {
 	background-color: #ddf;
 }
-#lfigs:hover {
+#figure:hover {
 	background-color: #18366b;
 	color:white;
 }
-/*This is a comment*/
+
+/* SECTION 2: Routine Skeleton */
+#routineSkeleton {
+	width: 260px;
+	margin-left: 20px;
+}
+#addFigure {
+	width: 20px; 
+	height: 20px; 
+}
+#figureBlock {
+	width: 100px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+/* SECTION 3: Options */
+#options {
+	width: 260px;
+	margin-left: 20px;
+}

@@ -1,4 +1,5 @@
 var myApp = angular.module('myApp',[])
+src="jquery-1.12.3.js"
 
 myApp.controller('MyController', function($scope) {
 
@@ -8,4 +9,9 @@ myApp.controller('MyController', function($scope) {
 		console.log(err)
 	}
 })
-//This is a comment
+
+ $(document).ready(function(){
+
+   // jQuery methods go here...
+
+});
