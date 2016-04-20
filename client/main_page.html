@@ -55,28 +55,41 @@
 
       <div id="figureBlocks">
 
-        <form>
-          <!--<button id="addFigure"></button>-->
-          <button name="figureBlock" id="figureBlock">Starting Figure</input>
-          <!--<button id="addFigure"></button>-->
-        </form>
+        <!-- Triangle button goes here -->
+        <button id="figureBlock">Starting Figure</input>
+          <!-- Triangle button goes here -->
 
+        </div>
+
+      </div>
+
+      <!-- SECTION 3: Options -->
+      <div id="options">
+
+        <button id="optionButton">Log In</button>
+        <button id="optionButton">Sign Up</button>
+        <button id="optionButtonLast">Randomise</button>
+        <button id="optionButtonLast">Create Figure</button>
+
+        <div id="selectTempo">
+          Select Tempo<br>
+          120<input type="range" name="tempo" id="tempoSlider" min="120" max="128"></input>128
+        </div>
+
+        <button id="startMetronome">Start Metronome</button>
+        <div id="danceDuration">
+          Duration of dance: 00m 00s
+        </div>
+        <form id="exitForm" action="index.html">
+          <button id="exitButton">Exit</button>
+        </form>
       </div>
 
     </div>
 
-    <!-- SECTION 3: Options -->
-    <div id="options">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="index.js"></script>
 
+  </body>
 
-
-    </div>
-
-  </div>
-
-  <script src="node_modules/angular/angular.js"></script>
-  <script src="index.js"></script>
-
-</body>
-
-</html>
+  </html>

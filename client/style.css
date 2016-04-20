@@ -14,7 +14,7 @@ p {
 	-moz-text-align-last: center;
 	text-align-last: center;
 }
-form {
+#danceForm {
 	max-width: 340px;  
 	padding: 25px;
 	margin: auto;
@@ -46,16 +46,16 @@ form {
 #groupedSections {
 	width: 1000px;
 	height: 1000px;
-	margin: 0 auto;
+	margin: auto;
 	text-align: center;
 }
 #figureSelection, #routineSkeleton, #options {
-	height: 300px;
+	height: 400px;
 	display: inline-block;
 	background-color: #B7C3FF;
 	padding: 10px;
 	margin-bottom: 20px;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 /* SECTION 1: Figure Selection */
@@ -120,10 +120,50 @@ form {
 	width: 100px;
 	margin-left: 40px;
 	margin-right: 40px;
+	margin-top: 5px;
 }
 
 /* SECTION 3: Options */
 #options {
 	width: 260px;
 	margin-left: 20px;
+	text-align: center;
+}
+#optionButton, #optionButtonLast {
+	display: inline-block;
+	margin: 4px;
+	width: 119px;
+	height: 70px;
+	vertical-align: middle;
+}
+#optionButtonLast {
+	margin-bottom: 15px;
+}
+#selectTempo {
+	border: 1px solid #18366b;
+	padding: 10px;
+	width: 226px;
+	display: inline-block;
+}
+#tempoSlider {
+	width: 130px;
+	position: relative;
+	top: 6px;
+	margin-right: 12px;
+	margin-left: 12px;
+}
+#startMetronome, #exitButton {
+	display: inline-block;
+	width: 250px;
+	margin-top: 14px;
+}
+#danceDuration {
+	display: inline-block;
+	width: 246px;
+	margin-top: 14px;
+	background-color: #ddf;
+	padding: 10px 0px;
+}
+#exitForm {
+	display: inline-block;
 }
