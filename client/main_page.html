@@ -13,7 +13,7 @@
 <body ng-controller="MyController">
 
   <br>
-  <h1>Dance Teaching Aid</h1>
+  <h1 id="mainHeading">Dance Teaching Aid</h1>
   <br>
 
   <div id="groupedSections">
@@ -25,7 +25,7 @@
         <div id="textInstructions">
           Number of Bars:
         </div>
-        <input type="text" id="numberSearchInput"></input>
+        <input type="number" id="numberInput" min="1" max="25"></input>
         <button id="difficultyButton">S</button>
         <button id="difficultyButton">A</button>
       </div>
@@ -34,7 +34,7 @@
         <div id="textInstructions">
           Number of Steps:
         </div>
-        <input type="text" id="numberSearchInput"></input>
+        <input type="number" id="numberInput" min="1" max="50"></input>
         <button id="difficultyButton">L</button>
         <button id="difficultyButton">F</button>
       </div>
@@ -85,8 +85,40 @@
         </form>
       </div>
 
+      <!-- SECTION 4: Create Figure (Hidden)-->
+      <div id="section4CreateFigure">
+
+        Create Figure<br><br>
+
+        <form id="figureForm" action="create_figure.html" method="post" target="iframe_A">
+          <div id="search">
+            <div id="textInstructions2">
+              Number of Steps:
+            </div>
+            <input type="number" id="numberInput" name="stepNo" min="1" max="50"></input>
+          </div>
+
+          <div id="search">
+            <div id="textInstructions2">
+              Number of Precedes:
+            </div>
+            <input type="number" id="numberInput" name="precedeNo" min="0" max="50"></input>
+          </div>
+
+          <div id="search">
+            <div id="textInstructions2">
+              Number of Follows:
+            </div>
+            <input type="number" id="numberInput" name="followNo" min="0" max="50"></input>       
+          </div>
+
+          <button id="exitButton">Next</button>
+        </form>
+      </div>
+
     </div>
 
+    <iframe id="createFigure" src="create_figure.html" name="iframe_A" width="800px" height="400px"></iframe>
     <script src="node_modules/angular/angular.js"></script>
     <script src="index.js"></script>
 

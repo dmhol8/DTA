@@ -2,7 +2,7 @@ body {
 	font-family: Helvetica;
 	background-color: #E6EAFF;
 }
-h1 {
+#mainHeading {
 	text-align: center;
 	max-width: 800px;
 	margin: auto;
@@ -49,8 +49,7 @@ p {
 	margin: auto;
 	text-align: center;
 }
-#figureSelection, #routineSkeleton, #options {
-	height: 400px;
+#figureSelection, #routineSkeleton, #options, #section4CreateFigure {
 	display: inline-block;
 	background-color: #B7C3FF;
 	padding: 10px;
@@ -60,6 +59,7 @@ p {
 
 /* SECTION 1: Figure Selection */
 #figureSelection {
+	height: 400px;
 	width: 260px;
 }
 #search {
@@ -72,7 +72,7 @@ p {
 	font-style: italic;
 	text-align: left;
 }
-#numberSearchInput {
+#numberInput {
 	max-width: 30px;
 }
 #difficultyButton {
@@ -110,6 +110,7 @@ p {
 /* SECTION 2: Routine Skeleton */
 #routineSkeleton {
 	width: 260px;
+	height: 400px;
 	margin-left: 20px;
 }
 #addFigure {
@@ -125,19 +126,24 @@ p {
 
 /* SECTION 3: Options */
 #options {
+	max-height: 400px;
 	width: 260px;
 	margin-left: 20px;
 	text-align: center;
+	display: none;
 }
 #optionButton, #optionButtonLast {
 	display: inline-block;
 	margin: 4px;
 	width: 119px;
-	height: 70px;
 	vertical-align: middle;
 }
 #optionButtonLast {
 	margin-bottom: 15px;
+}
+#createFigure {
+	/*display: none;*/
+	border: none;
 }
 #selectTempo {
 	border: 1px solid #18366b;
@@ -166,4 +172,36 @@ p {
 }
 #exitForm {
 	display: inline-block;
+}
+
+/* SECTION 4: Create Figure (Hidden) */
+#section4CreateFigure {
+/*	display: none;*/
+	max-height: 400px;
+	width: 260px;
+	margin-left: 20px;
+	text-align: center;
+}
+#textInstructions2 {
+	display: inline-block;
+	width: 218px;
+	font-style: italic;
+	text-align: left;
+}
+#figureForm {
+	display: inline-block;
+}
+
+/* create_figure.html */
+
+#figureHeading {
+	text-align: center;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#textInstructions3 {
+	width: 200px;
+	font-style: italic;
+	text-align: left;	
 }
