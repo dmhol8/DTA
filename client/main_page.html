@@ -57,11 +57,11 @@
 
         <!-- Triangle button goes here -->
         <button id="figureBlock">Starting Figure</input>
-          <!-- Triangle button goes here -->
-
-        </div>
+        <!-- Triangle button goes here -->
 
       </div>
+
+    </div>
 
       <!-- SECTION 3: Options -->
       <div id="options">
@@ -90,7 +90,7 @@
 
         Create Figure<br><br>
 
-        <form id="figureForm" action="create_figure.html" method="post" target="iframe_A">
+        <form id="figureForm" action="create_figure.html" method="get" target="iframe_A">
           <div id="search">
             <div id="textInstructions2">
               Number of Steps:
@@ -112,13 +112,15 @@
             <input type="number" id="numberInput" name="followNo" min="0" max="50"></input>       
           </div>
 
-          <button id="exitButton">Next</button>
+          <input type="submit" id="exitButton" value="Next"></input>
+          <button id="backButton">Back</button>
         </form>
       </div>
 
     </div>
-
-    <iframe id="createFigure" src="create_figure.html" name="iframe_A" width="800px" height="400px"></iframe>
+    <div id="iframe">
+      <iframe id="createFigure" src="create_figure.html" name="iframe_A" width="601px" height="593px"></iframe>
+    </div>
     <script src="node_modules/angular/angular.js"></script>
     <script src="index.js"></script>
 

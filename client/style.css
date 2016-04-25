@@ -45,7 +45,6 @@ p {
 
 #groupedSections {
 	width: 1000px;
-	height: 1000px;
 	margin: auto;
 	text-align: center;
 }
@@ -145,6 +144,14 @@ p {
 	/*display: none;*/
 	border: none;
 }
+#iframe {
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#bodyIframe {
+	background-color: #B7C3FF;
+}
 #selectTempo {
 	border: 1px solid #18366b;
 	padding: 10px;
@@ -191,17 +198,76 @@ p {
 #figureForm {
 	display: inline-block;
 }
+#backButton {
+	display: inline-block;
+	width: 250px;
+	margin-top: 14px;
+	margin-bottom: 7px;
+}
 
 /* create_figure.html */
 
-#figureHeading {
-	text-align: center;
-	max-width: 1000px;
-	margin: auto;
-}
-
 #textInstructions3 {
-	width: 200px;
+	display: inline-block;
+	width: 150px;
 	font-style: italic;
-	text-align: left;	
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+#textInstructions4 {
+	display: inline-block;
+	width: 98px;
+	font-style: italic;
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#selectStepNo, #selectPreNo, #selectFollNo {
+	margin-left: 10px;
+}
+#selectRole {
+	margin-left: 10px;
+}
+#figureDataTextInput {
+	width: 400px;
+	margin-left: 10px;
+	font-family: Helvetica;
+}
+#timingList {
+	width: 30px;
+	text-align: center;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#cbmList, #swayList {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#additionalNotesInput {
+    width: 400px;
+    height: 100px;
+    resize: none;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    vertical-align: top;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+#prefollTextInput {
+	width: 347px;
+	margin-left: 10px;
+	font-family: Helvetica;
+}
+#createFigButtonDiv {
+	text-align: center;
+	margin: auto;
+
+}
+#createFigButton {
+	display: inline-block;
+	width: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
