@@ -10,39 +10,256 @@
 
 </head>
 
-<body ng-controller="MyController">
+<body ng-controller="myController">
 
   <br>
   <h1 id="mainHeading">Dance Teaching Aid</h1>
   <br>
 
-  <p>This interactive website is designed to help teachers to create a ballroom dance routine in a more efficient manner than is possible with the existing recourses. Once you finish making a routine you will be able to see all the technical details in tabular form. While this website's main focus is on syllabus figures, there's also an option for account holders to add their own figures into the mix! Happy dance-making!</p>
+  <!-- SECTION A: Introduction -->
+  <div id="introPage">
 
-  <div id="logInButtons">
-    <button ng-click="signUp()" id="button1">Sign Up</button>
-    <button ng-click="logIn()" id="button1">Log In</button>
+    <p>This interactive website is designed to help teachers to create a ballroom dance routine in a more efficient manner than is possible with the existing recourses. Once you finish making a routine you will be able to see all the technical details in tabular form. This website's main focus is on syllabus figures, but there's also an option for account holders to add their own figures into the mix! Happy dance-making!</p>
+
+    <div id="logInButtons">
+      <button ng-click="signUp()" id="button1">Sign Up</button>
+      <button ng-click="logIn()" id="button1">Log In</button>
+    </div>
+
+    <div id="danceForm">
+      Select a dance:&nbsp
+      <select ng-model="danceSelect" id="selectDanceType" name="dance">
+        <option value="waltz">Waltz</option>
+        <option value="foxtrot">Foxtrot</option>
+        <option value="tango">Tango</option>
+        <option value="quickstep">Quickstep</option>
+        <option value="vWaltz">Viennese Waltz</option>
+        <option value="rumba">Rumba</option>
+        <option value="cha">Cha Cha Cha</option>
+        <option value="jive">Jive</option>
+        <option value="samba">Samba</option>
+        <option value="pasoDoble">Paso Doble</option>
+      </select>
+      <button id="submitDanceType" onclick="visMain()">Begin</button>
+    </div>
+
   </div>
 
-  <form id="danceForm" action="main_page.html" method="post">
-    Select a dance:&nbsp
-    <select ng-model="danceSelect" id="selectDanceType" name="dance">
-      <option value="waltz">Waltz</option>
-      <option value="foxtrot">Foxtrot</option>
-      <option value="tango">Tango</option>
-      <option value="quickstep">Quickstep</option>
-      <option value="vWaltz">Viennese Waltz</option>
-      <option value="rumba">Rumba</option>
-      <option value="cha">Cha Cha Cha</option>
-      <option value="jive">Jive</option>
-      <option value="samba">Samba</option>
-      <option value="pasoDoble">Paso Doble</option>
-    </select>
-    <input type="submit" id="submitDanceType" value="Begin">
-  </form>
-  
+  <!-- SECTION B: Main Page-->
+  <div id="mainPage">
+
+    <div id="groupedSections">
+
+      <!-- SECTION 1: Figure Selection -->
+      <div id="figureSelection"> 
+
+        <div id="search">
+          <div id="textInstructions">
+            Number of Bars:
+          </div>
+          <input type="number" id="numberInput" min="1" max="25"></input>
+          <button id="difficultyButton">S</button>
+          <button id="difficultyButton">A</button>
+        </div>
+
+        <div id="search">
+          <div id="textInstructions">
+            Number of Steps:
+          </div>
+          <input type="number" id="numberInput" min="1" max="50"></input>
+          <button id="difficultyButton">L</button>
+          <button id="difficultyButton">F</button>
+        </div>
+
+        <input type="text" placeholder="Search..." id="textSearch"></input>
+
+        <ul id="figureList">
+          <li id="figure">Temporary One</li>
+          <li id="figure">Temporary Two</li>
+          <li id="figure">Temporary Three</li>
+          <li id="figure">Temporary Four</li>
+        </ul>
+
+      </div>
+
+      <!-- SECTION 2: The Routine Skeleton -->
+      <div id="routineSkeleton">
+
+        <div id="figureBlocks">
+
+          <button id="figureBlock">Starting Figure</button>
+
+        </div>
+
+      </div>
+
+      <!-- SECTION 3: Options -->
+      <div id="options">
+
+        <button id="optionButton">Log In</button>
+        <button id="optionButton">Sign Up</button>
+        <button id="optionButtonLast">Randomise</button>
+        <button id="optionButtonLast" onclick="visFig()">Create Figure</button>
+
+        <div id="selectTempo">
+          Select Tempo<br>
+          120<input type="range" name="tempo" id="tempoSlider" min="120" max="128"></input>128
+        </div>
+
+        <button id="startMetronome">Start Metronome</button>
+        <div id="danceDuration">
+          Duration of dance: 00m 00s
+        </div>
+        <div id="exitForm">
+          <button id="exitButton" onclick="visIndex()">Exit</button>
+        </div>
+      </div>
+
+      <!-- SECTION 4: Create Figure 1 (Hidden)-->
+      <div id="section4CreateFigure">
+
+        Create Figure<br><br>
+
+        <div id="figureForm">
+          <div id="search">
+            <div id="textInstructions2">
+              Number of Steps:
+            </div>
+            <input type="number" id="numberInput" name="stepNo" min="1" max="50"></input>
+          </div>
+
+          <div id="search">
+            <div id="textInstructions2">
+              Number of Precedes:
+            </div>
+            <input type="number" id="numberInput" name="precedeNo" min="0" max="50"></input>
+          </div>
+
+          <div id="search">
+            <div id="textInstructions2">
+              Number of Follows:
+            </div>
+            <input type="number" id="numberInput" name="followNo" min="0" max="50"></input>       
+          </div>
+
+          <button id="exitButton" onclick="visCreateFig()">Next</button>
+        </div>
+
+        <button id="backButton" onclick="visOpt()">Back</button>
+
+      </div>
+
+    </div>
+
+    <!-- SECTION 5: Create Figure 2 (Hidden)-->
+    <div id="figDetailBox">
+
+      <div id="textInstructions3">
+        Step Number:
+      </div>
+      <select id="selectStepNo" name="currentStepNo"></select>
+
+      <div id="textInstructions4">
+        Role:
+      </div>
+      <select id="selectRole" name="currentRole">
+        <option value="lead">Lead</option>
+        <option value="follow">Follow</option>
+      </select><br>
+
+      <div id="textInstructions3">
+        Figure Name:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Feet Positions:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Alignment:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Amount of Turn:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Rise and Fall:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Footwork:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Timing:
+      </div>
+      <input list="timing" id="timingList">
+      <datalist id="timing">
+        <option value="S"></option>
+        <option value="Q"></option>
+        <option value="&amp"></option>
+        <option value="a"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+      </datalist>
+
+      <div id="textInstructions4">
+        CBM:
+      </div>
+      <select id="cbmList">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="slight">Slight</option>
+      </select>
+
+      <div id="textInstructions4">
+        Sway:
+      </div>
+      <select id="swayList">
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+        <option value="none">None</option>
+      </select><br>
+
+      <div id="textInstructions3">
+        Additional Notes:
+      </div>
+      <textarea id="additionalNotesInput"></textarea><br>
+
+      <div id="textInstructions3">
+        Precedes:
+      </div>
+      <select id="selectPreNo" name="currentPreNo"></select>
+      <input type="text" id="prefollTextInput"></input><br>
+
+      <div id="textInstructions3">
+        Follows:
+      </div>
+      <select id="selectFollNo" name="currentFollNo"></select>
+      <input type="text" id="prefollTextInput"></input><br>
+      <div id="createFigButtonDiv">
+        <button id="createFigButton" onclick="visNoCreateFig()">Back</button>
+        <button id="createFigButton">Save Figure</button>
+      </div>
+
+    </div>
+
+  </div>
+
   <script src="node_modules/angular/angular.js"></script>
   <script src="index.js"></script>
+<script>
 
+</script>
 </body>
 
 </html>

@@ -7,6 +7,8 @@ body {
 	max-width: 800px;
 	margin: auto;
 }
+
+/* SECTION A: Introduction */
 p {
 	max-width: 1000px;
 	margin: auto;
@@ -15,7 +17,7 @@ p {
 	text-align-last: center;
 }
 #danceForm {
-	max-width: 340px;  
+	max-width: 350px;  
 	padding: 25px;
 	margin: auto;
 	text-align: center;
@@ -41,8 +43,10 @@ p {
 	text-align: left;
 }
 
-/* main_page.html */
-
+/* SECTION B: Main Page */
+#mainPage {
+	display: none;
+}
 #groupedSections {
 	width: 1000px;
 	margin: auto;
@@ -67,7 +71,7 @@ p {
 }
 #textInstructions {
 	display: inline-block;
-	width: 150px;
+	width: 140px;
 	font-style: italic;
 	text-align: left;
 }
@@ -129,7 +133,6 @@ p {
 	width: 260px;
 	margin-left: 20px;
 	text-align: center;
-	display: none;
 }
 #optionButton, #optionButtonLast {
 	display: inline-block;
@@ -139,18 +142,6 @@ p {
 }
 #optionButtonLast {
 	margin-bottom: 15px;
-}
-#createFigure {
-	/*display: none;*/
-	border: none;
-}
-#iframe {
-	margin: auto;
-	text-align: center;
-	margin-bottom: 20px;
-}
-#bodyIframe {
-	background-color: #B7C3FF;
 }
 #selectTempo {
 	border: 1px solid #18366b;
@@ -181,9 +172,9 @@ p {
 	display: inline-block;
 }
 
-/* SECTION 4: Create Figure (Hidden) */
+/* SECTION 4: Create Figure 1 (Hidden) */
 #section4CreateFigure {
-/*	display: none;*/
+	display: none;
 	max-height: 400px;
 	width: 260px;
 	margin-left: 20px;
@@ -191,7 +182,7 @@ p {
 }
 #textInstructions2 {
 	display: inline-block;
-	width: 218px;
+	width: 210px;
 	font-style: italic;
 	text-align: left;
 }
@@ -205,8 +196,17 @@ p {
 	margin-bottom: 7px;
 }
 
-/* create_figure.html */
-
+/* SECTION 5: Create Figure 2 (Hidden) */
+#figDetailBox {
+	display: none;
+	background-color: #B7C3FF;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+	width: 601px;
+	height: 585px;
+	padding-top: 10px;
+}
 #textInstructions3 {
 	display: inline-block;
 	width: 150px;
@@ -263,11 +263,9 @@ p {
 #createFigButtonDiv {
 	text-align: center;
 	margin: auto;
-
 }
 #createFigButton {
 	display: inline-block;
 	width: 150px;
 	margin-top: 10px;
-	margin-bottom: 10px;
 }
