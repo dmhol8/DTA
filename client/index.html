@@ -40,7 +40,7 @@
         <option value="samba">Samba</option>
         <option value="pasoDoble">Paso Doble</option>
       </select>
-      <button id="submitDanceType" onclick="visMain()">Begin</button>
+      <button id="submitDanceType" ng-click="dispMain()">Begin</button>
     </div>
 
   </div>
@@ -57,18 +57,18 @@
           <div id="textInstructions">
             Number of Bars:
           </div>
-          <input type="number" id="numberInput" min="1" max="25"></input>
-          <button id="difficultyButton">S</button>
-          <button id="difficultyButton">A</button>
+          <input type="number" class="numberInput" id="numIn1" min="1" max="25"></input>
+          <button class="difficultyButton" id="difBut1">S</button>
+          <button class="difficultyButton" id="difBut2">A</button>
         </div>
 
         <div id="search">
           <div id="textInstructions">
             Number of Steps:
           </div>
-          <input type="number" id="numberInput" min="1" max="50"></input>
-          <button id="difficultyButton">L</button>
-          <button id="difficultyButton">F</button>
+          <input type="number" class="numberInput" id="numIn2" min="1" max="50"></input>
+          <button class="difficultyButton" id="difBut3">L</button>
+          <button class="difficultyButton" id="difBut4">F</button>
         </div>
 
         <input type="text" placeholder="Search..." id="textSearch"></input>
@@ -99,7 +99,7 @@
         <button id="optionButton">Log In</button>
         <button id="optionButton">Sign Up</button>
         <button id="optionButtonLast">Randomise</button>
-        <button id="optionButtonLast" onclick="visFig()">Create Figure</button>
+        <button id="optionButtonLast" ng-click="dispFig()">Create Figure</button>
 
         <div id="selectTempo">
           Select Tempo<br>
@@ -111,7 +111,7 @@
           Duration of dance: 00m 00s
         </div>
         <div id="exitForm">
-          <button id="exitButton" onclick="visIndex()">Exit</button>
+          <button id="exitButton" ng-click="dispIndex()">Exit</button>
         </div>
       </div>
 
@@ -125,27 +125,27 @@
             <div id="textInstructions2">
               Number of Steps:
             </div>
-            <input type="number" id="numberInput" name="stepNo" min="1" max="50"></input>
+            <input type="number" class="numberInput" id="numIn3" ng-model="numSteps" name="stepNo" min="1" max="50"></input>
           </div>
 
           <div id="search">
             <div id="textInstructions2">
               Number of Precedes:
             </div>
-            <input type="number" id="numberInput" name="precedeNo" min="0" max="50"></input>
+            <input type="number" class="numberInput" id="numIn4" ng-model="numPre" name="precedeNo" min="0" max="50"></input>
           </div>
 
           <div id="search">
             <div id="textInstructions2">
               Number of Follows:
             </div>
-            <input type="number" id="numberInput" name="followNo" min="0" max="50"></input>       
+            <input type="number" class="numberInput" id="numIn5" ng-model="numFoll" name="followNo" min="0" max="50"></input>       
           </div>
 
-          <button id="exitButton" onclick="visCreateFig()">Next</button>
+          <button id="nextButton" ng-click="dispCreateFig()">Next</button>
         </div>
 
-        <button id="backButton" onclick="visOpt()">Back</button>
+        <button id="backButton" ng-click="dispOpt()">Back</button>
 
       </div>
 
@@ -153,6 +153,11 @@
 
     <!-- SECTION 5: Create Figure 2 (Hidden)-->
     <div id="figDetailBox">
+
+      <div id="textInstructions3">
+        Figure Name:
+      </div>
+      <input type="text" id="figureDataTextInput"></input><br>
 
       <div id="textInstructions3">
         Step Number:
@@ -166,11 +171,6 @@
         <option value="lead">Lead</option>
         <option value="follow">Follow</option>
       </select><br>
-
-      <div id="textInstructions3">
-        Figure Name:
-      </div>
-      <input type="text" id="figureDataTextInput"></input><br>
 
       <div id="textInstructions3">
         Feet Positions:
@@ -247,7 +247,7 @@
       <select id="selectFollNo" name="currentFollNo"></select>
       <input type="text" id="prefollTextInput"></input><br>
       <div id="createFigButtonDiv">
-        <button id="createFigButton" onclick="visNoCreateFig()">Back</button>
+        <button id="createFigButton" ng-click="dispNoCreateFig()">Back</button>
         <button id="createFigButton">Save Figure</button>
       </div>
 
@@ -257,9 +257,6 @@
 
   <script src="node_modules/angular/angular.js"></script>
   <script src="index.js"></script>
-<script>
-
-</script>
 </body>
 
 </html>

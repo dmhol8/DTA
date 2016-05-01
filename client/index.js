@@ -1,63 +1,160 @@
 var myApp = angular.module('myApp',[])
 src="jquery-1.12.3.js"
 
-myApp.service('CreateDropdown', function() {
+myApp.service('NumberService', function() {
 
-	this.numberList = function numberList(steps) {
+	this.numberList = function (steps) {
 		var i, text;
 		for (i = 1; i < steps+1; i++){
 			text += "<option>" + i + "</option>";
 		}
-		return text;
+		return text
 	}
-});
+})
 
 myApp.service('VisibilityService', function() {
 
-	this.visibleChange = function visibleChange() {
+	this.visMain = function () {
 		document.getElementById("introPage").style.display = "none";
-		document.getElementById("mainPage").style.display = "block";
+    	document.getElementById("mainPage").style.display = "block";
+    	window.localStorage.setItem("pageState", "B");
+    	// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
 	}
 
-});
+	this.visIndex = function () {
+		document.getElementById("mainPage").style.display = "none";
+    	document.getElementById("introPage").style.display = "block";
+    	window.localStorage.setItem("pageState", "A");
+    	// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+	}
 
-myApp.controller('myController', function($scope) {
+	this.visFig = function () {
+		document.getElementById("options").style.display = "none";
+    	document.getElementById("section4CreateFigure").style.display = "inline-block";
+    	window.localStorage.setItem("pageState", "C");
+    	// document.getElementById("state").innerHTML = localStorage.getItem('pageState');		
+	}
 
-	$scope.danceSelect = waltz;
+	this.visOpt = function () {
+		document.getElementById("section4CreateFigure").style.display = "none";
+		document.getElementById("options").style.display = "inline-block";
+		window.localStorage.setItem("pageState", "B");
+		// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+	}
 
-	function error(err) {
-		console.log(err);
-	};
-});
+	this.visCreateFig = function () {
+		document.getElementById("figDetailBox").style.display = "block";
+		// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+	}
 
-document.getElementById("selectStepNo").innerHTML = numberList(5);
-document.getElementById("selectPreNo").innerHTML = numberList(5);
-document.getElementById("selectFollNo").innerHTML = numberList(5);
+	this.visNoCreateFig = function () {
+		document.getElementById("figDetailBox").style.display = "none";
+		// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+	}
+})
 
-function visMain() {
-    document.getElementById("introPage").style.display = "none";
-    document.getElementById("mainPage").style.display = "block";
-}
+myApp.controller('myController', function($scope, NumberService, VisibilityService) {
 
-function visIndex() {
-	document.getElementById("mainPage").style.display = "none";
-    document.getElementById("introPage").style.display = "block";
-}
+	$scope.danceSelect = "waltz"
+	$scope.numSteps = 4
+	$scope.numPre = 3
+	$scope.numFoll = 3
 
-function visFig() {
-	document.getElementById("options").style.display = "none";
-    document.getElementById("section4CreateFigure").style.display = "inline-block";
-}
+	$scope.numberStepsList = function () {
+    	NumberService.numberList( $scope.numSteps )
+    	// .then(saveSuccess, error)    
+  	}
 
-function visOpt() {
-	document.getElementById("section4CreateFigure").style.display = "none";
-	document.getElementById("options").style.display = "inline-block";
-}
+  	$scope.numberPreList = function () {
+    	NumberService.numberList( $scope.numPre )
+    	// .then(saveSuccess, error)    
+  	}
 
-function visCreateFig() {
-	document.getElementById("figDetailBox").style.display = "block";
-}
+  	$scope.numberFollList = function () {
+    	NumberService.numberList( $scope.numFoll )
+    	// .then(saveSuccess, error)    
+  	}
 
-function visNoCreateFig() {
-	document.getElementById("figDetailBox").style.display = "none";
-}
+  	$scope.dispMain = function () {
+    	VisibilityService.visMain()
+    	// .then(saveSuccess, error)    
+  	}	
+
+  	$scope.dispIndex = function () {
+    	VisibilityService.visIndex()
+    	// .then(saveSuccess, error)    
+  	}	
+
+  	$scope.dispFig = function () {
+    	VisibilityService.visFig()
+    	// .then(saveSuccess, error)    
+  	}	
+
+  	$scope.dispOpt = function () {
+    	VisibilityService.visOpt()
+    	// .then(saveSuccess, error)    
+  	}	
+
+  	$scope.dispCreateFig = function () {
+    	VisibilityService.visCreateFig()
+    	document.getElementById("numIn1").disabled = true;
+    	document.getElementById("numIn2").disabled = true;
+    	document.getElementById("numIn3").disabled = true;
+    	document.getElementById("numIn4").disabled = true;
+    	document.getElementById("numIn5").disabled = true;
+    	document.getElementById("difBut1").disabled = true;
+    	document.getElementById("difBut2").disabled = true;
+    	document.getElementById("difBut3").disabled = true;
+    	document.getElementById("difBut4").disabled = true;
+    	document.getElementById("textSearch").disabled = true;
+    	document.getElementById("figureBlock").disabled = true;
+    	document.getElementById("nextButton").disabled = true;
+    	document.getElementById("backButton").disabled = true;
+    	document.getElementById("selectStepNo").innerHTML = NumberService.numberList($scope.numSteps);
+		document.getElementById("selectPreNo").innerHTML = NumberService.numberList($scope.numPre);
+		document.getElementById("selectFollNo").innerHTML = NumberService.numberList($scope.numFoll);
+    	// .then(saveSuccess, error)    
+  	}	
+
+  	$scope.dispNoCreateFig = function () {
+    	VisibilityService.visNoCreateFig()
+		document.getElementById("numIn1").disabled = false;
+    	document.getElementById("numIn2").disabled = false;
+    	document.getElementById("numIn3").disabled = false;
+    	document.getElementById("numIn4").disabled = false;
+    	document.getElementById("numIn5").disabled = false; 
+    	document.getElementById("difBut1").disabled = false;
+    	document.getElementById("difBut2").disabled = false;
+    	document.getElementById("difBut3").disabled = false;
+    	document.getElementById("difBut4").disabled = false;   	
+    	document.getElementById("textSearch").disabled = false;
+    	document.getElementById("figureBlock").disabled = false;
+    	document.getElementById("nextButton").disabled = false;
+    	document.getElementById("backButton").disabled = false;
+    	// .then(saveSuccess, error)    
+  	}	
+
+  	window.onload = function() {
+  		document.getElementById("numIn1").disabled = false;
+    	document.getElementById("numIn2").disabled = false;
+    	document.getElementById("numIn3").disabled = false;
+    	document.getElementById("numIn4").disabled = false;
+    	document.getElementById("numIn5").disabled = false; 
+    	document.getElementById("difBut1").disabled = false;
+    	document.getElementById("difBut2").disabled = false;
+    	document.getElementById("difBut3").disabled = false;
+    	document.getElementById("difBut4").disabled = false;   	
+    	document.getElementById("textSearch").disabled = false;
+    	document.getElementById("figureBlock").disabled = false;
+    	document.getElementById("nextButton").disabled = false;
+    	document.getElementById("backButton").disabled = false;
+		var pageState = localStorage.getItem("pageState");
+	    if(pageState == "B") {
+	      	VisibilityService.visMain();
+	    }
+	    else if (pageState == "C") {
+	    	VisibilityService.visMain();
+	    	VisibilityService.visFig();
+	    }
+	}
+})
