@@ -134,7 +134,7 @@
   "follow": ["4-6 Reverse Turn", "Reverse Corte", "Reverse Pivot", "Turning Lock", "Basic Weave (approaching a corner)", "Left Whisk (starting with RF back)"]
 }
 {
-  "name": "Underturned Natural Spin Turn",
+  "name": "Natural Spin Turn (underturned)",
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
@@ -190,7 +190,7 @@
   "follow": ["4-6 Reverse Turn", "Reverse Corte", "Reverse Pivot", "Turning Lock", "Basic Weave (approaching a corner)", "Left Whisk (starting with RF back)"]
 }
 {
-  "name": "Overturned Natural Spin Turn",
+  "name": "Natural Spin Turn (overturned)",
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
@@ -270,8 +270,7 @@
     },
   "precede": ["Reverse Turn", "4-6 Reverse Turn (after Natural Spin Turn)", "Double Reverse Spin", "Reverse Pivot", 
               "4-6 Reverse Turn (at corner after Underturned Natural Spin Turn or Closed Impetus)", "Hesitation Change (at corner)", "Closed Wing (facing DW)", "Fallaway Reverse and Slip Pivot"],
-  "follow": ["Chasse from PP", "Weave from PP (steps 1-2 moving to centre after Whisk turned to face DC, or steps 1-2 moving DC after Whisk turned to face LOD)", "Cross Hesitation", "Wing", 
-              "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
 }
 {
   "name": "Whisk (end Facing DC)",
@@ -392,8 +391,7 @@
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
     "footwork": ["TH", "HT", "TH", "T"],
     "CBM": ["yes", "no", "no", "yes"],
-    "sway": ["S", "L", "S", "S"],
-    "note": "When commenced backing DW turn 3/8 between 1-2 and 1/8 between 2-3."
+    "sway": ["S", "L", "S", "S"]
     },
   "lady": {
     "feet positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
@@ -419,8 +417,7 @@
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
     "footwork": ["TH", "HT", "TH", "T"],
     "CBM": ["yes", "no", "no", "yes"],
-    "sway": ["S", "L", "S", "S"],
-    "note": "When commenced backing DW turn 3/8 between 1-2 and 1/8 between 2-3."
+    "sway": ["S", "L", "S", "S"]
     },
   "lady": {
     "feet positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
@@ -445,8 +442,7 @@
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
     "footwork": ["TH", "HT", "TH", "T"],
     "CBM": ["yes", "no", "no", "yes"],
-    "sway": ["S", "L", "S", "S"],
-    "note": "When commenced backing DW turn 3/8 between 1-2 and 1/8 between 2-3."
+    "sway": ["S", "L", "S", "S"]
     },
   "lady": {
     "feet positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
@@ -460,4 +456,687 @@
   "precede": ["Reverse Corte (turning 1/2 to end backing DW after Underturned Natural Spin Turn or Closed Impetus at side of room)", "Back Lock", "Progressive Chasse to R",
               "Cross Hesitation (turned to L to back DW)"],
   "follow": ["4-6 Reverse Turn", "Reverse Corte", "Reverse Pivot", "Turning Lock", "Basic Weave (approaching a corner)", "Left Whisk (starting with RF back)"]
+}
+{
+  "name": "Hesitation Change",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing DC", "Facing DC"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "3/8 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["HT", "T", "TH", "TH", "H", "IE of T (LF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "R", "R", "S", "L", "L"]
+    },
+  "lady": {
+    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DC", "Backing DC"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "3/8 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["TH", "T", "TH", "HT", "TH", "IE of T (RF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "L", "L", "S", "R", "R"]
+    },
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Basic Weave", "Natural Turn (at corner)", "Reverse Corte (preceding 4-6 Natural Turn)", 
+              "Weave from PP", "Closed Telemark", "Outside Spin", "Turning Lock", "Cross Hesitation (preceding 4-6 Hesitation Change)"],
+  "follow": ["Reverse Turn", "Double Reverse Spin", "Progressive Chasse to R", "Closed Telemark", "Open Telemark", "Fallaway Reverse and Slip Pivot"]
+}
+{
+  "name": "Hesitation Change (at corner to end facing DW of new LOD)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing DW of new LOD", "Facing DW of new LOD"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "3/8 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["HT", "T", "TH", "TH", "H", "IE of T (LF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "R", "R", "S", "L", "L"]
+    },
+  "lady": {
+    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DW of new LOD", "Backing DW of new LOD"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "3/8 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["TH", "T", "TH", "HT", "TH", "IE of T (RF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "L", "L", "S", "R", "R"]
+    },
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Basic Weave", "Natural Turn (at corner)", "Reverse Corte (preceding 4-6 Natural Turn)", 
+              "Weave from PP", "Closed Telemark", "Outside Spin", "Turning Lock", "Cross Hesitation (preceding 4-6 Hesitation Change)"],
+  "follow": ["Closed Change, Reverse to Natural", "Whisk", "Contra Check"]
+}
+{
+  "name": "Hesitation Change (at corner to end facing new LOD)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing new LOD", "Facing new LOD"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "1/4 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["HT", "T", "TH", "TH", "H", "IE of T (LF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "R", "R", "S", "L", "L"]
+    },
+  "lady": {
+    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing new LOD", "Backing new LOD"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "1/4 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["TH", "T", "TH", "HT", "TH", "IE of T (RF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "L", "L", "S", "R", "R"]
+    },
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Basic Weave", "Natural Turn (at corner)", "Reverse Corte (preceding 4-6 Natural Turn)", 
+              "Weave from PP", "Closed Telemark", "Outside Spin", "Turning Lock", "Cross Hesitation (preceding 4-6 Hesitation Change)"],
+  "follow": ["1-3 Reverse Turn (to back DW)"]
+}
+{
+  "name": "Hesitation Change (at corner to end facing DC of new LOD)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing DC of new LOD", "Facing DC of new LOD"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "1/8 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["HT", "T", "TH", "TH", "H", "IE of T (LF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "R", "R", "S", "L", "L"]
+    },
+  "lady": {
+    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DC of new LOD", "Backing DC of new LOD"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "1/8 between 4-5", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
+    "footwork": ["TH", "T", "TH", "HT", "TH", "IE of T (RF)"],
+    "CBM": ["yes", "no", "no", "yes", "no", "no"],
+    "sway": ["S", "L", "L", "S", "R", "R"]
+    },
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Basic Weave", "Natural Turn (at corner)", "Reverse Corte (preceding 4-6 Natural Turn)", 
+              "Weave from PP", "Closed Telemark", "Outside Spin", "Turning Lock", "Cross Hesitation (preceding 4-6 Hesitation Change)"],
+  "follow": ["Reverse Turn", "Double Reverse Spin", "Progressive Chasse to R", "Closed Telemark", "Open Telemark", "Fallaway Reverse and Slip Pivot"]
+}
+{
+  "name": "Outside Change",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "alignment": ["Backing DC", "Backing DC", "Pointing DW", "Facing DW"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "T", "TH", "H"],
+    "CBM": ["no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "alignment": ["Facing DC", "Facing DC", "Backing DW", "Backing DW"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "T"],
+    "CBM": ["no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S"]
+    },
+  "precede": ["1-3 Natural Turn (underturned)", "1-3 Natural Turn (commenced facing LOD)", "Reverse Corte (at corner)", "Progressive Chasse to R (end backing DC)", "Cross Hesitation (at corner)"
+              "Left Whisk (at corner)", "Hover Corte (at corner)"],
+  "follow": ["Any Natural Figure"]
+}
+{
+  "name": "Outside Change (end facing DC)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "alignment": ["Backing DC against LOD", "Backing DC against LOD", "Pointing DC", "Facing DC"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "T", "TH", "H"],
+    "CBM": ["no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "alignment": ["Facing DC against LOD", "Facing DC against LOD", "Backing DC", "Backing DC"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "T"],
+    "CBM": ["no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S"]
+    },
+  "precede": ["Left Whisk", "Hover Corte"],
+  "follow": ["Closed Wing"]
+}
+{
+  "name": "Outside Change (end in PP)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
+    "alignment": ["Backing DC", "Backing DC", "Facing DW, Moving along LOD", "Facing DW, Moving along LOD"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "T", "TH", "H"],
+    "CBM": ["no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["RF fwd", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "alignment": ["Facing DC", "Facing DC", "Facing DC, Moving along LOD", "Facing DC, Moving along LOD"],
+    "amount_of_turn": ["nil", "nil", "nil", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["no", "no", "no", "yes"],
+    "sway": ["S", "S", "S"]
+    },
+  "precede": ["1-3 Natural Turn (underturned)", "1-3 Natural Turn (commenced facing LOD)", "Reverse Corte (at corner)", "Progressive Chasse to R (end backing DC)", "Cross Hesitation (at corner)"
+              "Left Whisk (at corner)", "Hover Corte (at corner)"],
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk"]
+}
+{
+  "name": "Reverse Corte",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "alignment": ["Backing LOD", "Backing DC against LOD", "Backing DC against LOD", "Backing DC against LOD"],
+    "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "nil", "nil"],
+    "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "H (LF) then T (both feet)", "TH (RF)", "T"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "R", "R", "S"],
+    "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "alignment": ["Facing LOD", "Facing Centre", "Facing DC against LOD", "Facing DC against LOD"],
+    "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "L", "L", "S"],
+    "note": "Lady commences to rise slightly earlier than the Man."
+    },
+  "precede": ["1-3 Reverse Turn", "Natural Spin Turn (overturned)"],
+  "follow": ["Back Whisk", "Outside Change (end Facing DC)"]
+}
+{
+  "name": "Reverse Corte (1/2 turn)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "alignment": ["Backing LOD", "Backing against LOD", "Backing against LOD", "Backing against LOD"],
+    "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "nil", "nil"],
+    "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "H (LF) then T (both feet)", "TH (RF)", "T"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "R", "R", "S"],
+    "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "alignment": ["Facing LOD", "Almost Facing DC against LOD", "Facing against LOD", "Facing against LOD"],
+    "amount_of_turn": ["Com to turn L", "Just over 1/4 between 1-2", "Just under 1/4 between 2-3", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "L", "L", "S"],
+    "note": "Lady commences to rise slightly earlier than the man."
+    },
+  "precede": ["1-3 Reverse Turn", "Natural Spin Turn (overturned)"],
+  "follow": ["Back Whisk (end facing LOD)"]
+}
+{
+  "name": "Reverse Corte (at corner)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "alignment": ["Backing LOD", "Backing DC of new LOD", "Backing DC of new LOD", "Backing DC of new LOD"],
+    "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "nil", "nil"],
+    "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "H (LF) then T (both feet)", "TH (RF)", "T"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "R", "R", "S"],
+    "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "alignment": ["Facing LOD", "Facing Centre", "Facing DC of new LOD", "Facing DC of new LOD"],
+    "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "L", "L", "S"],
+    "note": "Lady commences to rise slightly earlier than the Man."
+    },
+  "precede": ["1-3 Reverse Turn", "Natural Spin Turn (overturned)"],
+  "follow": ["Outside Change"]
+}
+{
+  "name": "Reverse Corte (5/8 turn)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "alignment": ["Backing LOD", "Backing DW against LOD", "Backing DW against LOD", "Backing DW against LOD"],
+    "amount_of_turn": ["Com to turn L", "5/8 between 1-2", "nil", "nil"],
+    "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "H (LF) then T (both feet)", "TH (RF)", "T"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "R", "R", "S"],
+    "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "alignment": ["Facing LOD", "Facing DC against LOD", "Facing DW against LOD", "Facing DW against LOD"],
+    "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/4 between 2-3", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "L", "L", "S"],
+    "note": "Lady commences to rise slightly earlier than the Man."
+    },
+  "precede": ["1-3 Reverse Turn", "Natural Spin Turn (overturned)"],
+  "follow": ["Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (end facing DC)"]
+}
+{
+  "name": "Reverse Corte (1/4 turn)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "alignment": ["Backing DC", "Backing DC against LOD", "Backing DC against LOD", "Backing DC against LOD"],
+    "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "nil", "nil"],
+    "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "H (LF) then T (both feet)", "TH (RF)", "T"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "R", "R", "S"],
+    "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "alignment": ["Facing DC", "Facing Centre", "Facing DC against LOD", "Facing DC against LOD"],
+    "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/8 between 2-3", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "L", "L", "S"],
+    "note": "Lady commences to rise slightly earlier than the Man."
+    },
+  "precede": ["Natural Spin Turn", "Closed Impetus", "Outside Spin (underturned)"],
+  "follow": ["Back Whisk", "Outside Change (end Facing DC)"]
+}
+{
+  "name": "Reverse Corte (1/2 turn to end backing DW)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "alignment": ["Backing DC against LOD", "Backing DW", "Backing DW", "Backing DW"],
+    "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "nil", "nil"],
+    "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
+    "footwork": ["TH", "H (LF) then T (both feet)", "TH (RF)", "T"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "R", "R", "S"],
+    "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "alignment": ["Facing DC against LOD", "Almost Facing Wall", "Facing DW", "Facing DW"],
+    "amount_of_turn": ["Com to turn L", "Just over 1/4 between 1-2", "Just under 1/4 between 2-3", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
+    "footwork": ["HT", "T", "TH", "H"],
+    "CBM": ["yes", "no", "no", "no"],
+    "sway": ["S", "L", "L", "S"],
+    "note": "Lady commences to rise slightly earlier than the man."
+    },
+  "precede": ["Natural Spin Turn (underturned)", "Closed Impetus (underturned)"],
+  "follow": ["4-6 Natural Turn", "Closed Impetus (commenced backing DW)", "Back Lock", "Back Whisk (1/4 turn at corner)", "Back Whisk (1/4 turn end facing DC)", "Back Whisk (3/8 turn)", 
+            "Open Impetus", "Outside Spin (underturned)"]
+}
+{
+  "name": "Back Whisk",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DC against LOD", "Backing DC against LOD", "Facing DW"],
+    "amount_of_turn": ["nil", "nil", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DC against LOD", "Facing Centre", "Facing DC"],
+    "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte", "Cross Hesitation", "Hover Corte"],
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
+}
+{
+  "name": "Back Whisk (end facing LOD)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing against LOD", "Backing against LOD", "Facing LOD"],
+    "amount_of_turn": ["nil", "nil", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing against LOD", "Facing DC against LOD", "Facing Centre"],
+    "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (1/2 turn)"],
+  "follow": ["Weave from PP (steps 1-2 moving DC)", "Chasse from PP (moving DC)"]
+}
+{
+  "name": "Back Whisk (1/4 turn)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DW against LOD", "Backing DC against LOD", "Facing DW"],
+    "amount_of_turn": ["nil", "1/4 between 1-2 BTL", "BCT"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DW against LOD", "Facing DC against LOD", "Facing DC"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/4 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (5/8 turn)"],
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
+}
+{
+  "name": "Back Whisk (at corner)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DW against LOD", "Backing DW against LOD", "Facing DW of new LOD"],
+    "amount_of_turn": ["nil", "nil", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DW against LOD", "Facing against LOD", "Facing DC of new LOD"],
+    "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (5/8 turn)"],
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
+}
+{
+  "name": "Back Whisk (end facing DC)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DW against LOD", "Backing DW against LOD", "Facing DC"],
+    "amount_of_turn": ["nil", "nil", "nil"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DW against LOD", "Facing against LOD", "Facing DC against LOD"],
+    "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (5/8 turn)"],
+  "follow": ["Weave from PP (steps 1-2 moving to centre)"]
+}
+{
+  "name": "Back Whisk (1/4 turn at corner)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DW", "Backing DW against LOD", "Facing DW of new LOD"],
+    "amount_of_turn": ["nil", "1/4 between 1-2 BTL", "BCT"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DW", "Facing DW against LOD", "Facing DC of new LOD"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/4 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (end backing DW)", "Back Lock", "Progressive Chasse to R"],
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
+}
+{
+  "name": "Back Whisk (1/4 turn end facing DC)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DW", "Backing DW against LOD", "Facing DC"],
+    "amount_of_turn": ["nil", "1/4 between 1-2 BTL", "BCT"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DW", "Facing DW against LOD", "Facing DC against LOD"],
+    "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/4 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (end backing DW)", "Back Lock", "Progressive Chasse to R"],
+  "follow": ["Weave from PP (steps 1-2 moving to centre)"]
+}
+{
+  "name": "Back Whisk (3/8 turn)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing DW", "Backing against LOD", "Facing LOD"],
+    "amount_of_turn": ["nil", "3/8 between 1-2 BTL", "BCT"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing DW", "Facing against LOD", "Facing Centre"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["Reverse Corte (end backing DW)", "Back Lock", "Progressive Chasse to R"],
+  "follow": ["Weave from PP (steps 1-2 moving DC)", "Chasse from PP (moving DC)"]
+}
+{
+  "name": "Back Whisk (3/8 turn end facing DC)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing LOD", "Backing DW against LOD", "Facing DC"],
+    "amount_of_turn": ["nil", "3/8 between 1-2 BTL", "BCT"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing LOD", "Facing DW against LOD", "Facing DC against LOD"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["1-3 Natural Turn"],
+  "follow": ["Weave from PP (steps 1-2 moving to centre)"]
+}
+{
+  "name": "Back Whisk (3/8 turn at corner)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "alignment": ["Backing LOD", "Backing DW against LOD", "Facing DW of new LOD"],
+    "amount_of_turn": ["nil", "3/8 between 1-2 BTL", "BCT"],
+    "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["TH", "T", "TH"],
+    "CBM": ["sl", "no", "no"],
+    "sway": ["S", "L", "L"],
+    "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
+    },
+  "lady": {
+    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "alignment": ["Facing LOD", "Facing DW against LOD", "Facing DC of new LOD"],
+    "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "R", "R"]
+    },
+  "precede": ["1-3 Natural Turn"],
+  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk", "Chasse from PP (moving DC to follow with Closed Wing)"]
+}
+{
+  "name": "Basic Weave",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "alignment": ["Backing DW", "Facing DC against LOD", "Backing LOD", "Backing DC", "Backing DC", "Pointing DW", "Facing DW"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
+    "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
+    "footwork": ["TH", "HT", "TH", "TH", "T", "TH", "H"],
+    "CBM": ["yes", "yes", "no", "no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S", "S", "S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "alignment": ["Facing DW", "Backing DC against LOD", "Pointing DC", "Facing DC", "Facing DC", "Backing DW", "Backing DW"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
+    "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
+    "footwork": ["H", "T", "TH", "HT", "T", "TH", "T"],
+    "CBM": ["yes", "yes", "no", "no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S", "S", "S", "S", "S"],
+    "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
+    },
+  "precede": ["1-3 Reverse Turn (commenced facing LOD)"],
+  "follow": ["Any Natural Figure", "Closed Wing (end facing DW)"]
+}
+{
+  "name": "Basic Weave (at corner)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "alignment": ["Backing DC", "Facing DW against LOD", "Backing Centre", "Backing DC of new LOD", "Backing DC of new LOD", "Pointing DW of new LOD", "Facing DW of new LOD"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
+    "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
+    "footwork": ["TH", "HT", "TH", "TH", "T", "TH", "H"],
+    "CBM": ["yes", "yes", "no", "no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S", "S", "S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "alignment": ["Facing DC", "Backing DW against LOD", "Pointing DC of new LOD", "Facing DC of new LOD", "Facing DC of new LOD", "Backing DW of new LOD", "Backing DW of new LOD"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
+    "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
+    "footwork": ["H", "T", "TH", "HT", "T", "TH", "T"],
+    "CBM": ["yes", "yes", "no", "no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S", "S", "S", "S", "S"],
+    "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
+    },
+  "precede": ["Natural Spin Turn", "Outside Spin (underturned)"],
+  "follow": ["Any Natural Figure", "Closed Wing (end facing DW)"]
+}
+{
+  "name": "Basic Weave (commenced backing LOD at corner)",
+  "dance": "Waltz",
+  "difficulty": "Associate",
+  "man": {
+    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "alignment": ["Backing LOD", "Facing LOD", "Backing DC", "Backing Centre", "Backing Centre", "Pointing DW of new LOD", "Facing DW of new LOD"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "3/8 between 5-6 BTL", "nil"],
+    "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
+    "footwork": ["TH", "HT", "TH", "TH", "T", "TH", "H"],
+    "CBM": ["yes", "yes", "no", "no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S", "S", "S", "S", "S"],
+    "note": "It is better to commence facing LOD for the 3 steps of the Reverse Turn preceding this figure."
+    },
+  "lady": {
+    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "alignment": ["Facing LOD", "Backing LOD", "Pointing Centre", "Facing Centre", "Facing Centre", "Backing DW of new LOD", "Backing DW of new LOD"],
+    "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "3/8 between 5-6 BTL", "nil"],
+    "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
+    "footwork": ["H", "T", "TH", "HT", "T", "TH", "T"],
+    "CBM": ["yes", "yes", "no", "no", "yes", "no", "yes"],
+    "sway": ["S", "S", "S", "S", "S", "S", "S"],
+    "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
+    },
+  "precede": ["1-3 Reverse Turn"],
+  "follow": ["Any Natural Figure", "Closed Wing (end facing DW)"]
 }
