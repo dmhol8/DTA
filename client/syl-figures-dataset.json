@@ -484,7 +484,7 @@
               "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", "Basic Weave (at corner, commenced backing LOD)", "Weave from PP", 
               "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
   "follow": ["4-6 Reverse Turn (underturned)", "4-6 Reverse Turn (end facing LOD)", "Reverse Corte (1/4 turn)", "Reverse Pivot (commenced backing DC, end facing DW)", 
-            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Basic Weave (at corner)", 
+            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Turning Lock (end in PP)", "Basic Weave (at corner)", 
             "Basic Weave (at corner, end in PP)", "Left Whisk (commenced backing DC)"]
 }
 {
@@ -546,7 +546,7 @@
               "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", "Basic Weave (at corner, commenced backing LOD)", "Weave from PP", 
               "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
   "follow": ["4-6 Reverse Turn (underturned)", "4-6 Reverse Turn (end facing LOD)", "Reverse Corte (1/4 turn)", "Reverse Pivot (commenced backing DC, end facing DW)", 
-            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Basic Weave (at corner)", 
+            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Turning Lock (end in PP)", "Basic Weave (at corner)", 
             "Basic Weave (at corner, end in PP)", "Left Whisk (commenced backing DC)"]
 }
 {
@@ -2635,9 +2635,9 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "R", "S"]
     },
-  "precede": ["1-3 Natural Turn", "Reverse Corte (turning 1/2 to end backing DW after Underturned Natural Spin Turn or Closed Impetus at side of room)", "Back Lock", "Progressive Chasse to R",
-              "Cross Hesitation (turned to L to back DW)"],
-  "follow": ["Chasse from PP (facing DC)", "Weave from PP", "Cross Hesitation (facing DC)", "Wing (commenced pointing DC)", "Left Whisk"]
+  "precede": ["1-3 Natural Turn"],
+  "follow": ["Chasse from PP (facing DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 
+            "Cross Hesitation (end backing DW)", "Wing (commenced pointing DC)", "Wing (at corner, commenced pointing DC)"]
 }
 {
   "name": "Open Impetus (commenced backing DW)",
@@ -2662,7 +2662,8 @@
     "sway": ["S", "R", "S"]
     },
   "precede": ["Reverse Corte (1/2 turn, end backing DW)", "Back Lock", "Progressive Chasse to R", "Progressive Chasse to R (commenced facing LOD)", "Cross Hesitation (end backing DW)"],
-  "follow": ["Chasse from PP (facing DC)", "Weave from PP", "Cross Hesitation (facing DC)", "Wing (commenced pointing DC)", "Left Whisk"]
+  "follow": ["Chasse from PP (facing DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 
+            "Cross Hesitation (end backing DW)", "Wing (commenced pointing DC)", "Wing (at corner, commenced pointing DC)"]
 }
 {
   "name": "Open Impetus (at corner)",
@@ -2686,9 +2687,9 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "R", "S"]
     },
-  "precede": ["1-3 Natural Turn", "Reverse Corte (turning 1/2 to end backing DW after Underturned Natural Spin Turn or Closed Impetus at side of room)", "Back Lock", "Progressive Chasse to R",
-              "Cross Hesitation (turned to L to back DW)"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Left Whisk"]
+  "precede": ["1-3 Natural Turn"],
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing to LOD)", "Wing (underturned, commenced pointing to LOD)", 
+            "Wing (at corner, commenced pointing to LOD)", "Left Whisk", "Left Whisk (at corner)"]
 }
 {
   "name": "Outside Spin",
@@ -2712,8 +2713,10 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "S", "S"]
     },
-  "precede": ["Reverse Corte", "Cross Hesitation", "Hover Corte"],
-  "follow": ["Any Natural Figure"]
+  "precede": ["Reverse Corte", "Reverse Corte (1/4 turn)", "Cross Hesitation (facing DW)", "Hover Corte", "Hover Corte (using extra bar of music)"],
+  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Turn (at corner)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (at corner)", 
+            "Natural Spin Turn (overturned)", "Hesitation Change", "Hesitation Change (at corner, end facing DW of new LOD)", "Hesitation Change (at corner, end facing new LOD)", 
+            "Hesitation Change (at corner, end facing DC of new LOD)"]
 }
 {
   "name": "Outside Spin (end facing DC)",
@@ -2737,7 +2740,7 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "S", "S"]
     },
-  "precede": ["Cross Hesitation (facing DC)"],
+  "precede": ["Cross Hesitation (facing DC)", "Reverse Corte (5/8 turn)"],
   "follow": ["Closed Change, Natural to Reverse"]
 }
 {
@@ -2762,8 +2765,10 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "S", "S"]
     },
-  "precede": ["Reverse Corte (end backing DW)", "Back Lock", "Progressive Chasse to R"],
-  "follow": ["4-6 Reverse Turn", "Reverse Corte", "Reverse Pivot", "Turning Lock", "Basic Weave (approaching a corner)", "Left Whisk (starting with RF back)"]
+  "precede": ["Reverse Corte (1/2 turn, end backing DW)", "Cross Hesitation (end backing DW)", "Back Lock", "Progressive Chasse to R", "Progressive Chasse to R (commenced facing LOD)"],
+  "follow": ["4-6 Reverse Turn (underturned)", "4-6 Reverse Turn (end facing LOD)", "Reverse Corte (1/4 turn)", "Reverse Pivot (commenced backing DC, end facing DW)", 
+            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Turning Lock (end in PP)", "Basic Weave (at corner)", 
+            "Basic Weave (at corner, end in PP)", "Left Whisk (commenced backing DC)"]
 }
 {
   "name": "Outside Spin (1/2 turn, commenced backing DW against LOD)",
@@ -2787,8 +2792,10 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "S", "S"]
     },
-  "precede": ["Cross Hesitation (Facing DC)"],
-  "follow": ["4-6 Reverse Turn", "Reverse Corte", "Reverse Pivot", "Turning Lock", "Basic Weave (approaching a corner)", "Left Whisk (starting with RF back)"]
+  "precede": ["Cross Hesitation (facing DC)", "Reverse Corte (5/8 turn)"],
+  "follow": ["4-6 Reverse Turn (underturned)", "4-6 Reverse Turn (end facing LOD)", "Reverse Corte (1/4 turn)", "Reverse Pivot (commenced backing DC, end facing DW)", 
+            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Turning Lock (end in PP)", "Basic Weave (at corner)", 
+            "Basic Weave (at corner, end in PP)", "Left Whisk (commenced backing DC)"]
 }
 {
   "name": "Outside Spin (commenced backing DW, end backing LOD)",
@@ -2812,7 +2819,7 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "S", "S"]
     },
-  "precede": ["Reverse Corte (end backing DW)", "Back Lock", "Progressive Chasse to R"],
+  "precede": ["Reverse Corte (1/2 turn, end backing DW)", "Cross Hesitation (end backing DW)", "Back Lock", "Progressive Chasse to R", "Progressive Chasse to R (commenced facing LOD)"],
   "follow": ["Turning Lock to R"]
 }
 {
@@ -2837,7 +2844,7 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "S", "S"]
     },
-  "precede": ["Cross Hesitation (Facing DC)"],
+  "precede": ["Cross Hesitation (facing DC)", "Reverse Corte (5/8 turn)"],
   "follow": ["Turning Lock to R"]
 }
 {
@@ -2864,8 +2871,11 @@
     "sway": ["R", "R", "S", "S", "S"],
     "timing": ["1", "&", "2", "3", "1"]
     },
-  "precede": ["Natural Spin Turn", "Closed Impetus", "Outside Spin (underturned)"],
-  "follow": ["Any Natural Figure", "Closed Wing (facing DW)"]
+  "precede": ["Natural Spin Turn", "Natural Spin Turn (at corner)", "Closed Impetus (at corner)", "Outside Spin (3/4 turn, commenced backing DW)", 
+              "Outside Spin (1/2 turn, commenced backing DW against LOD)"], 
+  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Turn (at corner)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (at corner)", 
+            "Natural Spin Turn (overturned)", "Hesitation Change", "Hesitation Change (at corner, end facing DW of new LOD)", "Hesitation Change (at corner, end facing new LOD)", 
+            "Hesitation Change (at corner, end facing DC of new LOD)", "Closed Wing"]
 }
 {
   "name": "Turning Lock (end in PP)",
@@ -2891,8 +2901,10 @@
     "sway": ["R", "R", "S", "S", "S"],
     "timing": ["1", "&", "2", "3", "1"]
     },
-  "precede": ["Natural Spin Turn", "Closed Impetus", "Outside Spin (underturned)"],
-  "follow": ["Chasse from PP", "Cross Hesitation", "Wing", "Left Whisk"]
+  "precede": ["Natural Spin Turn", "Natural Spin Turn (at corner)", "Closed Impetus (at corner)", "Outside Spin (3/4 turn, commenced backing DW)", 
+              "Outside Spin (1/2 turn, commenced backing DW against LOD)"], 
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing LOD)", "Wing (at corner, commenced pointing LOD)", "Left Whisk", 
+            "Left Whisk (at corner)"]
 }
 {
   "name": "Left Whisk",
