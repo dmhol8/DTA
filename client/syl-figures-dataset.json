@@ -2387,8 +2387,11 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check"],
-  "follow": ["4-6 Natural Turn", "Outside Change (end facing DC)", "Back Whisk", "Outside Spin"]
+  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
+              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
+              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check", 
+              "Contra Check (commenced facing DW against LOD)"],
+  "follow": ["Outside Change (end facing DC)", "Outside Change (end facing DC, in PP)", "Back Whisk", "Outside Spin"]
 }
 {
   "name": "Cross Hesitation (at corner)",
@@ -2412,8 +2415,11 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check"],
-  "follow": ["Outside Change"]
+  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
+              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
+              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check", 
+              "Contra Check (commenced facing DW against LOD)"],
+  "follow": ["Outside Change", "Outside Change (end in PP)"]
 }
 {
   "name": "Cross Hesitation (facing DC)",
@@ -2437,8 +2443,10 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Open Impetus", "Turning Lock to R", "Whisk", "Back Whisk"],
-  "follow": ["Back Whisk", "Outside Spin"]
+  "precede": ["Whisk (end facing DC)", "Outside Change (end facing DC, in PP)", "Back Whisk (end facing DC)", "Back Whisk (1/4 turn, end facing DC)", "Back Whisk (3/8 turn, end facing DC)", 
+              "Open Impetus", "Open Impetus (commenced backing DW)", "Turning Lock (end in PP)", "Turning Lock to R"],
+  "follow": ["4-6 Natural Turn (underturned, end facing DW)", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (end facing DC)", 
+            "Outside Spin (1/2 turn, commenced backing DW against LOD)", "Outside Spin (end facing DC)", "Outside Spin (commenced backing DW against LOD, end backing LOD)"]
 }
 {
   "name": "Cross Hesitation (end backing DW)",
@@ -2462,8 +2470,10 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Open Impetus", "Turning Lock to R", "Whisk", "Back Whisk"],
-  "follow": ["Closed Impetus (commenced backing DW)", "Open Impetus (commenced backing DW)", "Back Lock"]
+  "precede": ["Whisk (end facing DC)", "Outside Change (end facing DC, in PP)", "Back Whisk (end facing DC)", "Back Whisk (1/4 turn, end facing DC)", "Back Whisk (3/8 turn, end facing DC)", 
+              "Open Impetus", "Open Impetus (commenced backing DW)", "Turning Lock (end in PP)", "Turning Lock to R"],
+  "follow": ["Closed Impetus (commenced backing DW)", "Open Impetus (commenced backing DW)", "Back Whisk (at corner, 1/4 turn)", "Back Whisk (1/4 turn, end facing DC)", "Back Whisk (3/8 turn)", 
+            "Back Lock", "Outside Spin (3/4 turn, commenced backing DW)", "Outside Spin (commenced backing DW, end backing LOD)"]
 }
 {
   "name": "Wing (commenced pointing LOD)",
@@ -2487,8 +2497,13 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check"],
-  "follow": ["Any Reverse Figure (taking step 1 in CBMP OP on L side)"]
+  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
+              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
+              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Open Impetus (at corner)", "Turning Lock (end in PP)", "Contra Check", 
+              "Contra Check (commenced facing DW against LOD)"],
+  "follow": ["Reverse Turn", "1-3 Reverse Turn", "Double Reverse Spin (commenced facing DC)", "Double Reverse Spin (full turn, commenced facing DC)", 
+            "Double Reverse Spin (underturned, commenced facing DC)", "Progressive Chasse to R", "Progressive Chasse to R (3/8 turn, commenced facing DC)", 
+            "Progressive Chasse to R (1/2 turn, commenced facing DC)", "Closed Telemark", "Open Telemark", "Fallaway Reverse and Slip Pivot", "Fallaway Reverse and Slip Pivot (end facing LOD)"]
 }
 {
   "name": "Wing (underturned, commenced pointing LOD)",
@@ -2512,7 +2527,10 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check"],
+  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
+              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
+              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Open Impetus (at corner)", "Turning Lock (end in PP)", "Contra Check", 
+              "Contra Check (commenced facing DW against LOD)"],
   "follow": ["Double Reverse Spin", "Double Reverse Spin (end facing LOD)", "Progressive Chasse to R (commenced facing LOD)"]
 }
 {
@@ -2537,8 +2555,63 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check"],
-  "follow": ["Whisk"]
+  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
+              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
+              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Open Impetus (at corner)", "Turning Lock (end in PP)", "Contra Check", 
+              "Contra Check (commenced facing DW against LOD)"],
+  "follow": ["Whisk", "Double Reverse Spin (commenced facing DW)"]
+}
+{
+  "name": "Wing (commenced pointing DC)",
+  "dance": "Waltz",
+  "difficulty": "Licentiate",
+  "man": {
+    "feet positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "alignment": ["Pointing DC, body Facing LOD", "Towards next alignment", "Facing DC"],
+    "amount_of_turn": ["nil", "Body turn to L", "Body turn to L"],
+    "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
+    "footwork": ["H", "Pressure on T (RF) with FF, and pressure on IE of T (LF)", "Pressure on T (RF) with FF, and pressure on IE of T (LF)"],
+    "CBM": ["no", "no", "no"],
+    "sway": ["S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "alignment": ["Facing DC against LOD", "Facing against LOD", "Facing DW against LOD"],
+    "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/8 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "L", "L"]
+    },
+  "precede": ["Outside Change (end facing DC, in PP)", "Open Impetus", "Open Impetus (commenced backing DW)", "Turning Lock to R"],
+  "follow": ["Reverse Turn", "1-3 Reverse Turn", "Double Reverse Spin (commenced facing DC)", "Double Reverse Spin (full turn, commenced facing DC)", 
+            "Double Reverse Spin (underturned, commenced facing DC)", "Progressive Chasse to R", "Progressive Chasse to R (3/8 turn, commenced facing DC)", 
+            "Progressive Chasse to R (1/2 turn, commenced facing DC)", "Closed Telemark", "Open Telemark", "Fallaway Reverse and Slip Pivot", "Fallaway Reverse and Slip Pivot (end facing LOD)"]
+}
+{
+  "name": "Wing (at corner, commenced pointing DC)",
+  "dance": "Waltz",
+  "difficulty": "Licentiate",
+  "man": {
+    "feet positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "alignment": ["Pointing DC, body Facing LOD", "Towards next alignment", "Facing DW of new LOD"],
+    "amount_of_turn": ["nil", "Body turn to L", "Body turn to L"],
+    "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
+    "footwork": ["H", "Pressure on T (RF) with FF, and pressure on IE of T (LF)", "Pressure on T (RF) with FF, and pressure on IE of T (LF)"],
+    "CBM": ["no", "no", "no"],
+    "sway": ["S", "S", "S"]
+    },
+  "lady": {
+    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "alignment": ["Facing DC against LOD", "Facing against LOD", "Facing DC against new LOD"],
+    "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/8 between 2-3"],
+    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
+    "footwork": ["HT", "T", "TH"],
+    "CBM": ["yes", "no", "no"],
+    "sway": ["S", "L", "L"]
+    },
+  "precede": ["Outside Change (end facing DC, in PP)", "Open Impetus", "Open Impetus (commenced backing DW)", "Turning Lock to R"],
+  "follow": ["Whisk", "Double Reverse Spin (commenced facing DW)"]
 }
 {
   "name": "Open Impetus",
@@ -2616,56 +2689,6 @@
   "precede": ["1-3 Natural Turn", "Reverse Corte (turning 1/2 to end backing DW after Underturned Natural Spin Turn or Closed Impetus at side of room)", "Back Lock", "Progressive Chasse to R",
               "Cross Hesitation (turned to L to back DW)"],
   "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Left Whisk"]
-}
-{
-  "name": "Wing (commenced pointing DC)",
-  "dance": "Waltz",
-  "difficulty": "Licentiate",
-  "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
-    "alignment": ["Pointing DC, body Facing LOD", "Towards next alignment", "Facing DC"],
-    "amount_of_turn": ["nil", "Body turn to L", "Body turn to L"],
-    "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
-    "footwork": ["H", "Pressure on T (RF) with FF, and pressure on IE of T (LF)", "Pressure on T (RF) with FF, and pressure on IE of T (LF)"],
-    "CBM": ["no", "no", "no"],
-    "sway": ["S", "S", "S"]
-    },
-  "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
-    "alignment": ["Facing DC against LOD", "Facing against LOD", "Facing DW against LOD"],
-    "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/8 between 2-3"],
-    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
-    "footwork": ["HT", "T", "TH"],
-    "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"]
-    },
-  "precede": ["Whisk", "Outside Change (end in PP facing DC)", "Back Whisk", "Open Impetus", "Turning Lock to R"],
-  "follow": ["Any Reverse Figure (taking step 1 in CBMP OP on L side)"]
-}
-{
-  "name": "Wing (at corner, commenced pointing DC)",
-  "dance": "Waltz",
-  "difficulty": "Licentiate",
-  "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
-    "alignment": ["Pointing DC, body Facing LOD", "Towards next alignment", "Facing DW of new LOD"],
-    "amount_of_turn": ["nil", "Body turn to L", "Body turn to L"],
-    "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
-    "footwork": ["H", "Pressure on T (RF) with FF, and pressure on IE of T (LF)", "Pressure on T (RF) with FF, and pressure on IE of T (LF)"],
-    "CBM": ["no", "no", "no"],
-    "sway": ["S", "S", "S"]
-    },
-  "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
-    "alignment": ["Facing DC against LOD", "Facing against LOD", "Facing DC against new LOD"],
-    "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/8 between 2-3"],
-    "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
-    "footwork": ["HT", "T", "TH"],
-    "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"]
-    },
-  "precede": ["Whisk", "Outside Change (end in PP facing DC)", "Back Whisk", "Open Impetus", "Turning Lock to R"],
-  "follow": ["Whisk"]
 }
 {
   "name": "Outside Spin",
