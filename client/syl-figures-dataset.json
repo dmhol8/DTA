@@ -473,8 +473,7 @@
     "footwork": ["TH", "T", "TH", "HT", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "S", "S"],
-    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact
-            with the floor."
+    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact with the floor."
     },
   "precede": ["Closed Change, Reverse to Natural", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", "Chasse from PP", 
               "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", "Basic Weave (at corner, commenced backing LOD)", "Weave from PP", 
@@ -505,8 +504,7 @@
     "footwork": ["TH", "T", "TH", "HT", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "S", "S"],
-    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact
-            with the floor."
+    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact with the floor."
     },
   "precede": ["Closed Change, Reverse to Natural", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", "Chasse from PP", 
               "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", "Basic Weave (at corner, commenced backing LOD)", "Weave from PP", 
@@ -535,8 +533,7 @@
     "footwork": ["TH", "T", "TH", "HT", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "S", "S"],
-    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact
-            with the floor."
+    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact with the floor."
     },
   "precede": ["Closed Change, Reverse to Natural", "4-6 Natural Turn (underturned, end facing DW)", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Weave from PP", 
               "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
@@ -566,8 +563,7 @@
     "footwork": ["TH", "T", "TH", "HT", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "S", "S"],
-    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact
-            with the floor."
+    "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact with the floor."
     },
   "precede": ["Closed Change, Reverse to Natural", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", "Chasse from PP", 
               "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", "Basic Weave (at corner, commenced backing LOD)", "Weave from PP", 
@@ -3346,7 +3342,7 @@
     "feet positions": ["LF fwd", "RF to side", "LF brushes towards RF", "LF brushes towards RF", "LF brushes to RF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Towards next alignment", "Towards next alignment", "Towards next alignment", "Facing DC against LOD", "Facing DC against LOD", 
                   "Facing DC against LOD"],
-    "amount_of_turn": ["Com to turn L", "1/4 between 1-2" "Cont to turn 1/8 between 3-5", "nil", "nil", "nil", "nil"],
+    "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "Cont to turn 1/8 between 3-5", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-5", "nil", "nil", "nil", "Up. Lower e/o 6", "nil"],
     "footwork": ["HT", "T", "T (RF) and IE of T (LF)", "T (RF) and IE of T (LF)", "T (RF) and IE of T (LF)", "TH", "H"],
     "CBM": ["yes", "no", "no", "no", "no", "no", "yes"],
@@ -3373,7 +3369,7 @@
     "feet positions": ["LF fwd", "RF to side", "LF brushes towards RF", "LF brushes towards RF", "LF brushes to RF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Towards next alignment", "Towards next alignment", "Towards next alignment", "Facing DC of new LOD", "Facing DC of new LOD", 
                   "Facing DC of new LOD"],
-    "amount_of_turn": ["Com to turn L", "1/4 between 1-2" "Cont to turn 1/8 between 3-5", "nil", "nil", "nil", "nil"],
+    "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "Cont to turn 1/8 between 3-5", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-5", "nil", "nil", "nil", "Up. Lower e/o 6", "nil"],
     "footwork": ["HT", "T", "T (RF) and IE of T (LF)", "T (RF) and IE of T (LF)", "T (RF) and IE of T (LF)", "TH", "H"],
     "CBM": ["yes", "no", "no", "no", "no", "no", "yes"],

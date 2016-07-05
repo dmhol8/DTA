@@ -17,39 +17,39 @@ myApp.service('VisibilityService', function() {
 	this.visMain = function () {
 		document.getElementById("introPage").style.display = "none";
     	document.getElementById("mainPage").style.display = "block";
-    	window.localStorage.setItem("pageState", "B");
-    	// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+    	window.sessionStorage.setItem("pageState", "B");
+    	// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
 	}
 
 	this.visIndex = function () {
 		document.getElementById("mainPage").style.display = "none";
     	document.getElementById("introPage").style.display = "block";
-    	window.localStorage.setItem("pageState", "A");
-    	// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+    	window.sessionStorage.setItem("pageState", "A");
+    	// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
 	}
 
 	this.visFig = function () {
 		document.getElementById("options").style.display = "none";
     	document.getElementById("section4CreateFigure").style.display = "inline-block";
-    	window.localStorage.setItem("pageState", "C");
-    	// document.getElementById("state").innerHTML = localStorage.getItem('pageState');		
+    	window.sessionStorage.setItem("pageState", "C");
+    	// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');		
 	}
 
 	this.visOpt = function () {
 		document.getElementById("section4CreateFigure").style.display = "none";
 		document.getElementById("options").style.display = "inline-block";
-		window.localStorage.setItem("pageState", "B");
-		// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+		window.sessionStorage.setItem("pageState", "B");
+		// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
 	}
 
 	this.visCreateFig = function () {
 		document.getElementById("figDetailBox").style.display = "block";
-		// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+		// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
 	}
 
 	this.visNoCreateFig = function () {
 		document.getElementById("figDetailBox").style.display = "none";
-		// document.getElementById("state").innerHTML = localStorage.getItem('pageState');
+		// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
 	}
 })
 
@@ -93,7 +93,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	$scope.dispOpt = function () {
     	VisibilityService.visOpt()
     	// .then(saveSuccess, error)    
-  	}	
+  	}
 
   	$scope.dispCreateFig = function () {
     	VisibilityService.visCreateFig()
@@ -107,7 +107,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	document.getElementById("difBut3").disabled = true;
     	document.getElementById("difBut4").disabled = true;
     	document.getElementById("textSearch").disabled = true;
-    	document.getElementById("figureBlock").disabled = true;
+    	document.getElementById("startFigure").disabled = true;
     	document.getElementById("nextButton").disabled = true;
     	document.getElementById("backButton").disabled = true;
     	document.getElementById("selectStepNo").innerHTML = NumberService.numberList($scope.numSteps);
@@ -128,11 +128,11 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	document.getElementById("difBut3").disabled = false;
     	document.getElementById("difBut4").disabled = false;   	
     	document.getElementById("textSearch").disabled = false;
-    	document.getElementById("figureBlock").disabled = false;
+    	document.getElementById("startFigure").disabled = false;
     	document.getElementById("nextButton").disabled = false;
     	document.getElementById("backButton").disabled = false;
     	// .then(saveSuccess, error)    
-  	}	
+  	}
 
   	window.onload = function() {
   		document.getElementById("numIn1").disabled = false;
@@ -145,10 +145,12 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	document.getElementById("difBut3").disabled = false;
     	document.getElementById("difBut4").disabled = false;   	
     	document.getElementById("textSearch").disabled = false;
-    	document.getElementById("figureBlock").disabled = false;
+    	document.getElementById("startFigure").disabled = false;
     	document.getElementById("nextButton").disabled = false;
     	document.getElementById("backButton").disabled = false;
-		var pageState = localStorage.getItem("pageState");
+
+		var pageState = sessionStorage.getItem("pageState");
+		
 	    if(pageState == "B") {
 	      	VisibilityService.visMain();
 	    }
