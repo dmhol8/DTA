@@ -183,12 +183,10 @@
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "R", "R"]
     },
-  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", 
-              "Basic Weave (at corner, commenced backing LOD)", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", 
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "4-6 Natural Turn (underturned, end facing DW)", 
               "Weave from PP", "Closed Telemark", "Outside Spin", "Turning Lock"],
-  "follow": ["Natural Turn", "1-3 Natural Turn (underturned)", "1-3 Natural Turn", "Natural Turn (at corner)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (at corner)", 
-            "Natural Spin Turn (overturned)", "Hesitation Change", "Hesitation Change (at corner, end facing DW of new LOD)", "Hesitation Change (at corner, end facing new LOD)", 
-            "Hesitation Change (at corner, end facing DC of new LOD)"]
+  "follow": ["Natural Turn", "1-3 Natural Turn (underturned)", "1-3 Natural Turn", "Natural Spin Turn", "Natural Spin Turn (underturned)",  
+            "Natural Spin Turn (overturned)", "Hesitation Change"]
 }
 {
   "name": "4-6 Natural Turn (underturned)",
@@ -238,9 +236,7 @@
     "sway": ["S", "R", "R"]
     },
   "precede": ["Back Lock", "Progressive Chasse to R", "Reverse Corte (1/2 turn, end backing DW)"],
-  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Turn (at corner)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (at corner)", 
-            "Natural Spin Turn (overturned)", "Hesitation Change", "Hesitation Change (at corner, end facing DW of new LOD)", "Hesitation Change (at corner, end facing new LOD)", 
-            "Hesitation Change (at corner, end facing DC of new LOD)"]
+  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Spin Turn", "Natural Spin Turn (underturned)",  "Natural Spin Turn (overturned)", "Hesitation Change"]
 }
 {
   "name": "4-6 Natural Turn (underturned, end facing DW)",
@@ -400,7 +396,7 @@
     "sway": ["S", "L", "L"]
     },
   "precede": ["Natural Spin Turn (underturned)", "Closed Impetus", "Closed Impetus (commenced backing DW)"],
-  "follow": ["Closed Change, Reverse to Natural", "Whisk", "Whisk (at corner)", "Whisk (end facing DC)", "Whisk (end facing LOD)", "Double Reverse Spin (commenced facing DW)", "Contra Check",
+  "follow": ["Closed Change, Reverse to Natural", "Whisk", "Whisk (end facing DC)", "Whisk (end facing LOD)", "Double Reverse Spin (commenced facing DW)", "Contra Check",
             "Contra Check (end moving DC)"]
 }
 {
@@ -542,12 +538,11 @@
     "note": "The rise is taken from the ball of LF on step 5, and it is important to note that as the RF commences to move to brush to LF the ball of RF not the heel is in contact
             with the floor."
     },
-  "precede": ["Closed Change, Reverse to Natural", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", "Chasse from PP", 
-              "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", "Basic Weave (at corner, commenced backing LOD)", "Weave from PP", 
+  "precede": ["Closed Change, Reverse to Natural", "4-6 Natural Turn (underturned, end facing DW)", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Weave from PP", 
               "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
   "follow": ["4-6 Reverse Turn (underturned)", "4-6 Reverse Turn (end facing LOD)", "Reverse Corte (1/4 turn)", "Reverse Pivot (commenced backing DC, end facing DW)", 
-            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Turning Lock (end in PP)", "Basic Weave (at corner)", 
-            "Basic Weave (at corner, end in PP)", "Left Whisk (commenced backing DC)"]
+            "Reverse Pivot (commenced backing DC, end facing LOD)", "Reverse Pivot (commenced backing DC, end facing DC)", "Turning Lock", "Turning Lock (end in PP)", 
+            "Left Whisk (commenced backing DC)"]
 }
 {
   "name": "Natural Spin Turn (overturned)",
@@ -632,10 +627,10 @@
     "CBM": ["no", "no", "no"],
     "sway": ["S", "R", "R"]
     },
-  "precede": ["Reverse Turn", "4-6 Reverse Turn (underturned)", "4-6 Reverse Turn (at corner, underturned)", "Double Reverse Spin", "Double Reverse Spin (commenced facing DW)",
-              "Double Reverse Spin (underturned, commenced facing DC)", "Reverse Pivot", "Reverse Pivot (commenced backing DC, end facing DW)", 
-              "Hesitation Change (at corner, end facing DW of new LOD)", "Closed Wing (facing DW)", "Fallaway Reverse and Slip Pivot"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (at corner, commenced pointing LOD)", "Wing (at corner, commenced pointing DC)", "Left Whisk"]
+  "precede": ["Reverse Turn", "4-6 Reverse Turn (underturned)", "Double Reverse Spin", "Double Reverse Spin (commenced facing DW)",
+              "Double Reverse Spin (underturned, commenced facing DC)", "Reverse Pivot", "Reverse Pivot (commenced backing DC, end facing DW)", "Closed Wing (facing DW)", 
+              "Fallaway Reverse and Slip Pivot"],
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Left Whisk"]
 }
 {
   "name": "Whisk (end facing DC)",
@@ -880,8 +875,7 @@
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "R", "R"]
     },
-  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", 
-              "Basic Weave (at corner, commenced backing LOD)", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", 
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "4-6 Natural Turn (underturned, end facing DW)", 
               "Weave from PP", "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
   "follow": ["Closed Change, Reverse to Natural", "Whisk", "Whisk (end facing DC)", "Whisk (end facing LOD)", "Double Reverse Spin (commenced facing DW)", "Contra Check", 
             "Contra Check (end moving DC)"]
@@ -908,8 +902,7 @@
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "R", "R"]
     },
-  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", 
-              "Basic Weave (at corner, commenced backing LOD)", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", 
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "4-6 Natural Turn (underturned, end facing DW)", 
               "Weave from PP", "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
   "follow": ["1-3 Reverse Turn (end backing DW)"]
 }
@@ -935,8 +928,7 @@
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
     "sway": ["S", "L", "L", "S", "R", "R"]
     },
-  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "Basic Weave (at corner)", 
-              "Basic Weave (at corner, commenced backing LOD)", "Natural Turn (at corner)", "4-6 Natural Turn (at corner, underturned)", "4-6 Natural Turn (underturned, end facing DW)", 
+  "precede": ["Closed Change, Reverse to Natural", "Chasse from PP", "Outside Change", "Outside Change (1/8 turn)", "Basic Weave", "4-6 Natural Turn (underturned, end facing DW)", 
               "Weave from PP", "Weave from PP (commenced facing LOD)", "Closed Telemark", "Outside Spin", "Turning Lock"],
   "follow": ["Reverse Turn", "1-3 Reverse Turn", "Double Reverse Spin (commenced facing DC)", "Double Reverse Spin (full turn, commenced facing DC)", 
             "Double Reverse Spin (underturned, commenced facing DC)", "Progressive Chasse to R", "Progressive Chasse to R (3/8 turn, commenced facing DC)", 
@@ -1342,8 +1334,7 @@
     "sway": ["S", "R", "R"]
     },
   "precede": ["Reverse Corte (5/8 turn)"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing LOD)", "Wing (at corner, commenced pointing LOD)", "Left Whisk", 
-            "Left Whisk (at corner)"]
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (commenced pointing LOD)", "Left Whisk"]
 }
 {
   "name": "Back Whisk (end facing DC)",
@@ -1395,8 +1386,7 @@
     "sway": ["S", "R", "R"]
     },
   "precede": ["Reverse Corte (1/2 turn, end backing DW)", "Back Lock", "Progressive Chasse to R", "Progressive Chasse to R (commenced facing LOD)"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing LOD)", "Wing (at corner, commenced pointing LOD)", "Left Whisk", 
-            "Left Whisk (at corner)"]
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (commenced pointing LOD)", "Left Whisk"]
 }
 {
   "name": "Back Whisk (1/4 turn, end facing DC)",
@@ -1500,8 +1490,7 @@
     "sway": ["S", "R", "R"]
     },
   "precede": ["1-3 Natural Turn"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing LOD)", "Wing (at corner, commenced pointing LOD)", "Left Whisk", 
-            "Left Whisk (at corner)"]
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (commenced pointing LOD)", "Left Whisk"]
 }
 {
   "name": "Basic Weave",
@@ -1555,9 +1544,8 @@
     "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
     },
   "precede": ["Natural Spin Turn", "Outside Spin (3/4 turn, commenced backing DW)", "Outside Spin (1/2 turn, commenced backing DW against LOD)"],
-  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Turn (at corner)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (at corner)", 
-            "Natural Spin Turn (overturned)", "Hesitation Change", "Hesitation Change (at corner, end facing DW of new LOD)", "Hesitation Change (at corner, end facing new LOD)", 
-            "Hesitation Change (at corner, end facing DC of new LOD)", "Closed Wing (facing DW)"]
+  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (overturned)", "Hesitation Change", 
+            "Closed Wing (facing DW)"]
 }
 {
   "name": "Basic Weave (at corner, commenced backing LOD)",
@@ -1584,9 +1572,8 @@
     "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
     },
   "precede": ["1-3 Reverse Turn"],
-  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Turn (at corner)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (at corner)", 
-            "Natural Spin Turn (overturned)", "Hesitation Change", "Hesitation Change (at corner, end facing DW of new LOD)", "Hesitation Change (at corner, end facing new LOD)", 
-            "Hesitation Change (at corner, end facing DC of new LOD)", "Closed Wing (facing DW)"]
+  "follow": ["Natural Turn", "1-3 Natural Turn", "1-3 Natural Turn (underturned)", "Natural Spin Turn", "Natural Spin Turn (underturned)", "Natural Spin Turn (overturned)", "Hesitation Change", 
+            "Closed Wing (facing DW)"]
 }
 {
   "name": "Basic Weave (end in PP)",
@@ -1638,9 +1625,8 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"],
     "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
     },
-  "precede": ["Natural Spin Turn", "Closed Impetus (at corner)", "Outside Spin (3/4 turn, commenced backing DW)", "Outside Spin (1/2 turn, commenced backing DW against LOD)"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing LOD)", "Wing (at corner, commenced pointing LOD)", "Left Whisk", 
-            "Left Whisk (at corner)"]
+  "precede": ["Natural Spin Turn", "Outside Spin (3/4 turn, commenced backing DW)", "Outside Spin (1/2 turn, commenced backing DW against LOD)"],
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (commenced pointing LOD)", "Left Whisk"]
 }
 {
   "name": "Basic Weave (at corner, commenced backing LOD, end in PP)",
@@ -1667,8 +1653,7 @@
     "note": "More advanced lady dancers may, if they wish, use ball of foot to whole foot on step 1 of this figure."
     },
   "precede": ["1-3 Reverse Turn"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing LOD)", "Wing (at corner, commenced pointing LOD)", "Left Whisk", 
-            "Left Whisk (at corner)"]
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (commenced pointing LOD)", "Left Whisk"]
 }
 {
   "name": "Double Reverse Spin",
@@ -2415,10 +2400,8 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
-              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
-              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Turning Lock (end in PP)", "Contra Check", 
-              "Contra Check (commenced facing DW against LOD)"],
+  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", 
+              "Open Telemark", "Turning Lock (end in PP)", "Contra Check", "Contra Check (commenced facing DW against LOD)"],
   "follow": ["Outside Change", "Outside Change (end in PP)"]
 }
 {
@@ -2555,10 +2538,8 @@
     "CBM": ["yes", "no", "no"],
     "sway": ["S", "L", "L"]
     },
-  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
-              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
-              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Open Impetus (at corner)", "Turning Lock (end in PP)", "Contra Check", 
-              "Contra Check (commenced facing DW against LOD)"],
+  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", 
+              "Open Telemark", "Turning Lock (end in PP)", "Contra Check", "Contra Check (commenced facing DW against LOD)"],
   "follow": ["Whisk", "Double Reverse Spin (commenced facing DW)"]
 }
 {
@@ -2688,8 +2669,7 @@
     "sway": ["S", "R", "S"]
     },
   "precede": ["1-3 Natural Turn"],
-  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Cross Hesitation (at corner)", "Wing (commenced pointing to LOD)", "Wing (underturned, commenced pointing to LOD)", 
-            "Wing (at corner, commenced pointing to LOD)", "Left Whisk", "Left Whisk (at corner)"]
+  "follow": ["Chasse from PP", "Cross Hesitation (facing DW)", "Wing (commenced pointing to LOD)", "Wing (underturned, commenced pointing to LOD)", "Left Whisk"]
 }
 {
   "name": "Outside Spin",
@@ -2958,10 +2938,8 @@
     "sway": ["S", "S", "S"],
     "note": "The lady may overturn slightly to the L on step 3 and turn her head well to the L. The man should look towards her face, not over her R shoulder."
     },
-  "precede": ["Whisk", "Whisk (at corner)", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Back Whisk (at corner)", "Back Whisk (at corner, 1/4 turn)", 
-              "Back Whisk (at corner, 3/8 turn)", "Basic Weave (end in PP)", "Basic Weave (at corner, end in PP)", "Basic Weave (at corner, commenced backing LOD, end in PP)", 
-              "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", "Open Telemark", "Open Impetus (at corner)", "Turning Lock (end in PP)", "Contra Check", 
-              "Contra Check (commenced facing DW against LOD)"],
+  "precede": ["Whisk", "Outside Change (end in PP)", "Back Whisk", "Back Whisk (1/4 turn)", "Basic Weave (end in PP)", "Weave from PP (end in PP)", "Weave from PP (commenced facing LOD, end in PP)", 
+              "Open Telemark", "Turning Lock (end in PP)", "Contra Check", "Contra Check (commenced facing DW against LOD)"],
   "follow": ["Outside Change", "Outside Change (end in PP)"]
 }
 {
