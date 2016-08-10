@@ -74,10 +74,7 @@
         <input type="text" placeholder="Search..." id="textSearch"></input>
 
         <ul id="figureList">
-          <li id="figure">Temporary One</li>
-          <li id="figure">Temporary Two</li>
-          <li id="figure">Temporary Three</li>
-          <li id="figure">Temporary Four</li>
+          <li ng-repeat="x in names" id="figure">{{x}}</li>
         </ul>
 
       </div>
@@ -87,7 +84,7 @@
 
         <div id="figureBlocks">
 
-          <input class="figureButtons" id="startFigure" type="button" value="Starting Figure" ng-click="changeClass(this.id)"></input>
+          <input class="figureButtons" id="startFigure" type="button" value="Starting Figure" ng-click="changeClass('startFigure')"></input>
 
         </div>
 

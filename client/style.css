@@ -89,6 +89,7 @@ p {
 #figureList {
 	display: block;
 	max-width: 259px;
+	max-height: 288px;
 	line-height: 25px;
 	list-style-type: none;
 	text-transform: uppercase;
@@ -107,7 +108,7 @@ p {
 }
 #figure:hover {
 	background-color: #18366b;
-	color:white;
+	color: white;
 }
 
 /* SECTION 2: Routine Skeleton */
@@ -119,6 +120,14 @@ p {
 #addFigure {
 	width: 20px; 
 	height: 20px; 
+}
+.figureButtons {
+	background-color: white;
+	color: #18366b;
+}
+.answerBtnsSelected {
+	background-color: #18366b;
+	color: white;
 }
 
 /* SECTION 3: Options */

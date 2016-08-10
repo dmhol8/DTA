@@ -1,5 +1,6 @@
 var myApp = angular.module('myApp',[])
-src="jquery-1.12.3.js"
+
+// src="jquery-1.12.3.js"
 
 myApp.service('NumberService', function() {
 
@@ -53,12 +54,25 @@ myApp.service('VisibilityService', function() {
 	}
 })
 
-myApp.controller('myController', function($scope, NumberService, VisibilityService) {
+myApp.service('ClassService', function($http) {
+
+	var baseUrl = 'http://localhost:8080/';
+
+	this.chClass = function (id) {
+		document.getElementById(id).className = 'answerBtnsSelected';
+
+		var url = baseUrl + "chClass"
+    	return $http.get(url)
+	}
+})
+
+myApp.controller('myController', function($scope, NumberService, VisibilityService, ClassService) {
 
 	$scope.danceSelect = "waltz"
 	$scope.numSteps = 4
 	$scope.numPre = 3
 	$scope.numFoll = 3
+	$scope.names = []
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -93,6 +107,21 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	$scope.dispOpt = function () {
     	VisibilityService.visOpt()
     	// .then(saveSuccess, error)    
+  	}
+
+  	$scope.changeClass = function (oneId) {
+  		$scope.id = oneId;
+  		ClassService.chClass( $scope.id )
+  		.then(loadSuccess, error)
+  	}
+
+  	function loadSuccess (json) {
+    	$scope.names = json.data
+  	}
+
+  	function error (err) {
+  		document.getElementById("figure").innerHTML = 'error'
+    	console.log(err)
   	}
 
   	$scope.dispCreateFig = function () {
