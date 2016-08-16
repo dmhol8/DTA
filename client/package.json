@@ -9,6 +9,7 @@
   "author": "Dustin Hollis",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.3"
+    "angular": "^1.5.3",
+    "jqlite": "^0.2.39"
   }
 }

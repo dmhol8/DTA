@@ -1,6 +1,21 @@
 var myApp = angular.module('myApp',[])
 
-// src="jquery-1.12.3.js"
+src="node_modules/angular/jqlite.js"
+
+myApp.directive("anotherfig", function($compile){
+	return function(scope, element, attrs){
+		element.bind("click", function(){
+			scope.count++;
+			exp = "getFigs2('nextFig"+scope.count+"')"
+
+			angular.element(document.querySelector('#figureBlocks')).append($compile("<br><br><input class='figureButtons' id='nextFig"
+				+scope.count+
+				"' type='button' value='New Figure "
+				+scope.count+
+				"' ng-click="+exp+" >")(scope));
+		});
+	};
+});
 
 myApp.service('NumberService', function() {
 
@@ -54,25 +69,72 @@ myApp.service('VisibilityService', function() {
 	}
 })
 
-myApp.service('ClassService', function($http) {
+myApp.service('FigService', function($http) {
 
 	var baseUrl = 'http://localhost:8080/';
 
-	this.chClass = function (id) {
+	this.getFigNames = function (id, prevID) {
+		if (prevID != "") {
+			document.getElementById(prevID).className = 'figureButtons';
+		}
 		document.getElementById(id).className = 'answerBtnsSelected';
 
-		var url = baseUrl + "chClass"
+		var url = baseUrl + "getFigNames"
     	return $http.get(url)
+	}
+
+	this.getFigNames2 = function (id, prevID, prevName, nextName) {
+		if (prevID != "") {
+			document.getElementById(prevID).className = 'figureButtons';
+		}
+		document.getElementById(id).className = 'answerBtnsSelected';
+
+		var url = baseUrl + "getFigNames2"
+    	return $http.post(url, {prevName, nextName})
+	}
+
+	this.placeFigNames = function (name, id) {
+		document.getElementById(id).value = name;
 	}
 })
 
-myApp.controller('myController', function($scope, NumberService, VisibilityService, ClassService) {
+myApp.service('IdService', function() {
+
+	this.getLastId = function (id) {
+		var s = id;
+		var index = 7;
+		chr = s.substr(7)
+		return s.substr(0, index) + (chr - 1);
+	}
+
+	this.getNextId = function (id) {
+		var s = id;
+		var index = 7;
+		chr = s.substr(7)
+		return s.substr(0, index) + (Number(chr) + 1);
+	}
+
+	this.getName = function (id, count) {
+		if (id == 'nextFig0' || Number(id.substr(7)) > count) {
+			return 'nothing';
+		}
+		return document.getElementById(id).value;
+	}
+})
+
+myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService) {
 
 	$scope.danceSelect = "waltz"
 	$scope.numSteps = 4
 	$scope.numPre = 3
 	$scope.numFoll = 3
 	$scope.names = []
+	$scope.prevID = ""
+	$scope.prevName = ""
+	$scope.count = 0;
+	$scope.nextName = ""
+	$scope.lastID = 1
+	$scope.nextID = 1
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -109,10 +171,33 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	// .then(saveSuccess, error)    
   	}
 
-  	$scope.changeClass = function (oneId) {
+  	$scope.getFigs = function (oneId) {
   		$scope.id = oneId;
-  		ClassService.chClass( $scope.id )
+  		FigService.getFigNames( $scope.id , $scope.prevID )
   		.then(loadSuccess, error)
+  		$scope.prevID = $scope.id
+  	}
+
+  	$scope.getFigs2 = function (oneId) {
+  		$scope.id = oneId;
+  		count = $scope.count;
+
+  		$scope.lastID = IdService.getLastId( oneId )
+  		$scope.nextID = IdService.getNextId( oneId )
+  		
+  		$scope.prevName = IdService.getName ( $scope.lastID, count )
+  		$scope.nextName = IdService.getName ( $scope.nextID, count )
+  		
+  		alert($scope.nextName)
+
+  		FigService.getFigNames2( $scope.id, $scope.prevID, $scope.prevName, $scope.nextName )
+  		.then(loadSuccess, error)
+  		$scope.prevID = $scope.id
+  	}
+
+  	$scope.placeFigs = function (name) {
+  		$scope.name = name;
+  		FigService.placeFigNames( $scope.name , $scope.id )
   	}
 
   	function loadSuccess (json) {

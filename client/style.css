@@ -92,7 +92,7 @@ p {
 	max-height: 288px;
 	line-height: 25px;
 	list-style-type: none;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 	text-align: left;
 	font-size: 13px;
 	margin: 0;
@@ -122,6 +122,11 @@ p {
 	height: 20px; 
 }
 .figureButtons {
+	background-color: white;
+	color: #18366b;
+	display: inline-block;
+}
+.addFigureButton {
 	background-color: white;
 	color: #18366b;
 }

@@ -8,9 +8,26 @@ var app = express()
 
 var url = 'mongodb://localhost:27017/dance';
 
+app.use(bodyParser.json())
+
 var findFigureNames = function(db, callback) {
 	var A = [];
    	var cursor = db.collection('figures').find({}, {_id: 0, name: 1});
+   	cursor.each(function(err, doc) {
+      	assert.equal(err, null);
+      	if (doc != null) {
+      		// console.dir(doc);
+      		var B = doc.name
+      		A = A.concat(B)
+      	} else {
+         	callback(A);
+      	}
+   	});
+};
+
+var findFigureNames2 = function(db, callback) {
+	var A = [];
+   	var cursor = db.collection('figures').find({"precede":"Natural Turn"}, {_id: 0, name: 1});
    	cursor.each(function(err, doc) {
       	assert.equal(err, null);
       	if (doc != null) {
@@ -32,13 +49,28 @@ MongoClient.connect(url, function(err, db) {
   	});
 });
 
-app.get('/chClass', function (req, res) {
+app.get('/getFigNames', function (req, res) {
 
  	MongoClient.connect(url, function(err, db) {
   		assert.equal(null, err);
 
  		console.log('I just read stuff from the database')
  		var data = findFigureNames(db, function(A) {
+ 			console.log(A)
+ 			res.send(A)
+ 		});
+  		
+	});
+ 	
+})
+
+app.post('/getFigNames2', function (req, res) {
+	console.log(req.body);
+ 	MongoClient.connect(url, function(err, db) {
+  		assert.equal(null, err);
+
+ 		console.log('I just read stuff from the database')
+ 		var data = findFigureNames2(db, function(A) {
  			console.log(A)
  			res.send(A)
  		});
