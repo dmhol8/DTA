@@ -116,15 +116,22 @@ p {
 	width: 260px;
 	height: 400px;
 	margin-left: 20px;
+	overflow-x: auto;
 }
 #addFigure {
 	width: 20px; 
 	height: 20px; 
 }
+#figureBlocks {
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
 .figureButtons {
 	background-color: white;
 	color: #18366b;
 	display: inline-block;
+	width: 250px;
+	white-space: normal;
 }
 .addFigureButton {
 	background-color: white;
@@ -133,6 +140,8 @@ p {
 .answerBtnsSelected {
 	background-color: #18366b;
 	color: white;
+	width: 250px;
+	white-space: normal;
 }
 
 /* SECTION 3: Options */

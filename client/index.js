@@ -6,13 +6,11 @@ myApp.directive("anotherfig", function($compile){
 	return function(scope, element, attrs){
 		element.bind("click", function(){
 			scope.count++;
-			exp = "getFigs2('nextFig"+scope.count+"')"
+			exp = "getFigs('nextFig"+scope.count+"')"
 
 			angular.element(document.querySelector('#figureBlocks')).append($compile("<br><br><input class='figureButtons' id='nextFig"
 				+scope.count+
-				"' type='button' value='New Figure "
-				+scope.count+
-				"' ng-click="+exp+" >")(scope));
+				"' type='button' value='New Figure' ng-click="+exp+" >")(scope));
 		});
 	};
 });
@@ -73,23 +71,13 @@ myApp.service('FigService', function($http) {
 
 	var baseUrl = 'http://localhost:8080/';
 
-	this.getFigNames = function (id, prevID) {
+	this.getFigNames = function (id, prevID, prevName, nextName) {
 		if (prevID != "") {
 			document.getElementById(prevID).className = 'figureButtons';
 		}
 		document.getElementById(id).className = 'answerBtnsSelected';
 
 		var url = baseUrl + "getFigNames"
-    	return $http.get(url)
-	}
-
-	this.getFigNames2 = function (id, prevID, prevName, nextName) {
-		if (prevID != "") {
-			document.getElementById(prevID).className = 'figureButtons';
-		}
-		document.getElementById(id).className = 'answerBtnsSelected';
-
-		var url = baseUrl + "getFigNames2"
     	return $http.post(url, {prevName, nextName})
 	}
 
@@ -101,6 +89,9 @@ myApp.service('FigService', function($http) {
 myApp.service('IdService', function() {
 
 	this.getLastId = function (id) {
+		if (id == 'nextFig1') {
+			return 'startFigure';
+		}
 		var s = id;
 		var index = 7;
 		chr = s.substr(7)
@@ -115,8 +106,10 @@ myApp.service('IdService', function() {
 	}
 
 	this.getName = function (id, count) {
-		if (id == 'nextFig0' || Number(id.substr(7)) > count) {
-			return 'nothing';
+		if (id != 'startFigure') {
+			if (Number(id.substr(7)) > count) {
+				return 'New Figure';
+			}
 		}
 		return document.getElementById(id).value;
 	}
@@ -173,24 +166,23 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.getFigs = function (oneId) {
   		$scope.id = oneId;
-  		FigService.getFigNames( $scope.id , $scope.prevID )
-  		.then(loadSuccess, error)
-  		$scope.prevID = $scope.id
-  	}
-
-  	$scope.getFigs2 = function (oneId) {
-  		$scope.id = oneId;
   		count = $scope.count;
 
-  		$scope.lastID = IdService.getLastId( oneId )
-  		$scope.nextID = IdService.getNextId( oneId )
-  		
-  		$scope.prevName = IdService.getName ( $scope.lastID, count )
-  		$scope.nextName = IdService.getName ( $scope.nextID, count )
-  		
-  		alert($scope.nextName)
+  		if ($scope.id == 'startFigure') {
+  			$scope.lastID = ''
+  			$scope.nextID = 'nextFig1'
 
-  		FigService.getFigNames2( $scope.id, $scope.prevID, $scope.prevName, $scope.nextName )
+  			$scope.prevName = 'New Figure'
+  			$scope.nextName = IdService.getName ( $scope.nextID, count )
+  		} else {
+  			$scope.lastID = IdService.getLastId( oneId )
+  			$scope.nextID = IdService.getNextId( oneId )
+  		
+  			$scope.prevName = IdService.getName ( $scope.lastID, count )
+  			$scope.nextName = IdService.getName ( $scope.nextID, count )
+  		}
+
+  		FigService.getFigNames( $scope.id, $scope.prevID, $scope.prevName, $scope.nextName )
   		.then(loadSuccess, error)
   		$scope.prevID = $scope.id
   	}
