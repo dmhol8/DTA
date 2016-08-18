@@ -113,6 +113,20 @@ myApp.service('IdService', function() {
 		}
 		return document.getElementById(id).value;
 	}
+	this.removeDups = function (A) {
+    	var seen = {};
+    	var done = [];
+    	var lenA = A.length;
+    	var j = 0;
+    	for(var i = 0; i < lenA; i++) {
+        	var one = A[i];
+        	if(seen[one] !== 1) {
+            	seen[one] = 1;
+            	done[j++] = one;
+        	}
+    	}
+    	return done;
+	}
 })
 
 myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService) {
@@ -193,7 +207,9 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	}
 
   	function loadSuccess (json) {
-    	$scope.names = json.data
+    	A = json.data;
+    	$scope.names = IdService.removeDups(A)
+    	// alert($scope.names)
   	}
 
   	function error (err) {

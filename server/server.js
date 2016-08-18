@@ -11,29 +11,39 @@ var url = 'mongodb://localhost:27017/dance';
 app.use(bodyParser.json())
 
 var findFigureNames = function(db, data, callback) {
+
 	var A = [];
+	var C = [];
+	var D = [];
 	console.log(data.prevName);
 	console.log(data.nextName);
+	var cursor2 = null; 
+	var cursor3 = null;
+
 	// Check the precedes and follows of the current figure, return names
-	if (data.prevName == 'New Figure') {
+	if (data.prevName == 'New Figure' || data.prevName == 'Starting Figure') {
 		if (data.nextName == 'New Figure') {
 			var cursor = db.collection('figures').find({}, {_id: 0, name: 1});
 		} else {
 			var cursor = db.collection('figures').find({"follow":data.nextName}, {_id: 0, name: 1});
+
+			// Check the precedes of the following figure, return all precedes
+			var cursor3 = db.collection('figures').find({"name":data.nextName}, {_id: 0, precede: 1});
 		}
 	} else {
+		// Check the follows of the preceding figure, return all follows
+		var cursor2 = db.collection('figures').find({"name":data.prevName}, {_id: 0, follow: 1});
+
 		if (data.nextName == 'New Figure') {
    			var cursor = db.collection('figures').find({"precede":data.prevName}, {_id: 0, name: 1});
+
    		} else {
    			var cursor = db.collection('figures').find({"precede":data.prevName, "follow":data.nextName}, {_id: 0, name: 1});
+
+   			// Check the precedes of the following figure, return all precedes
+   			var cursor3 = db.collection('figures').find({"name":data.nextName}, {_id: 0, precede: 1});
    		}
    	}
-
- 	// Check the follows of the preceding figure, return all follows
- 		//var cursor2 = db.collection('figures').find({"name":data.prevName}, {_id: 0, follow: 1});
-
- 	// Check the precedes of the following figure, return all precedes
- 		//var cursor3 = db.collection('figures').find({"name":data.nextName}, {_id: 0, precede: 1});
 
    	cursor.each(function(err, doc) {
       	assert.equal(err, null);
@@ -42,7 +52,56 @@ var findFigureNames = function(db, data, callback) {
       		var B = doc.name
       		A = A.concat(B)
       	} else {
-         	callback(A);
+      		if (cursor2 != null && cursor3 != null) {
+         		cursor2.each(function(err, doc1) {
+      				assert.equal(err, null);
+      				if (doc1 != null) {
+      					// console.dir(doc1);
+      					var B = doc1.follow
+      					C = C.concat(B)
+      				} else {
+
+         				cursor3.each(function(err, doc2) {
+      						assert.equal(err, null);
+      						if (doc2 != null) {
+      							// console.dir(doc2);
+      							var B = doc2.precede
+      							D = D.concat(B)
+      						} else {
+      							A = A.concat(C)
+      							A = A.concat(D)
+         						callback(A);
+      						}
+   						});
+      				}
+   				});
+         	} else if (cursor3 != null) {
+         		cursor3.each(function(err, doc2) {
+      				assert.equal(err, null);
+      				if (doc2 != null) {
+      					// console.dir(doc2);
+      					var B = doc2.precede
+      					D = D.concat(B)
+      				} else {
+      					A = A.concat(D)
+         				callback(A);
+      				}
+   				});
+         	} else if (cursor2 != null) {
+         		cursor2.each(function(err, doc1) {
+      				assert.equal(err, null);
+      				if (doc1 != null) {
+      					// console.dir(doc1);
+      					var B = doc1.follow
+      					C = C.concat(B)
+      				} else {
+      					A = A.concat(C)
+         				callback(A);
+      				}
+   				});
+         	} else {
+         		callback(A)
+         	}
       	}
    	});
 };
@@ -54,7 +113,7 @@ app.post('/getFigNames', function (req, res) {
  
  		console.log('I just read stuff from the database')
  		var data = findFigureNames(db, req.body, function(A) {
- 			console.log(A)
+ 			// console.log(A)
  			res.send(A)
  		});
   		
