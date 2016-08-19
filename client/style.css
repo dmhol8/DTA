@@ -79,10 +79,17 @@ p {
 	max-width: 30px;
 }
 .difficultyButton {
+	background-color: white;
+	color: #18366b;
+	width: 30px;
+}
+.diffBtnsSelected {
+	background-color: #18366b;
+	color: white;
 	width: 30px;
 }
 #textSearch {
-	width:250px;
+	width:244px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }

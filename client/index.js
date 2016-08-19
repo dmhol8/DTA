@@ -71,14 +71,14 @@ myApp.service('FigService', function($http) {
 
 	var baseUrl = 'http://localhost:8080/';
 
-	this.getFigNames = function (id, prevID, prevName, nextName) {
+	this.getFigNames = function (id, prevID, prevName, nextName, diff) {
 		if (prevID != "") {
 			document.getElementById(prevID).className = 'figureButtons';
 		}
 		document.getElementById(id).className = 'answerBtnsSelected';
 
 		var url = baseUrl + "getFigNames"
-    	return $http.post(url, {prevName, nextName})
+    	return $http.post(url, {prevName, nextName, diff})
 	}
 
 	this.placeFigNames = function (name, id) {
@@ -129,7 +129,32 @@ myApp.service('IdService', function() {
 	}
 })
 
-myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService) {
+myApp.service('DiffService', function() {
+
+	this.makeObj = function (S, A, L, F) {
+		var diff = [];
+
+		if (!S && !A && !L && !F) {
+			diff = ['Student Teacher','Associate','Licentiate','Fellow'];
+		} else {
+			if (S) {
+				diff = ['Student Teacher']
+			}
+			if (A) {
+				diff = diff.concat(['Associate'])
+			}
+			if (L) {
+				diff = diff.concat(['Licentiate'])
+			}
+			if (F) {
+				diff = diff.concat(['Fellow'])
+			}
+		}
+		return diff;
+	}
+})
+
+myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService, DiffService) {
 
 	$scope.danceSelect = "waltz"
 	$scope.numSteps = 4
@@ -142,6 +167,10 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.nextName = ""
 	$scope.lastID = 1
 	$scope.nextID = 1
+	$scope.S = 0
+	$scope.A = 0
+	$scope.L = 0
+	$scope.F = 0
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -196,7 +225,9 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   			$scope.nextName = IdService.getName ( $scope.nextID, count )
   		}
 
-  		FigService.getFigNames( $scope.id, $scope.prevID, $scope.prevName, $scope.nextName )
+  		$scope.diff = DiffService.makeObj( $scope.S, $scope.A, $scope.L, $scope.F )
+
+  		FigService.getFigNames( $scope.id, $scope.prevID, $scope.prevName, $scope.nextName, $scope.diff )
   		.then(loadSuccess, error)
   		$scope.prevID = $scope.id
   	}
@@ -215,6 +246,47 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	function error (err) {
   		document.getElementById("figure").innerHTML = 'error'
     	console.log(err)
+  	}
+
+  	$scope.setDifficulty = function (diff) {
+  		switch(diff) {
+  			case 'difBut1': 
+  				if ($scope.S) {
+  					document.getElementById(diff).className = 'difficultyButton'
+  					$scope.S = 0;
+  				} else {
+  					document.getElementById(diff).className = 'diffBtnsSelected'
+  					$scope.S = 1;
+  				}
+  				break;
+  			case 'difBut2': 
+  				if ($scope.A) {
+  					document.getElementById(diff).className = 'difficultyButton'
+  					$scope.A = 0;
+  				} else {
+  					document.getElementById(diff).className = 'diffBtnsSelected'
+  					$scope.A = 1;
+  				}
+  				break;
+  			case 'difBut3': 
+  				if ($scope.L) {
+  					document.getElementById(diff).className = 'difficultyButton'
+  					$scope.L = 0;
+  				} else {
+  					document.getElementById(diff).className = 'diffBtnsSelected'
+  					$scope.L = 1;
+  				}
+  				break;
+  			default: 
+  				if ($scope.F) {
+  					document.getElementById(diff).className = 'difficultyButton'
+  					$scope.F = 0;
+  				} else {
+  					document.getElementById(diff).className = 'diffBtnsSelected'
+  					$scope.F = 1;
+  				} 
+  		}
+  		// DiffService.setDiff( diff )
   	}
 
   	$scope.dispCreateFig = function () {
