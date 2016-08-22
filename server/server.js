@@ -16,8 +16,11 @@ var findFigureNames = function(db, data, callback) {
 	var C = [];
 	var D = [];
 	var B = [];
-	console.log(data.prevName);
-	console.log(data.nextName);
+	var Z = [];
+	var Y = [];
+	var X = [];
+	// console.log(data.prevName);
+	// console.log(data.nextName);
 	var cursor2 = null; 
 	var cursor3 = null;
 
@@ -55,33 +58,47 @@ var findFigureNames = function(db, data, callback) {
          		cursor2.each(function(err, doc1) {
       				assert.equal(err, null);
       				if (doc1 != null) {
-      					// console.dir(doc1);
-      					var numItems = db.collection('figures').find({"name":doc1.follow, "difficulty": { $in: data.diff }}).count()
-      					.then(function(numItems) {
-      						if (numItems) {
-      							var B = doc1.follow
-      						}
 
-      						C = C.concat(B)
-      					});
-      				} else {
 
-         				cursor3.each(function(err, doc2) {
+      					var cursor5 = db.collection('figures').find({"name": { $in: doc1.follow }, "difficulty": { $in: data.diff }}, {_id: 0, name: 1});
+
+	      				cursor5.each(function(err, doc4) {
       						assert.equal(err, null);
-      						if (doc2 != null) {
-      							// console.dir(doc1);
-      							var numItems = db.collection('figures').find({"name":doc2.precede, "difficulty": { $in: data.diff }}).count()
-      							.then(function(numItems) {
-      								if (numItems) {
-      									var B = doc2.precede
-      								}
+      						if (doc4 != null) {
+								// console.dir(doc4);
+      							X = doc4.name
+      							C = C.concat(X)
 
-      								D = D.concat(B)
-      							});
       						} else {
-      							A = A.concat(C)
-      							A = A.concat(D)
-         						callback(A);
+
+      							cursor3.each(function(err, doc2) {
+		      						assert.equal(err, null);
+		      						if (doc2 != null) {
+
+		      							var cursor4 = db.collection('figures').find({"name": { $in: doc2.precede }, "difficulty": { $in: data.diff }}, {_id: 0, name: 1});
+			      				
+					      				cursor4.each(function(err, doc3) {
+				      						assert.equal(err, null);
+				      						if (doc3 != null) {
+												// console.dir(doc3);
+				      							D = doc3.name
+				      							Y = Y.concat(D)
+
+				      						} else {
+
+												// The figures that can be added are follows of the preceding figure that match a precede of the following figure.
+				      							for (var i = 0; i < Y.length; i++) {
+										    		if (C.indexOf(Y[i]) !== -1) {
+										        		Z.push(Y[i])
+										    		}
+												}
+
+				      							A = A.concat(Z)
+				         						callback(A);
+				      						}
+				   						});
+		      						} 
+		   						});
       						}
    						});
       				}
@@ -90,39 +107,48 @@ var findFigureNames = function(db, data, callback) {
          		cursor3.each(function(err, doc2) {
       				assert.equal(err, null);
       				if (doc2 != null) {
-						// console.dir(doc1);
-						var numItems = db.collection('figures').find({"name":doc2.precede, "difficulty": { $in: data.diff }}).count()
-						.then(function(numItems) {
-							if (numItems) {
-								var B = doc2.precede
-							}
 
-							D = D.concat(B)
-						});
-      				} else {
-      					A = A.concat(D)
-         				callback(A);
+						var cursor4 = db.collection('figures').find({"name": { $in: doc2.precede }, "difficulty": { $in: data.diff }}, {_id: 0, name: 1});
+	      				
+	      				cursor4.each(function(err, doc3) {
+      						assert.equal(err, null);
+      						if (doc3 != null) {
+								// console.dir(doc3);
+      							D = doc3.name
+      							Y = Y.concat(D)
+
+      						} else {
+      							A = A.concat(Y)
+         						callback(A);
+      						}
+   						});
+
       				}
    				});
          	} else if (cursor2 != null) {
          		cursor2.each(function(err, doc1) {
       				assert.equal(err, null);
       				if (doc1 != null) {
-      					// console.dir(doc1);
-      					var numItems = db.collection('figures').find({"name":doc1.follow, "difficulty": { $in: data.diff }}).count()
-      					.then(function(numItems) {
-      						if (numItems) {
-      							var B = doc1.follow
-      						}
 
-      						C = C.concat(B)
-      					});
-      				} else {
-      					A = A.concat(C)
-         				callback(A);
-      				}
+	      				var cursor4 = db.collection('figures').find({"name": { $in: doc1.follow }, "difficulty": { $in: data.diff }}, {_id: 0, name: 1});
+
+	      				cursor4.each(function(err, doc3) {
+      						assert.equal(err, null);
+      						if (doc3 != null) {
+								// console.dir(doc3);
+      							D = doc3.name
+      							Y = Y.concat(D)
+
+      						} else {
+      							A = A.concat(Y)
+         						callback(A);
+      						}
+   						});
+
+					} 
    				});
          	} else {
+
          		callback(A)
          	}
       	}

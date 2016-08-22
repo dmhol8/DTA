@@ -72,7 +72,7 @@ myApp.service('FigService', function($http) {
 	var baseUrl = 'http://localhost:8080/';
 
 	this.getFigNames = function (id, prevID, prevName, nextName, diff) {
-		if (prevID != "") {
+		if (prevID != "" && prevID != id) {
 			document.getElementById(prevID).className = 'figureButtons';
 		}
 		document.getElementById(id).className = 'answerBtnsSelected';
@@ -171,6 +171,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.A = 0
 	$scope.L = 0
 	$scope.F = 0
+	$scope.id = 'none'
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -286,7 +287,9 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   					$scope.F = 1;
   				} 
   		}
-  		// DiffService.setDiff( diff )
+  		if ($scope.id != 'none') {
+  			$scope.getFigs( $scope.id );
+  		}
   	}
 
   	$scope.dispCreateFig = function () {
