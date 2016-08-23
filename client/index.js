@@ -127,6 +127,18 @@ myApp.service('IdService', function() {
     	}
     	return done;
 	}
+	this.searchNames = function (A, name) {
+		var lenA = A.length;
+		var done = [];
+		var j = 0;
+		for(var i = 0; i < lenA; i++) {
+			found = A[i].search(name)
+			if(found != -1){
+				done[j++] = A[i];
+			}
+		}
+		return done;
+	}
 })
 
 myApp.service('DiffService', function() {
@@ -172,6 +184,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.L = 0
 	$scope.F = 0
 	$scope.id = 'none'
+	$scope.searchFor = ''
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -238,8 +251,26 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		FigService.placeFigNames( $scope.name , $scope.id )
   	}
 
+  	$scope.go = function () {
+  		if ($scope.id != 'none') {
+  			$scope.getFigs( $scope.id );
+  		}
+  	}
+
+  	$scope.clear = function () {
+  		$scope.searchFor = ''
+  		if ($scope.id != 'none') {
+  			$scope.getFigs( $scope.id );
+  		}
+  	}
+
   	function loadSuccess (json) {
     	A = json.data;
+
+    	if ($scope.searchFor != ''){
+    		A = IdService.searchNames( A, $scope.searchFor )
+    	}
+
     	$scope.names = IdService.removeDups(A)
     	// alert($scope.names)
   	}
@@ -294,8 +325,10 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.dispCreateFig = function () {
     	VisibilityService.visCreateFig()
-    	document.getElementById("numIn1").disabled = true;
-    	document.getElementById("numIn2").disabled = true;
+    	document.getElementById("check1").disabled = true;
+    	document.getElementById("check2").disabled = true;
+    	document.getElementById("go").disabled = true;
+    	document.getElementById("clr").disabled = true;
     	document.getElementById("numIn3").disabled = true;
     	document.getElementById("numIn4").disabled = true;
     	document.getElementById("numIn5").disabled = true;
@@ -315,8 +348,10 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.dispNoCreateFig = function () {
     	VisibilityService.visNoCreateFig()
-		document.getElementById("numIn1").disabled = false;
-    	document.getElementById("numIn2").disabled = false;
+		document.getElementById("check1").disabled = false;
+    	document.getElementById("check2").disabled = false;
+    	document.getElementById("go").disabled = false;
+    	document.getElementById("clr").disabled = false;
     	document.getElementById("numIn3").disabled = false;
     	document.getElementById("numIn4").disabled = false;
     	document.getElementById("numIn5").disabled = false; 
@@ -332,8 +367,10 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	}
 
   	window.onload = function() {
-  		document.getElementById("numIn1").disabled = false;
-    	document.getElementById("numIn2").disabled = false;
+  		document.getElementById("check1").disabled = false;
+    	document.getElementById("check2").disabled = false;
+    	document.getElementById("go").disabled = false;
+    	document.getElementById("clr").disabled = false;
     	document.getElementById("numIn3").disabled = false;
     	document.getElementById("numIn4").disabled = false;
     	document.getElementById("numIn5").disabled = false; 

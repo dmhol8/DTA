@@ -57,24 +57,31 @@
       <div id="figureSelection"> 
 
         <div id="search">
-          <div id="textInstructions">
+          <!-- <div id="textInstructions">
             Number of Bars:
           </div>
-          <input type="number" class="numberInput" id="numIn1" min="1" max="25"></input>
-          <input class="difficultyButton" id="difBut1" type="button" value="S" ng-click="setDifficulty('difBut1')"></input>
-          <input class="difficultyButton" id="difBut2" type="button" value="A" ng-click="setDifficulty('difBut2')"></input>
-        </div>
-
-        <div id="search">
-          <div id="textInstructions">
+          <input type="number" class="numberInput" id="numIn1" min="1" max="25"></input> -->
+          <!-- <div id="textInstructions">
             Number of Steps:
           </div>
-          <input type="number" class="numberInput" id="numIn2" min="1" max="50"></input>
-          <input class="difficultyButton" id="difBut3" type="button" value="L" ng-click="setDifficulty('difBut3')"></input>
-          <input class="difficultyButton" id="difBut4" type="button" value="F" ng-click="setDifficulty('difBut4')"></input>
-        </div>
+          <input type="number" class="numberInput" id="numIn2" min="1" max="50"></input> -->
+          <div class="checkBoxes">
+            <input class="checkBoxFig" type="checkbox" id="check1" value="Syl"> Syllabus Figures</input><br>
+            <input class="checkBoxFig" type="checkbox" id="check2" value="User"> User Created Figures</input>
+          </div>
 
-        <input type="text" placeholder="Search..." id="textSearch"></input>
+          <div class="difButtonGroup">
+            <input class="difficultyButton" id="difBut1" type="button" value="S" ng-click="setDifficulty('difBut1')"></input>
+            <input class="difficultyButton" id="difBut2" type="button" value="A" ng-click="setDifficulty('difBut2')"></input><br>
+            <input class="difficultyButton" id="difBut3" type="button" value="L" ng-click="setDifficulty('difBut3')"></input>
+            <input class="difficultyButton" id="difBut4" type="button" value="F" ng-click="setDifficulty('difBut4')"></input>
+          </div>
+
+          <input type="text" placeholder="Search..." id="textSearch" ng-model="searchFor"></input>
+          <input class="goButton" id="go" type="button" value="GO" ng-click="go()"></input>
+          <input class="goButton" id="clr" type="button" value="CLEAR" ng-click="clear()"></input>
+
+        </div>
 
         <ul id="figureList">
           <li ng-repeat="x in names" id="figure" ng-click="placeFigs(x)">{{x}}</li>

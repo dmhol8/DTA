@@ -64,10 +64,26 @@ p {
 #figureSelection {
 	height: 400px;
 	width: 260px;
+	text-align: left;
 }
 #search {
 	width: 260px;
 	margin-bottom: 5px;
+}
+.checkBoxes {
+	display: inline-block;
+	float: left;
+	width: 195px;
+}
+.checkBoxFig {
+
+	
+
+}
+.diffButtonGroup {
+	display: inline-block;
+	float: left;
+	width: 60px;
 }
 #textInstructions {
 	display: inline-block;
@@ -82,6 +98,8 @@ p {
 	background-color: white;
 	color: #18366b;
 	width: 30px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 .diffBtnsSelected {
 	background-color: #18366b;
@@ -89,9 +107,14 @@ p {
 	width: 30px;
 }
 #textSearch {
-	width:244px;
+	width:105px;
 	margin-top: 5px;
 	margin-bottom: 10px;
+}
+.goButton {
+	background-color: white;
+	color: #18366b;
+	width: 65px;
 }
 #figureList {
 	display: block;
