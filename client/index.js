@@ -8,7 +8,7 @@ myApp.directive("anotherfig", function($compile){
 			scope.count++;
 			exp = "getFigs('nextFig"+scope.count+"')"
 
-			angular.element(document.querySelector('#figureBlocks')).append($compile("<br><br><input class='figureButtons' id='nextFig"
+			angular.element(document.querySelector('#figureBlocks')).append($compile("<input class='figureButtons' id='nextFig"
 				+scope.count+
 				"' type='button' value='New Figure' ng-click="+exp+" >")(scope));
 		});
@@ -240,7 +240,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		}
 
   		$scope.diff = DiffService.makeObj( $scope.S, $scope.A, $scope.L, $scope.F )
-
+  		// alert('current id ='+$scope.id+'\nprevious id ='+$scope.prevID+'\nlast name ='+$scope.prevName+'\nnext name ='+$scope.nextName)
   		FigService.getFigNames( $scope.id, $scope.prevID, $scope.prevName, $scope.nextName, $scope.diff )
   		.then(loadSuccess, error)
   		$scope.prevID = $scope.id
@@ -253,6 +253,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.go = function () {
   		if ($scope.id != 'none') {
+  			// alert($scope.id)
   			$scope.getFigs( $scope.id );
   		}
   	}
@@ -261,6 +262,26 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		$scope.searchFor = ''
   		if ($scope.id != 'none') {
   			$scope.getFigs( $scope.id );
+  		}
+  	}
+
+  	$scope.deleteFig = function () {
+  		if ($scope.count != 0) {
+  			var vId = '#nextFig'+$scope.count
+  			var aId = 'nextFig'+$scope.count
+  			angular.element(document.querySelector(vId)).remove()
+  			if ($scope.id == aId) {
+  				if ($scope.count == 1) {
+  					$scope.id = 'startFigure'
+  				} else {
+  					$scope.id = 'nextFig'+($scope.count-1)
+  				}
+  				$scope.prevID = ''
+  				$scope.count--
+  				$scope.go();
+  			} else {
+  				$scope.count--
+  			}
   		}
   	}
 

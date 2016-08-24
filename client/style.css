@@ -154,7 +154,6 @@ p {
 }
 #figureBlocks {
 	padding-top: 3px;
-	padding-bottom: 10px;
 }
 .figureButtons {
 	background-color: white;
@@ -162,16 +161,19 @@ p {
 	display: inline-block;
 	width: 250px;
 	white-space: normal;
+	margin-bottom: 20px;
 }
 .addFigureButton {
 	background-color: white;
 	color: #18366b;
+	width: 30px;
 }
 .answerBtnsSelected {
 	background-color: #18366b;
 	color: white;
 	width: 250px;
 	white-space: normal;
+	margin-bottom: 20px;
 }
 
 /* SECTION 3: Options */
