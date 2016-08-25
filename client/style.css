@@ -75,11 +75,6 @@ p {
 	float: left;
 	width: 195px;
 }
-.checkBoxFig {
-
-	
-
-}
 .diffButtonGroup {
 	display: inline-block;
 	float: left;
@@ -183,13 +178,13 @@ p {
 	margin-left: 20px;
 	text-align: center;
 }
-#optionButton, #optionButtonLast {
+#optionButton, #optionButtonLast, #seeDetailButton {
 	display: inline-block;
 	margin: 4px;
-	width: 119px;
+	width: 250px;
 	vertical-align: middle;
 }
-#optionButtonLast {
+#optionButtonLast, #seeDetailButton {
 	margin-bottom: 15px;
 }
 #selectTempo {
@@ -208,7 +203,8 @@ p {
 #startMetronome, #exitButton, #nextButton {
 	display: inline-block;
 	width: 250px;
-	margin-top: 14px;
+	margin: 4px;
+	/*margin-top: 14px;*/
 }
 #danceDuration {
 	display: inline-block;
@@ -216,9 +212,6 @@ p {
 	margin-top: 14px;
 	background-color: #ddf;
 	padding: 10px 0px;
-}
-#exitForm {
-	display: inline-block;
 }
 
 /* SECTION 4: Create Figure 1 (Hidden) */
@@ -264,7 +257,7 @@ p {
 	height: 585px;
 	padding-top: 10px;
 }
-#textInstructions3 {
+.textInstructions3 {
 	display: inline-block;
 	width: 150px;
 	font-style: italic;
@@ -272,7 +265,7 @@ p {
 	margin-top: 10px;
 	margin-bottom: 10px;	
 }
-#textInstructions4 {
+.textInstructions4 {
 	display: inline-block;
 	width: 90px;
 	font-style: italic;
@@ -286,7 +279,7 @@ p {
 #selectRole {
 	margin-left: 10px;
 }
-#figureDataTextInput {
+.figureDataTextInput {
 	width: 400px;
 	margin-left: 10px;
 	font-family: Helvetica;
@@ -312,7 +305,7 @@ p {
     font-family: Helvetica;
     font-size: 15px;
 }
-#prefollTextInput {
+#prefollTextInput, #prefollTextInput2 {
 	width: 347px;
 	margin-left: 10px;
 	font-family: Helvetica;
@@ -321,8 +314,26 @@ p {
 	text-align: center;
 	margin: auto;
 }
-#createFigButton {
+#createFigButton, #createFigButton2 {
 	display: inline-block;
 	width: 150px;
 	margin-top: 10px;
+}
+
+/* SECTION C: Detail Page */
+#detailPage {
+	display: none; 
+	/*usually none*/
+}
+#detTable {
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	background-color: #B7C3FF;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+th, td {
+	padding:5px;
 }

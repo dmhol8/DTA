@@ -106,23 +106,23 @@
       <!-- SECTION 3: Options -->
       <div id="options">
 
-        <button id="optionButton">Log In</button>
+        
+        <!-- <button id="optionButton">Log In</button>
         <button id="optionButton">Sign Up</button>
-        <button id="optionButtonLast">Randomise</button>
-        <button id="optionButtonLast" ng-click="dispFig()">Create Figure</button>
+        <button id="optionButtonLast">Randomise</button> -->
+        <!-- <button id="optionButtonLast" ng-click="dispFig()">Create Figure</button> -->
 
-        <div id="selectTempo">
+        <!-- <div id="selectTempo">
           Select Tempo<br>
           120<input type="range" name="tempo" id="tempoSlider" min="120" max="128"></input>128
-        </div>
+        </div> -->
 
-        <button id="startMetronome">Start Metronome</button>
-        <div id="danceDuration">
+        <!-- <button id="startMetronome">Start Metronome</button> -->
+        <!-- <div id="danceDuration">
           Duration of dance: 00m 00s
-        </div>
-        <div id="exitForm">
-          <button id="exitButton" ng-click="dispIndex()">Exit</button>
-        </div>
+        </div> -->
+        <button id="seeDetailButton" ng-click="seeDetail()">See Routine Details...</button>
+        <button id="exitButton" ng-click="dispIndex()">Exit</button>
       </div>
 
       <!-- SECTION 4: Create Figure 1 (Hidden)-->
@@ -164,17 +164,17 @@
     <!-- SECTION 5: Create Figure 2 (Hidden)-->
     <div id="figDetailBox">
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Figure Name:
       </div>
-      <input type="text" id="figureDataTextInput"></input><br>
+      <input type="text" class="figureDataTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Step Number:
       </div>
       <select id="selectStepNo" name="currentStepNo"></select>
 
-      <div id="textInstructions4">
+      <div class="textInstructions4">
         Role:
       </div>
       <select id="selectRole" name="currentRole">
@@ -182,32 +182,32 @@
         <option value="follow">Follow</option>
       </select><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Feet Positions:
       </div>
-      <input type="text" id="figureDataTextInput"></input><br>
+      <input type="text" class="figureDataTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Alignment:
       </div>
-      <input type="text" id="figureDataTextInput"></input><br>
+      <input type="text" class="figureDataTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Amount of Turn:
       </div>
-      <input type="text" id="figureDataTextInput"></input><br>
+      <input type="text" class="figureDataTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Rise and Fall:
       </div>
-      <input type="text" id="figureDataTextInput"></input><br>
+      <input type="text" class="figureDataTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Footwork:
       </div>
-      <input type="text" id="figureDataTextInput"></input><br>
+      <input type="text" class="figureDataTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Timing:
       </div>
       <input list="timing" id="timingList">
@@ -222,7 +222,7 @@
         <option value="4"></option>
       </datalist>
 
-      <div id="textInstructions4">
+      <div class="textInstructions4">
         CBM:
       </div>
       <select id="cbmList">
@@ -231,7 +231,7 @@
         <option value="slight">Slight</option>
       </select>
 
-      <div id="textInstructions4">
+      <div class="textInstructions4">
         Sway:
       </div>
       <select id="swayList">
@@ -240,7 +240,7 @@
         <option value="none">None</option>
       </select><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Additional Notes:
       </div>
       <textarea id="additionalNotesInput"></textarea><br>
@@ -251,17 +251,52 @@
       <select id="selectPreNo" name="currentPreNo"></select>
       <input type="text" id="prefollTextInput"></input><br>
 
-      <div id="textInstructions3">
+      <div class="textInstructions3">
         Follows:
       </div>
       <select id="selectFollNo" name="currentFollNo"></select>
-      <input type="text" id="prefollTextInput"></input><br>
+      <input type="text" id="prefollTextInput2"></input><br>
       <div id="createFigButtonDiv">
         <button id="createFigButton" ng-click="dispNoCreateFig()">Back</button>
-        <button id="createFigButton">Save Figure</button>
+        <button id="createFigButton2">Save Figure</button>
       </div>
 
     </div>
+
+  </div>
+
+  <div id="detailPage">
+
+    <table id="detTable">
+      <tr>
+        <th>Name</th>
+        <th>Step Number</th>
+        <th>Figure Step Number</th>
+        <th>Timing</th>
+        <th>Foot Position</th>
+        <th>Alignment</th>
+        <th>Amount of Turn</th>
+        <th>Rise and Fall</th>
+        <th>Footwork</th>
+        <th>CBM</th>
+        <th>Sway</th>
+        <th>Additional Notes</th>
+      </tr>
+      <tr ng-repeat="x in X" id="detRow">
+        <td>{{x.name}}</td>
+        <td></td>
+        <td></td>
+        <td>{{x.man.timing}}</td>
+        <td>{{x.man.feet_positions}}</td>
+        <td>{{x.man.alignment}}</td>
+        <td>{{x.man.amount_of_turn}}</td>
+        <td>{{x.man.rise_and_fall}}</td>
+        <td>{{x.man.footwork}}</td>
+        <td>{{x.man.CBM}}</td>
+        <td>{{x.man.sway}}</td>
+        <td>{{x.man.note}}</td>
+      </tr>
+    </table> 
 
   </div>
 

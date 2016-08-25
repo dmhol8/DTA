@@ -84,6 +84,11 @@ myApp.service('FigService', function($http) {
 	this.placeFigNames = function (name, id) {
 		document.getElementById(id).value = name;
 	}
+
+	this.getFigDetails = function (names) {
+		var url = baseUrl + "getFigDetails"
+		return $http.post(url, {names})
+	}
 })
 
 myApp.service('IdService', function() {
@@ -113,6 +118,7 @@ myApp.service('IdService', function() {
 		}
 		return document.getElementById(id).value;
 	}
+
 	this.removeDups = function (A) {
     	var seen = {};
     	var done = [];
@@ -127,6 +133,7 @@ myApp.service('IdService', function() {
     	}
     	return done;
 	}
+	
 	this.searchNames = function (A, name) {
 		var lenA = A.length;
 		var done = [];
@@ -166,13 +173,27 @@ myApp.service('DiffService', function() {
 	}
 })
 
-myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService, DiffService) {
+myApp.service('DetailService', function() {
+
+	this.allow = function (names) {
+
+		for (var i = 0; i < names.length; i++){
+			if (names[i] == 'New Figure' || names[i] == 'Starting Figure') {
+				return false;
+			}
+		}
+		return true;
+	}
+})
+
+myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService, DiffService, DetailService) {
 
 	$scope.danceSelect = "waltz"
 	$scope.numSteps = 4
 	$scope.numPre = 3
 	$scope.numFoll = 3
 	$scope.names = []
+	$scope.X = []
 	$scope.prevID = ""
 	$scope.prevName = ""
 	$scope.count = 0;
@@ -296,11 +317,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	// alert($scope.names)
   	}
 
-  	function error (err) {
-  		document.getElementById("figure").innerHTML = 'error'
-    	console.log(err)
-  	}
-
   	$scope.setDifficulty = function (diff) {
   		switch(diff) {
   			case 'difBut1': 
@@ -342,6 +358,48 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		if ($scope.id != 'none') {
   			$scope.getFigs( $scope.id );
   		}
+  	}
+
+  	$scope.seeDetail = function () {
+  		document.getElementById("mainPage").style.display = "none";
+  		document.getElementById("detailPage").style.display = "block";
+  		count = $scope.count;
+  		nms = [];
+
+  		// Get the names of all listed figures from their id
+  		// Starting figure:
+  		nms[0] = IdService.getName ( 'startFigure', count );
+
+  		// All other figures:
+  		if (count > 0){
+  			for (var i = 1; i < count+1; i++){
+  				nId = 'nextFig'+i;
+  				nms[i] = IdService.getName ( nId, count );
+  			}
+  		}
+
+  		// Check if the user is allowed to access this button:
+  		access = DetailService.allow(nms);
+
+  		// Retrieve data from the database
+  		if (access) {
+  			FigService.getFigDetails(nms)
+  			.then(function successCallback(json) {
+    			$scope.X = json.data;
+    			// alert($scope.X)
+  			}, function errorCallback(err) {
+    			console.log(err)
+  			});
+  		}
+
+  		// Change the data to be step by step, rather than figure by figure
+  		
+
+  		// Populate the table with the data retrieved using ng-repeat (done in html)
+  	}
+
+  	function error (err) {
+    	console.log(err)
   	}
 
   	$scope.dispCreateFig = function () {

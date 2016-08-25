@@ -162,7 +162,35 @@ app.post('/getFigNames', function (req, res) {
  
  		console.log('I just read stuff from the database')
  		var data = findFigureNames(db, req.body, function(A) {
- 			// console.log(A)
+ 			console.log(A)
+ 			res.send(A)
+ 		});
+  		
+	});	
+})
+
+var findFigureDetails = function(db, data, callback) {
+	var cursor = db.collection('figures').find({"name": { $in: data.names }}, {_id: 0, name: 1, man: 1, lady: 1});
+	AA = [];
+	cursor.each(function(err, doc) {
+      	assert.equal(err, null);
+      	if (doc != null) {
+      		var BB = doc
+      		AA = AA.concat(BB)
+      	} else {
+      		callback(AA)
+      	}
+    })
+}
+
+app.post('/getFigDetails', function (req, res) {
+	
+ 	MongoClient.connect(url, function(err, db) {
+  		assert.equal(null, err);
+ 
+ 		console.log('I just read stuff from the database')
+ 		var data = findFigureDetails(db, req.body, function(A) {
+ 			console.log(A)
  			res.send(A)
  		});
   		

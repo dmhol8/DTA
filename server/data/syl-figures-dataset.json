@@ -3,7 +3,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side and slightly fwd", "RF closes to LF"],
+    "feet_positions": ["RF fwd", "LF to side and slightly fwd", "RF closes to LF"],
     "alignment": ["Facing DC", "Facing DC", "Facing DC"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -13,7 +13,7 @@
     "note": "Although the amount of turn is given as 'nil', a very slight turn to R may be made."
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side and slightly back", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side and slightly back", "LF closes to RF"],
     "alignment": ["Backing DC", "Backing DC", "Backing DC"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -31,7 +31,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF fwd", "RF to side and slightly fwd", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side and slightly fwd", "LF closes to RF"],
     "alignment": ["Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -41,7 +41,7 @@
     "note": "Although the amount of turn is given as 'nil', a very slight turn to L may be made."
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side and slightly back", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side and slightly back", "RF closes to LF"],
     "alignment": ["Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -60,7 +60,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Pointing DC", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "3/8 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -69,7 +69,7 @@
     "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing Centre", "Backing DC"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "1/4 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -87,7 +87,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -96,7 +96,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -114,7 +114,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DW", "Backing Centre", "Backing DC"],
     "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -123,7 +123,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DW", "Pointing DC", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -141,7 +141,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DC", "Backing DW", "Backing Centre"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -150,7 +150,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DC", "Pointing to Centre", "Facing Centre"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -166,7 +166,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Pointing DW of new LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "3/8 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -175,7 +175,7 @@
     "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing Centre", "Backing DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "1/4 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -193,7 +193,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DW", "Pointing DC", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -202,7 +202,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DW", "Backing Centre", "Backing DC"],
     "amount_of_turn": ["Com to turn R", "1/8 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -218,7 +218,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DW", "Pointing DW of new LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -227,7 +227,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DW", "Backing Centre", "Backing DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/8 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -243,7 +243,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DW against LOD", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn R", "1/4 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -252,7 +252,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DW against LOD", "Backing LOD", "Backing DW"],
     "amount_of_turn": ["Com to turn R", "1/8 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -270,7 +270,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DC", "Backing DW", "Backing LOD", "Backing LOD", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "Com to turn L", "3/8 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -279,7 +279,7 @@
     "sway": ["S", "L", "L", "S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF", "LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF", "LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Backing DC", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "BCT", "Com to turn L", "1/4 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -298,7 +298,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DC", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -307,7 +307,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DC", "Pointing to LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -326,7 +326,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Facing LOD", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -335,7 +335,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Backing LOD", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -351,7 +351,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DC", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -360,7 +360,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DC", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/8 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -378,7 +378,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DC against LOD", "Pointing DW of new LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -387,7 +387,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DC against LOD", "Backing LOD", "Backing DW of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/8 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -404,7 +404,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DC against LOD", "Pointing DC", "Facing DC"],
     "amount_of_turn": ["Com to turn L", "1/4 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -413,7 +413,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DC against LOD", "Backing LOD", "Backing DC"],
     "amount_of_turn": ["Com to turn L", "1/8 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -431,7 +431,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
     "alignment": ["Backing DC", "Pointing LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 4-5 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -440,7 +440,7 @@
     "sway": ["S", "R", "R"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
     "alignment": ["Facing DC", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 4-5", "1/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 4", "Cont to rise on 5-6", "Lower e/o 6"],
@@ -456,7 +456,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Down LOD toe turned in", "Facing LOD", "Backing DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "1/2 to R on 4 (pivot)", "Cont to turn", "3/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -466,7 +466,7 @@
     "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing LOD", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "1/2 to R on 4 (pivot)", "Cont to turn", "3/8 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -487,7 +487,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Down LOD toe turned in", "Facing DC", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "3/8 to R on 4 (pivot)", "Cont to turn", "1/4 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -497,7 +497,7 @@
     "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DC", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "3/8 to R on 4 (pivot)", "Cont to turn", "1/4 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -516,7 +516,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Down LOD toe turned in", "Facing DW of new LOD", "Backing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "3/8 to R on 4 (pivot)", "Cont to turn", "1/4 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -526,7 +526,7 @@
     "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DW of new LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "3/8 to R on 4 (pivot)", "Cont to turn", "1/4 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -546,7 +546,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF fwd in CBMP", "LF to side and slightly back"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Down LOD toe turned in", "Facing LOD", "Backing LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "1/2 to R on 4 (pivot)", "Cont to turn", "1/2 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -556,7 +556,7 @@
     "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "1/2 to R on 4 (pivot)", "Cont to turn", "1/2 between 5-6"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "Rise e/o 5", "Up. Lower e/o 6"],
@@ -576,7 +576,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["LF fwd", "RF to side and slightly fwd", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF fwd", "RF to side and slightly fwd", "LF crosses behind RF in PP"],
     "alignment": ["Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -586,7 +586,7 @@
     "note": "The position of step 2 is consistent with step 2 of a Closed Change."
     },
   "lady": {
-    "feet positions": ["RF back", "LF diag back", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF back", "LF diag back", "RF crosses behind LF in PP"],
     "alignment": ["Backing DW", "Pointing DC", "Facing DC"],
     "amount_of_turn": ["nil", "1/4 to R between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -606,7 +606,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF diag fwd R side leading", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF fwd", "RF diag fwd R side leading", "LF crosses behind RF in PP"],
     "alignment": ["Facing DW", "Facing LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -615,7 +615,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF back L side leading", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF back", "LF back L side leading", "RF crosses behind LF in PP"],
     "alignment": ["Backing DW", "Backing DW", "Facing DC of new LOD"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -633,7 +633,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF fwd", "RF diag fwd R side leading", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF fwd", "RF diag fwd R side leading", "LF crosses behind RF in PP"],
     "alignment": ["Facing DW", "Facing LOD", "Facing DC"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -642,7 +642,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF back L side leading", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF back", "LF back L side leading", "RF crosses behind LF in PP"],
     "alignment": ["Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -660,7 +660,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side and slightly fwd", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF fwd", "RF to side and slightly fwd", "LF crosses behind RF in PP"],
     "alignment": ["Facing DW", "Facing LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -669,7 +669,7 @@
     "sway": ["S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF diag back", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF back", "LF diag back", "RF crosses behind LF in PP"],
     "alignment": ["Backing DW", "Backing LOD", "Facing Centre"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/4 to R between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -687,7 +687,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP OP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP OP"],
     "alignment": ["Facing DW (moving along LOD)", "Facing DW", "Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -697,7 +697,7 @@
     "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC (moving along LOD)", "Backing Wall", "Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["Com to turn to L", "1/8 between 1-2", "1/8 between 2-3 BTL", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -719,7 +719,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP OP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP OP"],
     "alignment": ["Facing LOD (moving DC)", "Facing LOD", "Facing LOD", "Facing LOD", "Facing LOD"],
     "amount_of_turn": ["nil", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -729,7 +729,7 @@
     "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing Centre (moving DC)", "Backing DW", "Backing LOD", "Backing LOD", "Backing LOD"],
     "amount_of_turn": ["Com to turn to L", "1/8 between 1-2", "1/8 between 2-3 BTL", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -746,7 +746,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF closes to LF (heel turn)", "LF to side and slightly back", "RF back"],
+    "feet_positions": ["LF back", "RF closes to LF (heel turn)", "LF to side and slightly back", "RF back"],
     "alignment": ["Backing LOD", "Facing DC", "Backing DC against LOD", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
@@ -755,7 +755,7 @@
     "sway": ["S", "L", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
+    "feet_positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
     "alignment": ["Facing LOD", "Backing DC", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
@@ -772,7 +772,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF closes to LF (heel turn)", "LF to side and slightly back", "RF back"],
+    "feet_positions": ["LF back", "RF closes to LF (heel turn)", "LF to side and slightly back", "RF back"],
     "alignment": ["Backing LOD", "Facing DC", "Backing DC of new LOD", "Backing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
@@ -781,7 +781,7 @@
     "sway": ["S", "L", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
+    "feet_positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
     "alignment": ["Facing LOD", "Backing DC", "Facing DC of new LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
@@ -799,7 +799,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF closes to LF (heel turn)", "LF to side and slightly back", "RF back"],
+    "feet_positions": ["LF back", "RF closes to LF (heel turn)", "LF to side and slightly back", "RF back"],
     "alignment": ["Backing DW", "Facing LOD", "Backing DC against LOD", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
@@ -808,7 +808,7 @@
     "sway": ["S", "L", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
+    "feet_positions": ["RF fwd", "LF to side", "RF diag fwd having brushed to LF", "LF fwd"],
     "alignment": ["Facing DW", "Backing LOD", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "nil"],
@@ -825,7 +825,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing DC", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "3/8 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -834,7 +834,7 @@
     "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DC", "Backing DC"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "3/8 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -854,7 +854,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing DW of new LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "3/8 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -863,7 +863,7 @@
     "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DW of new LOD", "Backing DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "3/8 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -881,7 +881,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing new LOD", "Facing new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "1/4 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -890,7 +890,7 @@
     "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing new LOD", "Backing new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "1/4 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -907,7 +907,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side small step (heel pull)", "LF closes to RF without weight"],
     "alignment": ["Facing DW", "Backing DC", "Backing LOD", "Backing LOD", "Facing DC of new LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3", "Com to turn R", "1/8 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -916,7 +916,7 @@
     "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
-    "feet positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
+    "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF without weight"],
     "alignment": ["Backing DW", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing DC of new LOD", "Backing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2 BTL", "BCT", "Com to turn R", "1/8 between 4-5", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "Lower e/o 3", "nil", "nil", "nil"],
@@ -935,7 +935,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC", "Backing DC", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -944,7 +944,7 @@
     "sway": ["S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Facing DC", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -963,7 +963,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing Centre", "Backing Centre", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -972,7 +972,7 @@
     "sway": ["S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing Centre", "Facing Centre", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -990,7 +990,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF back", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC against LOD", "Backing DC against LOD", "Pointing DC", "Facing DC"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -999,7 +999,7 @@
     "sway": ["S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["RF fwd", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC against LOD", "Facing DC against LOD", "Backing DC", "Backing DC"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1015,7 +1015,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF back", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
     "alignment": ["Backing DC", "Backing DC", "Facing DW, moving along LOD", "Facing DW, moving along LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1024,7 +1024,7 @@
     "sway": ["S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["RF fwd", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing DC", "Facing DC", "Facing DC, Moving along LOD", "Facing DC, Moving along LOD"],
     "amount_of_turn": ["nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1042,7 +1042,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF back", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
     "alignment": ["Backing DC against LOD", "Backing DC against LOD", "Facing DC, moving to Centre", "Facing DC, moving to Centre"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1051,7 +1051,7 @@
     "sway": ["S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["RF fwd", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing DC against LOD", "Facing DC against LOD", "Facing DC, moving to Centre", "Facing DC, moving to Centre"],
     "amount_of_turn": ["nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1067,7 +1067,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
     "alignment": ["Backing LOD", "Backing DC against LOD", "Backing DC against LOD", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1077,7 +1077,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1094,7 +1094,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
     "alignment": ["Backing LOD", "Backing against LOD", "Backing against LOD", "Backing against LOD"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1104,7 +1104,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
     "alignment": ["Facing LOD", "Almost Facing DC against LOD", "Facing against LOD", "Facing against LOD"],
     "amount_of_turn": ["Com to turn L", "Just over 1/4 between 1-2", "Just under 1/4 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1121,7 +1121,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
     "alignment": ["Backing LOD", "Backing DC of new LOD", "Backing DC of new LOD", "Backing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1131,7 +1131,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Facing DC of new LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1148,7 +1148,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
     "alignment": ["Backing LOD", "Backing DW against LOD", "Backing DW against LOD", "Backing DW against LOD"],
     "amount_of_turn": ["Com to turn L", "5/8 between 1-2", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1158,7 +1158,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
     "alignment": ["Facing LOD", "Facing DC against LOD", "Facing DW against LOD", "Facing DW against LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/4 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1175,7 +1175,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
     "alignment": ["Backing DC", "Backing DC against LOD", "Backing DC against LOD", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1185,7 +1185,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
     "alignment": ["Facing DC", "Facing Centre", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1202,7 +1202,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF without weight", "Position held", "LF back in CBMP"],
     "alignment": ["Backing DC against LOD", "Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise on 2", "Up. Lower e/o 3", "nil"],
@@ -1212,7 +1212,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
     "alignment": ["Facing DC against LOD", "Almost Facing Wall", "Facing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "Just over 1/4 between 1-2", "Just under 1/4 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1231,7 +1231,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DC against LOD", "Backing DC against LOD", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1241,7 +1241,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DC against LOD", "Facing Centre", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1258,7 +1258,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
     "alignment": ["Backing against LOD", "Backing against LOD", "Facing LOD"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1268,7 +1268,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing against LOD", "Facing DC against LOD", "Facing Centre"],
     "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1284,7 +1284,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DW against LOD", "Backing DC against LOD", "Facing DW"],
     "amount_of_turn": ["nil", "1/4 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1294,7 +1294,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DW against LOD", "Facing DC against LOD", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1311,7 +1311,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DW against LOD", "Backing DW against LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1321,7 +1321,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DW against LOD", "Facing against LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1337,7 +1337,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF diag back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DW against LOD", "Backing DW against LOD", "Facing DC"],
     "amount_of_turn": ["nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1347,7 +1347,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DW against LOD", "Facing against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1363,7 +1363,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DW", "Backing DW against LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["nil", "1/4 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1373,7 +1373,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DW", "Facing DW against LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1389,7 +1389,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DW", "Backing DW against LOD", "Facing DC"],
     "amount_of_turn": ["nil", "1/4 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1399,7 +1399,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DW", "Facing DW against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1415,7 +1415,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
     "alignment": ["Backing DW", "Backing against LOD", "Facing LOD"],
     "amount_of_turn": ["nil", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1425,7 +1425,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing DW", "Facing against LOD", "Facing Centre"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1441,7 +1441,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
     "alignment": ["Backing LOD", "Backing DW against LOD", "Facing DC"],
     "amount_of_turn": ["nil", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1451,7 +1451,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing LOD", "Facing DW against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1467,7 +1467,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
+    "feet_positions": ["LF back in CBMP", "RF side and slightly back", "LF crosses behind RF in PP"],
     "alignment": ["Backing LOD", "Backing DW against LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["nil", "3/8 between 1-2 BTL", "BCT"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1477,7 +1477,7 @@
     "note": "It is permissible for the man to commence to draw the LF back with the Toe or Heel in contact with the floor when moving back to cross behind RF on step 3."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF to side", "RF crosses behind LF in PP"],
     "alignment": ["Facing LOD", "Facing DW against LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -1493,7 +1493,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DW", "Facing DC against LOD", "Backing LOD", "Backing DC", "Backing DC", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1502,7 +1502,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DW", "Backing DC against LOD", "Pointing DC", "Facing DC", "Facing DC", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1521,7 +1521,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC", "Facing DW against LOD", "Backing Centre", "Backing DC of new LOD", "Backing DC of new LOD", "Pointing DW of new LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1530,7 +1530,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Backing DW against LOD", "Pointing DC of new LOD", "Facing DC of new LOD", "Facing DC of new LOD", "Backing DW of new LOD", "Backing DW of new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1548,7 +1548,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing LOD", "Facing LOD", "Backing DC", "Backing Centre", "Backing Centre", "Pointing DW of new LOD", "Facing DW of new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "3/8 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1558,7 +1558,7 @@
     "note": "It is better to commence facing LOD for the 3 steps of the Reverse Turn preceding this figure. Amount of turn can also be 1/4, 1/8, 1/4."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing LOD", "Backing LOD", "Pointing Centre", "Facing Centre", "Facing Centre", "Backing DW of new LOD", "Backing DW of new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "3/8 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1576,7 +1576,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd fwd and across in PP and CBMP"],
+    "feet_positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd fwd and across in PP and CBMP"],
     "alignment": ["Backing DW", "Facing DC against LOD", "Backing LOD", "Backing DC", "Backing DC", "Facing DW moving along LOD", "Facing DW moving along LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1585,7 +1585,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing DW", "Backing DC against LOD", "Pointing DC", "Facing DC", "Facing DC", "Facing DC moving along LOD", "Facing DC moving along LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1603,7 +1603,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd fwd and across in PP and CBMP"],
+    "feet_positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd fwd and across in PP and CBMP"],
     "alignment": ["Backing DC", "Facing DW against LOD", "Backing Centre", "Backing DC of new LOD", "Backing DC of new LOD", "Facing DW moving along new LOD", "Facing DW moving along new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/8 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1612,7 +1612,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing DC", "Backing DW against LOD", "Pointing DC of new LOD", "Facing DC of new LOD", "Facing DC of new LOD", "Facing DC moving along new LOD", "Facing DC moving along new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3 BTL", "nil", "Com to turn L", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1629,7 +1629,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd fwd and across in PP and CBMP"],
+    "feet_positions": ["RF back", "LF fwd", "RF to side", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd fwd and across in PP and CBMP"],
     "alignment": ["Backing LOD", "Facing LOD", "Backing Centre", "Backing DC against LOD", "Backing DC against LOD", "Facing DW moving along new LOD", "Facing DW moving along new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "1/4 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1639,7 +1639,7 @@
     "note": "It is better to commence facing LOD for the 3 steps of the Reverse Turn preceding this figure. Amount of turn can also be 1/8, 1/8, 3/8."
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF fwd", "RF back", "LF to side", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing LOD", "Backing LOD", "Pointing DC against LOD", "Facing DC against LOD", "Facing DC against LOD", "Facing DC moving along new LOD", "Facing DC moving along new LOD"],
     "amount_of_turn": ["nil", "Com to turn L", "3/8 between 2-3 BTL", "nil", "Com to turn L", "nil", "nil"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -1656,7 +1656,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
     "alignment": ["Facing LOD", "Backing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/2 between 2-3"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -1665,7 +1665,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
     "alignment": ["Backing LOD", "Facing LOD", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "1/4 between 2-3", "1/8 between 3-4"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up", "Up. Lower e/o 4"],
@@ -1686,7 +1686,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
     "alignment": ["Facing LOD", "Backing DW", "Facing LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "5/8 between 2-3"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -1695,7 +1695,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
     "alignment": ["Backing LOD", "Facing LOD", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "3/8 between 2-3", "1/8 between 3-4"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up", "Up. Lower e/o 4"],
@@ -1715,7 +1715,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
     "alignment": ["Facing DW", "Backing Wall", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "5/8 between 2-3"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -1724,7 +1724,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
     "alignment": ["Backing DW", "Facing DW", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "3/8 between 2-3", "1/8 between 3-4"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up", "Up. Lower e/o 4"],
@@ -1745,7 +1745,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
     "alignment": ["Facing DC", "Backing LOD", "Facing DC"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "5/8 between 2-3"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -1754,7 +1754,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
     "alignment": ["Backing DC", "Facing DC", "Backing LOD", "Backing DC"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "3/8 between 2-3", "1/8 between 3-4"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up", "Up. Lower e/o 4"],
@@ -1776,7 +1776,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
     "alignment": ["Facing DC", "Backing LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/2 between 2-3"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -1785,7 +1785,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
     "alignment": ["Backing DC", "Facing DC", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/2 between 1-2", "1/4 between 2-3", "1/8 between 3-4"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up", "Up. Lower e/o 4"],
@@ -1805,7 +1805,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF without weight (toe pivot)"],
     "alignment": ["Facing DC", "Backing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/2 between 2-3"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -1815,7 +1815,7 @@
     "note": "Amount of turn can also be 3/8 between 1-2, then 3/8 between 2-3."
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF crosses in front of RF"],
     "alignment": ["Backing DC", "Facing LOD", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/4 between 2-3", "1/8 between 3-4"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up", "Up. Lower e/o 4"],
@@ -1836,7 +1836,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing LOD, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing LOD, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To DC, toe turned in"],
     "amount_of_turn": ["3/8 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1847,7 +1847,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing LOD, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing LOD, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To DC"],
     "amount_of_turn": ["3/8 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1865,7 +1865,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing LOD, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing LOD, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To DC, toe turned in"],
     "amount_of_turn": ["1/2 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1876,7 +1876,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing LOD, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing LOD, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To DC"],
     "amount_of_turn": ["1/2 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1893,7 +1893,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing DC, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing DC, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To Centre, toe turned in"],
     "amount_of_turn": ["1/4 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1904,7 +1904,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing DC, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing DC, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To Centre"],
     "amount_of_turn": ["1/4 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1922,7 +1922,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing DC, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing DC, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To Centre, toe turned in"],
     "amount_of_turn": ["3/8 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1933,7 +1933,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing DC, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing DC, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To Centre"],
     "amount_of_turn": ["3/8 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1950,7 +1950,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing DC, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing DC, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To Centre, toe turned in"],
     "amount_of_turn": ["1/2 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1961,7 +1961,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing DC, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing DC, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To Centre"],
     "amount_of_turn": ["1/2 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1980,7 +1980,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing DC against LOD, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing DC against LOD, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To against LOD, toe turned in"],
     "amount_of_turn": ["1/4 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -1991,7 +1991,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing DC against LOD, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing DC against LOD, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To against LOD"],
     "amount_of_turn": ["1/4 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -2010,7 +2010,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["Commence backing DC against LOD, RF back in CBMP (small step) LF held in CBMP"],
+    "feet_positions": ["Commence backing DC against LOD, RF back in CBMP (small step) LF held in CBMP"],
     "alignment": ["To against LOD, toe turned in"],
     "amount_of_turn": ["1/8 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -2021,7 +2021,7 @@
     "note": "This step is in CBMP owing to the body turning strongly to L as the RF slips back."
     },
   "lady": {
-    "feet positions": ["Commence facing DC against LOD, LF fwd in CBMP (small step) RF held in CBMP"],
+    "feet_positions": ["Commence facing DC against LOD, LF fwd in CBMP (small step) RF held in CBMP"],
     "alignment": ["To against LOD"],
     "amount_of_turn": ["1/8 to L (pivot)"],
     "rise_and_fall": ["nil"],
@@ -2038,7 +2038,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF back in CBMP", "RF back", "LF crosses in front of RF", "RF diag back", "LF back in CBMP"],
+    "feet_positions": ["LF back in CBMP", "RF back", "LF crosses in front of RF", "RF diag back", "LF back in CBMP"],
     "alignment": ["Backing DW", "Backing DW", "Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1, NFR", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2049,7 +2049,7 @@
     "note": "Man may use foot rise on step 1. Body should be backing between wall and DW throughout."
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF diag fwd", "RF crosses behind LF", "LF diag fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF diag fwd", "RF crosses behind LF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing DW", "Facing DW", "Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2069,7 +2069,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Backing Wall", "Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/8 between 2-3 BTL", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2079,7 +2079,7 @@
     "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC", "Pointing DW", "Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2 BTL", "BCT", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2100,7 +2100,7 @@
   "dance": "Waltz",
   "difficulty": "Associate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing LOD", "Backing Wall", "Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3 BTL", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2110,7 +2110,7 @@
     "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing LOD", "Pointing DW", "Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "BCT", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2130,7 +2130,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Backing DW", "Backing LOD", "Backing LOD", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3 BTL", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2140,7 +2140,7 @@
     "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC", "Pointing LOD", "Facing LOD", "Facing LOD", "Facing LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "BCT", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2159,7 +2159,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Backing DW", "Backing LOD", "Backing LOD", "Backing DC"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3 BTL", "nil", "1/8 between 4-5"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2169,7 +2169,7 @@
     "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back", "LF to side", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC", "Pointing LOD", "Facing LOD", "Facing DC", "Facing DC"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "BCT", "1/8 between 3-4", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2188,7 +2188,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Pointing to Centre, body Facing DC", "Facing Centre", "Backing LOD", "Backing DC", "Backing DC", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["1/8 between preceding step and 1", "Cont to turn L", "1/4 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2197,7 +2197,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC against LOD", "Backing DC", "Pointing DC", "Facing DC", "Facing DC", "Backing DW", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/2 between 2-3 BTL", "nil", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2215,7 +2215,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Pointing DC, body Facing LOD", "Facing DC", "Backing DW", "Backing LOD", "Backing LOD", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["1/8 between preceding step and 1", "Cont to turn L", "1/4 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2224,7 +2224,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Pointing to Centre (moving DC)", "Backing DC", "Pointing to LOD", "Facing LOD", "Facing LOD", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/2 between 2-3 BTL", "nil", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2242,7 +2242,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
     "alignment": ["Pointing to Centre, body Facing DC", "Facing Centre", "Backing LOD", "Backing DC", "Backing DC", "Facing DW, moving along LOD", "Facing DW, moving along LOD"],
     "amount_of_turn": ["1/8 between preceding step and 1", "Cont to turn L", "1/4 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2251,7 +2251,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing DC against LOD", "Backing DC", "Pointing DC", "Facing DC", "Facing DC", "Facing DC, moving along LOD", "Facing DC, moving along LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/2 between 2-3 BTL", "nil", "Com to turn L", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2268,7 +2268,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF fwd", "RF to side and slightly back", "LF back in CBMP", "RF back", "LF to side in PP", "RF fwd and across in PP and CBMP"],
     "alignment": ["Pointing DC, body Facing LOD", "Facing DC", "Backing DW", "Backing LOD", "Backing LOD", "Facing DW, moving along LOD", "Facing DW, moving along LOD"],
     "amount_of_turn": ["1/8 between preceding step and 1", "Cont to turn L", "1/4 between 2-3", "1/8 between 3-4", "Com to turn L", "1/4 between 5-6 BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2277,7 +2277,7 @@
     "sway": ["S", "S", "S", "S", "S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF to side and slightly back", "LF to side and slightly fwd", "RF fwd in CBMP, OP", "LF fwd", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Pointing to Centre (moving DC)", "Backing DC", "Pointing to LOD", "Facing LOD", "Facing LOD", "Facing DC, moving along LOD", "Facing DC, moving along LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/2 between 2-3 BTL", "nil", "Com to turn L", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "Com to rise e/o 4", "Cont to rise on 5", "Up. Lower e/o 6", "nil"],
@@ -2294,7 +2294,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing DC", "Almost Backing LOD", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "Just under 3/8 between 1-2", "Just over 3/8 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3", "nil"],
@@ -2303,7 +2303,7 @@
     "sway": ["S", "L", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Backing DC", "Facing LOD", "Backing DW", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "3/8 between 2-3 BTL", "nil"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -2323,7 +2323,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF fwd", "RF to side", "LF to side and slightly fwd in PP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF to side and slightly fwd in PP"],
     "alignment": ["Facing DC", "Backing DW", "Pointing DW, body Facing Wall"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/2 between 2-3 BTL"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3"],
@@ -2332,7 +2332,7 @@
     "sway": ["S", "L", "S"]
     },
   "lady": {
-    "feet positions": ["RF back", "LF closes to RF (heel turn)", "RF diag fwd in PP, R side leading"],
+    "feet_positions": ["RF back", "LF closes to RF (heel turn)", "RF diag fwd in PP, R side leading"],
     "alignment": ["Backing DC", "Facing LOD", "Pointing to LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "Slight body turn to L"],
     "rise_and_fall": ["Rise slightly e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2351,7 +2351,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF closes to RF without weight", "Position held"],
+    "feet_positions": ["RF fwd in PP and CBMP", "LF closes to RF without weight", "Position held"],
     "alignment": ["Pointing DW, body Facing Wall", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "Body turn to L", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2360,7 +2360,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
     "alignment": ["Pointing to LOD (moving DW)", "Backing Wall", "Backing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2379,7 +2379,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF closes to RF without weight", "Position held"],
+    "feet_positions": ["RF fwd in PP and CBMP", "LF closes to RF without weight", "Position held"],
     "alignment": ["Pointing DW, body Facing Wall", "Facing DW", "Backing DC of new LOD"],
     "amount_of_turn": ["nil", "Body turn to L", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2388,7 +2388,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
     "alignment": ["Pointing to LOD (moving DW)", "Backing Wall", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2405,7 +2405,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF closes to RF without weight", "Position held"],
+    "feet_positions": ["RF fwd in PP and CBMP", "LF closes to RF without weight", "Position held"],
     "alignment": ["Pointing DC, body Facing LOD", "Facing DC", "Facing DC"],
     "amount_of_turn": ["nil", "Body turn to L", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2414,7 +2414,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
     "alignment": ["Pointing to Centre (moving DC)", "Backing LOD", "Backing DC"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2432,7 +2432,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF closes to RF without weight", "Position held"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF closes to RF without weight", "Position held"],
     "alignment": ["Pointing DC, body Facing LOD", "Facing DW", "Backing DW"],
     "amount_of_turn": ["1/4 to L on 1-2", "Body turn to L", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2441,7 +2441,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF"],
     "alignment": ["Pointing to Centre (moving DC)", "Backing DC", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2459,7 +2459,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Pointing to LOD", "Towards next alignment", "Facing DC"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "Body turn to L", "1/8 between 2-3"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -2468,7 +2468,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Facing DC", "Facing Centre", "Facing against LOD cont to turn back DC"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/4 between 2-3, then cont to turn body to back DC"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2489,7 +2489,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Pointing to LOD", "Facing LOD", "Facing LOD"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "Body turn to L", "nil"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -2498,7 +2498,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Facing DC", "Facing Centre", "Facing against LOD"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2517,7 +2517,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Pointing to LOD", "Towards next alignment", "Facing DW of new LOD"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "Body turn to L", "1/8 between 2-3"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -2526,7 +2526,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Facing DC", "Facing Centre", "Facing against LOD cont to turn back DW of new LOD"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/4 between 2-3, then cont to turn body to back DC"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -2543,7 +2543,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Pointing DC, body Facing LOD", "Towards next alignment", "Facing DC"],
     "amount_of_turn": ["nil", "Body turn to L", "Body turn to L"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -2552,7 +2552,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Facing DC against LOD", "Facing against LOD", "Facing DW against LOD"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2570,7 +2570,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd in PP and CBMP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Pointing DC, body Facing LOD", "Towards next alignment", "Facing DW of new LOD"],
     "amount_of_turn": ["nil", "Body turn to L", "Body turn to L"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -2579,7 +2579,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF fwd in PP and CBMP", "RF fwd preparing to step OP on L side", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Facing DC against LOD", "Facing against LOD", "Facing DC against new LOD"],
     "amount_of_turn": ["1/8 to L between preceding step and 1", "1/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2595,7 +2595,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back", "RF closes to LF (heel turn)", "LF diag fwd in PP, L side leading"],
+    "feet_positions": ["LF back", "RF closes to LF (heel turn)", "LF diag fwd in PP, L side leading"],
     "alignment": ["Backing LOD", "Facing DC", "Pointing DC, body Facing LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "Slight body turn to R"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2604,7 +2604,7 @@
     "sway": ["S", "L", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF to side in PP having brushed to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF to side in PP having brushed to LF"],
     "alignment": ["Facing LOD", "Backing DC", "Pointing to Centre, moving DC"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "3/8 between 2-3 BTL"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2621,7 +2621,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back", "RF closes to LF (heel turn)", "LF diag fwd in PP, L side leading"],
+    "feet_positions": ["LF back", "RF closes to LF (heel turn)", "LF diag fwd in PP, L side leading"],
     "alignment": ["Backing DW", "Facing DC", "Pointing DC, body Facing LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "Slight body turn to R"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2630,7 +2630,7 @@
     "sway": ["S", "L", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF to side in PP having brushed to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF to side in PP having brushed to LF"],
     "alignment": ["Facing DW", "Backing DC", "Pointing to Centre, moving DC"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "3/8 between 2-3 BTL"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2647,7 +2647,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back", "RF closes to LF (heel turn)", "LF diag fwd in PP, L side leading"],
+    "feet_positions": ["LF back", "RF closes to LF (heel turn)", "LF diag fwd in PP, L side leading"],
     "alignment": ["Backing LOD", "Facing DC", "Pointing DW of new LOD, body Facing Wall of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "Slight body turn to R"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2656,7 +2656,7 @@
     "sway": ["S", "L", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd", "LF to side", "RF to side in PP having brushed to LF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF to side in PP having brushed to LF"],
     "alignment": ["Facing LOD", "Backing DC", "Pointing to new LOD, moving DW of new LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "3/8 between 2-3 BTL"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2672,7 +2672,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side ending with LF back"],
+    "feet_positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side ending with LF back"],
     "alignment": ["DC against LOD, toe turned in", "Facing against LOD", "Facing DC, end Facing DW"],
     "amount_of_turn": ["3/8 to R on 1 (pivot)", "Cont to turn", "3/8 between 2-3, 1/4 on 3"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2681,7 +2681,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
     "alignment": ["Facing DC against LOD", "Facing Wall", "Facing against LOD, end Backing DW"],
     "amount_of_turn": ["Com to turn R", "5/8 between 1-2", "1/4 between 2-3, 1/8 on 3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2699,7 +2699,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side ending with LF back"],
+    "feet_positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side ending with LF back"],
     "alignment": ["DW against LOD, toe turned in", "Facing Wall", "Facing DC against LOD, end Facing DC"],
     "amount_of_turn": ["3/8 to R on 1 (pivot)", "Cont to turn", "3/8 between 2-3, 1/4 on 3"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2708,7 +2708,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
     "alignment": ["Facing DW against LOD", "Facing LOD", "Facing Wall, end Backing DC"],
     "amount_of_turn": ["Com to turn R", "5/8 between 1-2", "1/4 between 2-3, 1/8 on 3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2724,7 +2724,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side and slightly back"],
+    "feet_positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side and slightly back"],
     "alignment": ["DW, toe turned in", "Facing LOD", "Backing DC"],
     "amount_of_turn": ["3/8 to R on 1 (pivot)", "Cont to turn", "3/8 between 2-3"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2733,7 +2733,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF diag fwd"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF diag fwd"],
     "alignment": ["Facing DW", "Facing DC against LOD", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "1/2 between 1-2", "1/4 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2751,7 +2751,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side and slightly back"],
+    "feet_positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF to side and slightly back"],
     "alignment": ["DW against LOD, toe turned in", "Facing DW", "Backing DC"],
     "amount_of_turn": ["1/4 to R on 1 (pivot)", "Cont to turn", "1/4 between 2-3"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2760,7 +2760,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF diag fwd"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF diag fwd"],
     "alignment": ["Facing DW against LOD", "Facing Centre", "Facing DC"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2778,7 +2778,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF diag back ending with LF back"],
+    "feet_positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF diag back ending with LF back"],
     "alignment": ["DW, toe turned in", "Facing LOD", "Backing DC, end Backing LOD"],
     "amount_of_turn": ["3/8 to R on 1 (pivot)", "Cont to turn", "3/8 between 2-3, 1/8 on 3"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2787,7 +2787,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
     "alignment": ["Facing DW", "Facing DC against LOD", "Facing DC, end Facing LOD"],
     "amount_of_turn": ["Com to turn R", "1/2 between 1-2", "1/4 between 2-3, 1/8 on 3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2803,7 +2803,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF diag back ending with LF back"],
+    "feet_positions": ["LF back in CBMP (small step)", "RF fwd in CBMP, OP", "LF diag back ending with LF back"],
     "alignment": ["DW against LOD, toe turned in", "Facing DW", "Backing DC, end Backing LOD"],
     "amount_of_turn": ["1/4 to R on 1 (pivot)", "Cont to turn", "1/4 between 2-3, 1/8 on 3"],
     "rise_and_fall": ["nil", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -2812,7 +2812,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF closes to RF", "RF fwd ending in CBMP"],
     "alignment": ["Facing DW against LOD", "Facing Centre", "Facing DC, end Facing LOD"],
     "amount_of_turn": ["Com to turn R", "3/8 between 1-2", "1/8 between 2-3, 1/8 on 3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -2828,7 +2828,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF back, R side leading", "LF crosses in front of RF", "RF back and slightly rightwards", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["RF back, R side leading", "LF crosses in front of RF", "RF back and slightly rightwards", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Backing DC", "Backing DC", "Backing DC", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "Com to turn L", "1/4 between 3-4, BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2838,7 +2838,7 @@
     "timing": ["1", "&", "2", "3", "1"]
     },
   "lady": {
-    "feet positions": ["LF fwd, L side leading", "RF crosses behind LF", "LF fwd and slightly leftwards", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd, L side leading", "RF crosses behind LF", "LF fwd and slightly leftwards", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Facing DC", "Facing DC", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "nil", "Com to turn L", "1/4 between 3-4, BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2858,7 +2858,7 @@
   "dance": "Waltz",
   "difficulty": "Licentiate",
   "man": {
-    "feet positions": ["RF back, R side leading", "LF crosses in front of RF", "RF back and slightly rightwards", "LF to side in PP", "RF fwd and across in PP and CBMP"],
+    "feet_positions": ["RF back, R side leading", "LF crosses in front of RF", "RF back and slightly rightwards", "LF to side in PP", "RF fwd and across in PP and CBMP"],
     "alignment": ["Backing DC", "Backing DC", "Backing DC", "Facing DW, moving along LOD", "Facing DW, moving along LOD"],
     "amount_of_turn": ["nil", "nil", "Com to turn L", "1/4 between 3-4, BTL", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2868,7 +2868,7 @@
     "timing": ["1", "&", "2", "3", "1"]
     },
   "lady": {
-    "feet positions": ["LF fwd, L side leading", "RF crosses behind LF", "LF fwd and slightly leftwards", "RF to side in PP", "LF fwd and across in PP and CBMP"],
+    "feet_positions": ["LF fwd, L side leading", "RF crosses behind LF", "LF fwd and slightly leftwards", "RF to side in PP", "LF fwd and across in PP and CBMP"],
     "alignment": ["Facing DC", "Facing DC", "Facing DC", "Facing DC, moving along LOD", "Facing DC, moving along LOD"],
     "amount_of_turn": ["nil", "nil", "Com to turn L", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -2887,7 +2887,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF crosses behind LF"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF crosses behind LF"],
     "alignment": ["Facing DW, moving along LOD", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "Body com to turn L", "Body turn to L"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2896,7 +2896,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC, moving along LOD", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2916,7 +2916,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF crosses behind LF"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF crosses behind LF"],
     "alignment": ["Facing DW, moving along LOD", "Facing DW", "Backing DC of new LOD"],
     "amount_of_turn": ["nil", "Body com to turn L", "Body turn to L"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2925,7 +2925,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd and across in PP and CBMP", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC, moving along LOD", "Backing DW", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "nil"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2943,7 +2943,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back", "LF to side and slightly fwd", "RF crosses behind LF"],
+    "feet_positions": ["RF back", "LF to side and slightly fwd", "RF crosses behind LF"],
     "alignment": ["Backing LOD", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "Body cont to turn L"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2952,7 +2952,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing LOD", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2969,7 +2969,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back", "LF to side and slightly fwd", "RF crosses behind LF"],
+    "feet_positions": ["RF back", "LF to side and slightly fwd", "RF crosses behind LF"],
     "alignment": ["Backing DC", "Pointing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2 BTL", "Body cont to turn L"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2978,7 +2978,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["LF fwd", "RF to side and slightly back", "LF back in CBMP"],
     "alignment": ["Facing DC", "Backing DW", "Backing LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["nil", "nil", "nil"],
@@ -2996,7 +2996,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["Cross RF behind LF", "Replace weight to LF", "RF to side and slightly fwd"],
+    "feet_positions": ["Cross RF behind LF", "Replace weight to LF", "RF to side and slightly fwd"],
     "alignment": ["Facing DW", "Facing DW", "Pointing DW against LOD"],
     "amount_of_turn": ["nil", "Com to turn R", "1/4 to R between 2-3, BTL"],
     "rise_and_fall": ["nil", "Slight rise on 2", "Lower e/o 3"],
@@ -3005,7 +3005,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF back in CBMP", "RF fwd", "LF side and slightly back"],
+    "feet_positions": ["LF back in CBMP", "RF fwd", "LF side and slightly back"],
     "alignment": ["Backing DW", "Facing DC against LOD", "Backing DW against LOD"],
     "amount_of_turn": ["nil", "Com to turn R", "1/4 to R between 2-3"],
     "rise_and_fall": ["nil", "Slight rise on 2", "Lower e/o 3"],
@@ -3021,7 +3021,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["Untwist on both feet"],
+    "feet_positions": ["Untwist on both feet"],
     "alignment": ["Facing DW, end Backing DW against LOD"],
     "amount_of_turn": ["3/4 to R"],
     "rise_and_fall": ["nil"],
@@ -3030,7 +3030,7 @@
     "sway": ["S"]
     },
   "lady": {
-    "feet positions": ["RF fwd in CBMP", "LF fwd", "RF fwd in CBMP", "LF fwd"],
+    "feet_positions": ["RF fwd in CBMP", "LF fwd", "RF fwd in CBMP", "LF fwd"],
     "alignment": ["Facing DC against LOD", "Facing DC", "Facing DW", "Facing DW against LOD"],
     "amount_of_turn": ["Com to turn R", "1/4 to R between 1-2", "1/4 to R between 2-3", "1/4 to R between 3-4"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4"],
@@ -3048,7 +3048,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["LF fwd in CBMP", "Transfer weight back to RF", "LF to side in PP"],
+    "feet_positions": ["LF fwd in CBMP", "Transfer weight back to RF", "LF to side in PP"],
     "alignment": ["DW Pointing almost to LOD", "Backing DC against LOD", "Facing DW, moving along LOD"],
     "amount_of_turn": ["Body turn to L", "Body turn to R", "nil"],
     "rise_and_fall": ["Down, with knees slightly flexed", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -3058,7 +3058,7 @@
     "note": "Some dancers prefer to step forward with the foot flat on step 1."
     },
   "lady": {
-    "feet positions": ["RF back in CBMP", "Transfer weight fwd to LF", "RF to side in PP"],
+    "feet_positions": ["RF back in CBMP", "Transfer weight fwd to LF", "RF to side in PP"],
     "alignment": ["DW feet backing almost LOD", "Facing DC against LOD", "Facing DC, moving along LOD"],
     "amount_of_turn": ["Body turn to L", "Body turn to R", "1/4 to R between 2-3"],
     "rise_and_fall": ["Down, with knees slightly flexed", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -3077,7 +3077,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["LF fwd in CBMP", "Transfer weight back to RF", "LF to side in PP"],
+    "feet_positions": ["LF fwd in CBMP", "Transfer weight back to RF", "LF to side in PP"],
     "alignment": ["DW Pointing almost to LOD", "Backing DC against LOD", "Facing LOD, moving DC"],
     "amount_of_turn": ["Body turn to L", "Com to turn L", "1/8 to L between 2-3 BTL"],
     "rise_and_fall": ["Down, with knees slightly flexed", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -3087,7 +3087,7 @@
     "note": "Some dancers prefer to step forward with the foot flat on step 1."
     },
   "lady": {
-    "feet positions": ["RF back in CBMP", "Transfer weight fwd to LF", "RF to side in PP"],
+    "feet_positions": ["RF back in CBMP", "Transfer weight fwd to LF", "RF to side in PP"],
     "alignment": ["DW feet backing almost LOD", "Facing DC against LOD", "Facing Centre, moving DC"],
     "amount_of_turn": ["Body turn to L", "Body turn to R", "1/8 to R between 2-3"],
     "rise_and_fall": ["Down, with knees slightly flexed", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -3106,7 +3106,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["LF fwd in CBMP", "Transfer weight back to RF", "LF to side in PP"],
+    "feet_positions": ["LF fwd in CBMP", "Transfer weight back to RF", "LF to side in PP"],
     "alignment": ["DW against LOD Pointing almost to Wall", "Backing DC", "Facing DW, moving along LOD"],
     "amount_of_turn": ["Body turn to L", "Com to turn L", "1/4 to L between 2-3 BTL"],
     "rise_and_fall": ["Down, with knees slightly flexed", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -3116,7 +3116,7 @@
     "note": "Some dancers prefer to step forward with the foot flat on step 1."
     },
   "lady": {
-    "feet positions": ["RF back in CBMP", "Transfer weight fwd to LF", "RF to side in PP"],
+    "feet_positions": ["RF back in CBMP", "Transfer weight fwd to LF", "RF to side in PP"],
     "alignment": ["DW against LOD feet backing almost to Wall", "Facing DC", "Facing DC, moving along LOD"],
     "amount_of_turn": ["Body turn to L", "Body turn to R", "nil"],
     "rise_and_fall": ["Down, with knees slightly flexed", "Rise e/o 2", "Up. Lower e/o 3"],
@@ -3133,7 +3133,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Facing DC", "Facing DC", "Facing DC"],
     "amount_of_turn": ["nil", "Slight body turn to L", "Slight body turn to L"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -3142,7 +3142,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF back in CBMP", "RF to side and slightly back (small step)", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF back in CBMP", "RF to side and slightly back (small step)", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Backing DC", "Backing DC", "Backing DC"],
     "amount_of_turn": ["nil", "nil", "Slight body turn to L"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -3161,7 +3161,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF fwd in CBMP, OP", "LF com to close to RF", "LF closes to RF without weight"],
+    "feet_positions": ["RF fwd in CBMP, OP", "LF com to close to RF", "LF closes to RF without weight"],
     "alignment": ["Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "Slight body turn to L", "Slight body turn to L"],
     "rise_and_fall": ["nil", "Slight rise on 2-3 NFR", "nil"],
@@ -3170,7 +3170,7 @@
     "sway": ["S", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF back in CBMP", "RF to side and slightly back (small step)", "LF fwd in CBMP, OP on L side"],
+    "feet_positions": ["LF back in CBMP", "RF to side and slightly back (small step)", "LF fwd in CBMP, OP on L side"],
     "alignment": ["Backing DW", "Backing DW", "Backing DW"],
     "amount_of_turn": ["nil", "nil", "Slight body turn to L"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3"],
@@ -3188,7 +3188,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back, R side leading", "LF crosses loosely in front of RF", "RF to side and slightly fwd, small step between partner's feet", "LF diag fwd, L side leading in PP"],
+    "feet_positions": ["RF back, R side leading", "LF crosses loosely in front of RF", "RF to side and slightly fwd, small step between partner's feet", "LF diag fwd, L side leading in PP"],
     "alignment": ["Down LOD", "Facing Centre", "Facing DC", "Pointing DC, body Facing LOD"],
     "amount_of_turn": ["nil", "1/4 to R between 1-2", "1/8 between 2-3", "Slight body turn to R"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4"],
@@ -3198,7 +3198,7 @@
     "timing": ["1", "&", "2", "3"]
     },
   "lady": {
-    "feet positions": ["LF fwd, L side leading", "RF crosses loosely behind LF", "LF to side and slightly back", "RF to side in PP having brushed towards LF"],
+    "feet_positions": ["LF fwd, L side leading", "RF crosses loosely behind LF", "LF to side and slightly back", "RF to side in PP having brushed towards LF"],
     "alignment": ["Down LOD", "Backing Centre", "Backing DC", "Pointing to Centre, moving DC"],
     "amount_of_turn": ["nil", "1/4 to R between 1-2", "1/8 between 2-3", "3/8 between 3-4, BTL"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4"],
@@ -3217,7 +3217,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["LF fwd", "RF back in Fallaway, R side leading", "LF back in CBMP and Fallaway", "RF back, LF held in CBMP"],
+    "feet_positions": ["LF fwd", "RF back in Fallaway, R side leading", "LF back in CBMP and Fallaway", "RF back, LF held in CBMP"],
     "alignment": ["Facing DC", "Backing DW, moving down LOD", "Backing LOD", "To centre, toe turned in, end Facing DW"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3, BTL", "1/4 between 3-4, 1/8 on 4 (pivot)"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3", "nil"],
@@ -3228,7 +3228,7 @@
     "note": "Timing may also be 1, 2, &, 3."
     },
   "lady": {
-    "feet positions": ["RF back", "LF back in Fallaway, L side leading", "RF back in CBMP and Fallaway, small step, LF held in CBMP", "LF fwd in CBMP, RF held in CBMP"],
+    "feet_positions": ["RF back", "LF back in Fallaway, L side leading", "RF back in CBMP and Fallaway, small step, LF held in CBMP", "LF fwd in CBMP, RF held in CBMP"],
     "alignment": ["Backing DC", "Backing DC, moving down LOD", "Backing DC, end Facing Centre", "To centre, end Backing DW"],
     "amount_of_turn": ["nil", "nil", "5/8 to L on 3 (pivot)", "1/8 on 4 (pivot)"],
     "rise_and_fall": ["Rise e/o 1, NFR", "Up", "Up. Lower e/o 3", "nil"],
@@ -3248,7 +3248,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["LF fwd", "RF back in Fallaway, R side leading", "LF back in CBMP and Fallaway", "RF back, LF held in CBMP"],
+    "feet_positions": ["LF fwd", "RF back in Fallaway, R side leading", "LF back in CBMP and Fallaway", "RF back, LF held in CBMP"],
     "alignment": ["Facing DC", "Backing DW, moving down LOD", "Backing LOD", "To centre, toe turned in, end Facing LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3, BTL", "1/4 between 3-4, 1/4 on 4 (pivot)"],
     "rise_and_fall": ["Rise e/o 1", "Up", "Up. Lower e/o 3", "nil"],
@@ -3259,7 +3259,7 @@
     "note": "Timing may also be 1, 2, &, 3."
     },
   "lady": {
-    "feet positions": ["RF back", "LF back in Fallaway, L side leading", "RF back in CBMP and Fallaway, small step, LF held in CBMP", "LF fwd in CBMP, RF held in CBMP"],
+    "feet_positions": ["RF back", "LF back in Fallaway, L side leading", "RF back in CBMP and Fallaway, small step, LF held in CBMP", "LF fwd in CBMP, RF held in CBMP"],
     "alignment": ["Backing DC", "Backing DC, moving down LOD", "Backing DC, end Facing Centre", "To centre, end Backing LOD"],
     "amount_of_turn": ["nil", "nil", "5/8 to L on 3 (pivot)", "1/4 on 4 (pivot)"],
     "rise_and_fall": ["Rise e/o 1, NFR", "Up", "Up. Lower e/o 3", "nil"],
@@ -3279,7 +3279,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back", "LF to side and slightly fwd", "Transfer weight to RF side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF to side and slightly fwd", "Transfer weight to RF side and slightly back", "LF back in CBMP"],
     "alignment": ["Backing LOD", "Pointing DW", "Backing DC against LOD", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL, Cont to turn body on 2", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -3288,7 +3288,7 @@
     "sway": ["S", "R", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side and LF brushes towards RF", "LF diag fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF fwd", "RF to side and LF brushes towards RF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre to end Facing DC against LOD", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2, cont to turn 1/8 on 2", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -3304,7 +3304,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back", "LF to side and slightly fwd", "Transfer weight to RF side and slightly back", "LF back in CBMP"],
+    "feet_positions": ["RF back", "LF to side and slightly fwd", "Transfer weight to RF side and slightly back", "LF back in CBMP"],
     "alignment": ["Backing LOD", "Pointing DW", "Backing DC of new LOD", "Backing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL, Cont to turn body on 2", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1 NFR", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -3313,7 +3313,7 @@
     "sway": ["S", "R", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side and LF brushes towards RF", "LF diag fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF fwd", "RF to side and LF brushes towards RF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre to end Facing DC against LOD", "Facing DC of new LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2, cont to turn 1/8 on 2", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2", "Up. Lower e/o 3", "nil"],
@@ -3329,7 +3329,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back", "LF to side and slightly fwd", "RF moves towards LF", "RF moves towards LF", "RF moves towards LF", "Transfer weight to RF side and slightly back", 
+    "feet_positions": ["RF back", "LF to side and slightly fwd", "RF moves towards LF", "RF moves towards LF", "RF moves towards LF", "Transfer weight to RF side and slightly back", 
                       "LF back in CBMP"],
     "alignment": ["Backing LOD", "Pointing DW", "Towards next alignment", "Towards next alignment", "Towards next alignment", "Backing DC against LOD", "Backing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "Body cont to turn", "Body cont to turn", "Body cont to turn", "nil", "nil"],
@@ -3339,7 +3339,7 @@
     "sway": ["S", "R", "R", "R", "R", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF brushes towards RF", "LF brushes towards RF", "LF brushes to RF", "LF diag fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF brushes towards RF", "LF brushes towards RF", "LF brushes to RF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Towards next alignment", "Towards next alignment", "Towards next alignment", "Facing DC against LOD", "Facing DC against LOD", 
                   "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "Cont to turn 1/8 between 3-5", "nil", "nil", "nil", "nil"],
@@ -3356,7 +3356,7 @@
   "dance": "Waltz",
   "difficulty": "Fellow",
   "man": {
-    "feet positions": ["RF back", "LF to side and slightly fwd", "RF moves towards LF", "RF moves towards LF", "RF moves towards LF", "Transfer weight to RF side and slightly back", 
+    "feet_positions": ["RF back", "LF to side and slightly fwd", "RF moves towards LF", "RF moves towards LF", "RF moves towards LF", "Transfer weight to RF side and slightly back", 
                       "LF back in CBMP"],
     "alignment": ["Backing LOD", "Pointing DW", "Towards next alignment", "Towards next alignment", "Towards next alignment", "Backing DC of new LOD", "Backing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2 BTL", "Body cont to turn", "Body cont to turn", "Body cont to turn", "nil", "nil"],
@@ -3366,7 +3366,7 @@
     "sway": ["S", "R", "R", "R", "R", "S", "S"]
     },
   "lady": {
-    "feet positions": ["LF fwd", "RF to side", "LF brushes towards RF", "LF brushes towards RF", "LF brushes to RF", "LF diag fwd", "RF fwd in CBMP, OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF brushes towards RF", "LF brushes towards RF", "LF brushes to RF", "LF diag fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Towards next alignment", "Towards next alignment", "Towards next alignment", "Facing DC of new LOD", "Facing DC of new LOD", 
                   "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "Cont to turn 1/8 between 3-5", "nil", "nil", "nil", "nil"],
