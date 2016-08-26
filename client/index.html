@@ -267,10 +267,21 @@
 
   <div id="detailPage">
 
+    <div id="groupDetButtons">
+      <div id="radForm">
+        <input type="radio" name="role" value="man" checked> Man<br>
+        <input type="radio" name="role" value="lady"> Lady<br>
+      </div>
+      <div>
+        <button id="closeDetail" ng-click="noDetail()">Back</button>
+      </div>
+    </div>
+
+    <br><br><br>
     <table id="detTable">
       <tr>
-        <th>Name</th>
         <th>Step Number</th>
+        <th>Name</th>
         <th>Figure Step Number</th>
         <th>Timing</th>
         <th>Foot Position</th>
@@ -283,9 +294,9 @@
         <th>Additional Notes</th>
       </tr>
       <tr ng-repeat="x in X" id="detRow">
+        <td>{{x.step_no}}</td>
         <td>{{x.name}}</td>
-        <td></td>
-        <td></td>
+        <td>{{x.fig_step_no}}</td>
         <td>{{x.man.timing}}</td>
         <td>{{x.man.feet_positions}}</td>
         <td>{{x.man.alignment}}</td>
@@ -296,7 +307,7 @@
         <td>{{x.man.sway}}</td>
         <td>{{x.man.note}}</td>
       </tr>
-    </table> 
+    </table>
 
   </div>
 

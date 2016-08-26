@@ -324,6 +324,25 @@ p {
 #detailPage {
 	display: none; 
 	/*usually none*/
+	margin: auto;
+	text-align: center;
+}
+#radForm {
+	display: inline-block;
+	float: left;
+	text-align: left;
+	width: 80px;
+	margin: auto;
+}
+#groupDetButtons {
+	width: 150px;
+	margin: auto;
+	text-align: center;
+	background-color: #B7C3FF;
+}
+#closeDetail {
+	display: inline-block;
+	float: left;
 }
 #detTable {
 	width: 1000px;

@@ -184,6 +184,66 @@ myApp.service('DetailService', function() {
 		}
 		return true;
 	}
+
+	this.getDetailsList = function (figure) {
+
+		var A = [];
+		var TM = [];
+		var TL = [];
+		var index = 0;
+
+		for (var i = 0; i < figure.length; i++){
+			
+			lnth = figure[i].man.feet_positions.length;
+
+			for (var j = 0; j < lnth; j++) {
+
+				// Timing:
+				var sub = (Math.floor(j/3))*3;
+
+				if (figure[i].man.timing == undefined){
+					TM[j] = (j+1) - sub;
+				} else {
+					TM[j] = figure[i].man.timing[j];
+				}
+
+				if (figure[i].lady.timing == undefined){
+					TL[j] = (j+1) - sub;
+				} else {
+					TL[j] = figure[i].lady.timing[j];
+				}
+
+				// Name:
+				if (j == 0) {
+					N = figure[i].name;
+				} else {
+					N = '';
+				}
+
+				// Additional Notes:
+				if (j == 0) {
+					nM = figure[i].man.note;
+					nL = figure[i].lady.note;
+				} else {
+					nM = '';
+					nL = '';
+				}
+
+				// Array to go into the table:
+				A[index] = { name: N, step_no: index + 1, fig_step_no: j + 1,
+						man: { feet_positions: figure[i].man.feet_positions[j], alignment: figure[i].man.alignment[j],
+						amount_of_turn: figure[i].man.amount_of_turn[j], rise_and_fall: figure[i].man.rise_and_fall[j], 
+						footwork: figure[i].man.footwork[j], CBM: figure[i].man.CBM[j], sway: figure[i].man.sway[j],
+						timing: TM[j], note: nM},
+						lady: { feet_positions: figure[i].lady.feet_positions[j], alignment: figure[i].lady.alignment[j],
+						amount_of_turn: figure[i].lady.amount_of_turn[j], rise_and_fall: figure[i].lady.rise_and_fall[j], 
+						footwork: figure[i].lady.footwork[j], CBM: figure[i].lady.CBM[j], sway: figure[i].lady.sway[j],
+						timing: TL[j], note: nL}}
+				index++;
+			}
+		}
+		return A;
+	}
 })
 
 myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService, DiffService, DetailService) {
@@ -361,8 +421,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	}
 
   	$scope.seeDetail = function () {
-  		document.getElementById("mainPage").style.display = "none";
-  		document.getElementById("detailPage").style.display = "block";
+
   		count = $scope.count;
   		nms = [];
 
@@ -383,19 +442,29 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   		// Retrieve data from the database
   		if (access) {
+
+  			document.getElementById("mainPage").style.display = "none";
+  			document.getElementById("detailPage").style.display = "block";
+
   			FigService.getFigDetails(nms)
   			.then(function successCallback(json) {
-    			$scope.X = json.data;
+    			A = json.data;
     			// alert($scope.X)
+
+    			// Change the data to be step by step, rather than figure by figure
+    			$scope.X = DetailService.getDetailsList(A);
+
   			}, function errorCallback(err) {
     			console.log(err)
   			});
   		}
 
-  		// Change the data to be step by step, rather than figure by figure
-  		
-
   		// Populate the table with the data retrieved using ng-repeat (done in html)
+  	}
+
+  	$scope.noDetail = function () {
+  		document.getElementById("detailPage").style.display = "none";
+  		document.getElementById("mainPage").style.display = "block";
   	}
 
   	function error (err) {
