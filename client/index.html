@@ -268,44 +268,40 @@
   <div id="detailPage">
 
     <div id="groupDetButtons">
-      <div id="radForm">
-        <input type="radio" name="role" value="man" checked> Man<br>
-        <input type="radio" name="role" value="lady"> Lady<br>
-      </div>
-      <div>
-        <button id="closeDetail" ng-click="noDetail()">Back</button>
-      </div>
+        <input type="button" class="roleSelected" id="man" value="Man" ng-click="changeRole('man')"></input>
+        <input type="button" class="topButtons" id="lady" value="Lady" ng-click="changeRole('lady')"></input>
+        <input type="button" class="topButtons" ng-click="noDetail()" value="Back"></input>
     </div>
 
-    <br><br><br>
+    <br>
     <table id="detTable">
       <tr>
-        <th>Step Number</th>
-        <th>Name</th>
-        <th>Figure Step Number</th>
-        <th>Timing</th>
-        <th>Foot Position</th>
-        <th>Alignment</th>
-        <th>Amount of Turn</th>
-        <th>Rise and Fall</th>
-        <th>Footwork</th>
-        <th>CBM</th>
-        <th>Sway</th>
-        <th>Additional Notes</th>
+        <th class="longCol">Step Number</th>
+        <th class="longCol">Name</th>
+        <th class="longCol">Figure Step Number</th>
+        <th class="longCol">Timing</th>
+        <th class="longCol">Foot Position</th>
+        <th class="longCol">Alignment</th>
+        <th class="longCol">Amount of Turn</th>
+        <th class="longCol">Rise and Fall</th>
+        <th class="longCol">Footwork</th>
+        <th class="longCol">CBM</th>
+        <th class="longCol">Sway</th>
+        <th class="longColol">Additional Notes</th>
       </tr>
       <tr ng-repeat="x in X" id="detRow">
-        <td>{{x.step_no}}</td>
-        <td>{{x.name}}</td>
-        <td>{{x.fig_step_no}}</td>
-        <td>{{x.man.timing}}</td>
-        <td>{{x.man.feet_positions}}</td>
-        <td>{{x.man.alignment}}</td>
-        <td>{{x.man.amount_of_turn}}</td>
-        <td>{{x.man.rise_and_fall}}</td>
-        <td>{{x.man.footwork}}</td>
-        <td>{{x.man.CBM}}</td>
-        <td>{{x.man.sway}}</td>
-        <td>{{x.man.note}}</td>
+        <td class="longCol">{{x.step_no}}</td>
+        <td class="longCol">{{x.name}}</td>
+        <td class="longCol">{{x.fig_step_no}}</td>
+        <td class="longCol">{{x.timing}}</td>
+        <td class="longCol">{{x.feet_positions}}</td>
+        <td class="longCol">{{x.alignment}}</td>
+        <td class="longCol">{{x.amount_of_turn}}</td>
+        <td class="longCol">{{x.rise_and_fall}}</td>
+        <td class="longCol">{{x.footwork}}</td>
+        <td class="longCol">{{x.CBM}}</td>
+        <td class="longCol">{{x.sway}}</td>
+        <td class="longCol">{{x.note}}</td>
       </tr>
     </table>
 

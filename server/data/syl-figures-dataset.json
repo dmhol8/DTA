@@ -141,7 +141,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF", "LF back", "RF to side", "LF closes to RF"],
+    "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
     "alignment": ["Facing DC", "Backing DW", "Backing Centre"],
     "amount_of_turn": ["Com to turn R", "1/4 between 1-2", "1/8 between 2-3"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
@@ -687,7 +687,7 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP OP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing DW (moving along LOD)", "Facing DW", "Facing DW", "Facing DW", "Facing DW"],
     "amount_of_turn": ["nil", "nil", "nil", "nil", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
@@ -719,9 +719,9 @@
   "dance": "Waltz",
   "difficulty": "Student Teacher",
   "man": {
-    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP OP"],
+    "feet_positions": ["RF fwd and across in PP and CBMP", "LF to side and slightly fwd", "RF closes to LF", "LF to side and slightly fwd", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD (moving DC)", "Facing LOD", "Facing LOD", "Facing LOD", "Facing LOD"],
-    "amount_of_turn": ["nil", "nil", "nil", "nil", "nil"],
+    "amount_of_turn": ["nil", "nil", "nil", "nil", "1/8 to L between preceding step and 1"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "nil", "Up. Lower e/o 4", "nil"],
     "footwork": ["HT", "T", "T", "TH", "H"],
     "CBM": ["sl", "no", "no", "no", "yes"],
@@ -1077,7 +1077,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1104,7 +1104,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Almost Facing DC against LOD", "Facing against LOD", "Facing against LOD"],
     "amount_of_turn": ["Com to turn L", "Just over 1/4 between 1-2", "Just under 1/4 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1131,7 +1131,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing Centre", "Facing DC of new LOD", "Facing DC of new LOD"],
     "amount_of_turn": ["Com to turn L", "1/4 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1158,7 +1158,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP, OP"],
     "alignment": ["Facing LOD", "Facing DC against LOD", "Facing DW against LOD", "Facing DW against LOD"],
     "amount_of_turn": ["Com to turn L", "3/8 between 1-2", "1/4 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1185,7 +1185,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP, OP"],
     "alignment": ["Facing DC", "Facing Centre", "Facing DC against LOD", "Facing DC against LOD"],
     "amount_of_turn": ["Com to turn L", "1/8 between 1-2", "1/8 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -1212,7 +1212,7 @@
     "note": "On step 2 turn may be made on ball of RF with foot flat. Footwork would then be: 1 THT; 2 T (both feet); 3 TH (RF)."
     },
   "lady": {
-    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP OP"],
+    "feet_positions": ["LF fwd", "RF to side", "LF closes to RF", "RF fwd in CBMP, OP"],
     "alignment": ["Facing DC against LOD", "Almost Facing Wall", "Facing DW", "Facing DW"],
     "amount_of_turn": ["Com to turn L", "Just over 1/4 between 1-2", "Just under 1/4 between 2-3", "nil"],
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "nil"],
@@ -2613,7 +2613,7 @@
     "sway": ["S", "R", "S"]
     },
   "precede": ["1-3 Natural Turn"],
-  "follow": ["Chasse from PP (facing DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 
+  "follow": ["Chasse from PP (moving DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 
             "Cross Hesitation (end backing DW)", "Wing (commenced pointing DC)", "Wing (at corner, commenced pointing DC)"]
 }
 {
@@ -2639,7 +2639,7 @@
     "sway": ["S", "R", "S"]
     },
   "precede": ["Reverse Corte (1/2 turn, end backing DW)", "Back Lock", "Progressive Chasse to R", "Progressive Chasse to R (commenced facing LOD)", "Cross Hesitation (end backing DW)"],
-  "follow": ["Chasse from PP (facing DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 
+  "follow": ["Chasse from PP (moving DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 
             "Cross Hesitation (end backing DW)", "Wing (commenced pointing DC)", "Wing (at corner, commenced pointing DC)"]
 }
 {
@@ -3205,8 +3205,7 @@
     "footwork": ["T", "T", "T", "TH"],
     "CBM": ["no", "no", "no", "no"],
     "sway": ["R or L", "R or L", "S", "S", "S"],
-    "timing": ["1", "&", "2", "3"],
-    "note": "The lady will not brush on the preceding Natural Spin Turn, but brush towards when moving into step 4 of Turning Lock to R."
+    "timing": ["1", "&", "2", "3"]
     },
   "precede": ["Natural Spin Turn (overturned)", "Outside Spin (commenced backing DW, end backing LOD)", "Outside Spin (commenced backing DW against LOD, end backing LOD)"],
   "follow": ["Chasse from PP (moving DC)", "Weave from PP (commenced facing LOD)", "Weave from PP (commenced facing LOD, end in PP)", "Cross Hesitation (facing DC)", 

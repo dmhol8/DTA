@@ -65,6 +65,8 @@ p {
 	height: 400px;
 	width: 260px;
 	text-align: left;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 #search {
 	width: 260px;
@@ -95,11 +97,17 @@ p {
 	width: 30px;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 .diffBtnsSelected {
 	background-color: #18366b;
 	color: white;
 	width: 30px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border: 2px solid white;
+	border-radius: 4px;
 }
 #textSearch {
 	width:105px;
@@ -110,6 +118,8 @@ p {
 	background-color: white;
 	color: #18366b;
 	width: 65px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 #figureList {
 	display: block;
@@ -142,6 +152,8 @@ p {
 	height: 400px;
 	margin-left: 20px;
 	overflow-x: auto;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 #addFigure {
 	width: 20px; 
@@ -157,11 +169,15 @@ p {
 	width: 250px;
 	white-space: normal;
 	margin-bottom: 20px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 .addFigureButton {
 	background-color: white;
 	color: #18366b;
 	width: 30px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 .answerBtnsSelected {
 	background-color: #18366b;
@@ -169,6 +185,8 @@ p {
 	width: 250px;
 	white-space: normal;
 	margin-bottom: 20px;
+	border: 2px solid white;
+	border-radius: 4px;
 }
 
 /* SECTION 3: Options */
@@ -177,6 +195,8 @@ p {
 	width: 260px;
 	margin-left: 20px;
 	text-align: center;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 #optionButton, #optionButtonLast, #seeDetailButton {
 	display: inline-block;
@@ -327,25 +347,40 @@ p {
 	margin: auto;
 	text-align: center;
 }
-#radForm {
+.topButtons {
 	display: inline-block;
-	float: left;
-	text-align: left;
-	width: 80px;
-	margin: auto;
+	background-color: white;
+	color: #18366b;
+	width: 65px;
+	margin: 5px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
+}
+.topButtons:hover {
+	background-color: #18366b;
+	color: white;
+	border: 2px solid white;
+}
+.roleSelected {
+	display: inline-block;
+	background-color: #18366b;
+	color: white;
+	width: 65px;
+	margin: 5px;
+	border: 2px solid white;
+	border-radius: 4px;
 }
 #groupDetButtons {
-	width: 150px;
+	max-width: 300px;
 	margin: auto;
 	text-align: center;
 	background-color: #B7C3FF;
-}
-#closeDetail {
-	display: inline-block;
-	float: left;
+	padding: 5px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 #detTable {
-	width: 1000px;
+	width: 1100px;
 	margin: auto;
 	text-align: center;
 	background-color: #B7C3FF;
@@ -355,4 +390,7 @@ table, th, td {
 }
 th, td {
 	padding:5px;
+}
+.longCol {
+	width: 100px;
 }

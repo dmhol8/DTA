@@ -185,61 +185,167 @@ myApp.service('DetailService', function() {
 		return true;
 	}
 
-	this.getDetailsList = function (figure) {
+	this.orderList = function (figure, names) {
+
+		var F = 0;
+		var newOrder = [];
+		var figNames = [];
+
+		for (var j = 0; j < figure.length; j++){
+			figNames[j] = figure[j].name;
+		}
+
+		for (var i = 0; i < names.length; i++){
+			F = figNames.indexOf(names[i]);
+			newOrder[i] = figure[F];
+		}
+		return newOrder;
+	}
+
+	this.getDetailsList = function (figure, role) {
 
 		var A = [];
 		var TM = [];
 		var TL = [];
 		var index = 0;
 
-		for (var i = 0; i < figure.length; i++){
-			
-			lnth = figure[i].man.feet_positions.length;
+		if (role == 'man'){
 
-			for (var j = 0; j < lnth; j++) {
+			for (var i = 0; i < figure.length; i++){
+				
+				lnth = figure[i].man.feet_positions.length;
 
-				// Timing:
-				var sub = (Math.floor(j/3))*3;
+				for (var j = 0; j < lnth; j++) {
 
-				if (figure[i].man.timing == undefined){
-					TM[j] = (j+1) - sub;
-				} else {
-					TM[j] = figure[i].man.timing[j];
+					// Timing:
+					var sub = (Math.floor(j/3))*3;
+
+					if (figure[i].man.timing == undefined){
+						TM[j] = (j+1) - sub;
+					} else {
+						TM[j] = figure[i].man.timing[j];
+					}
+
+					// Name:
+					if (j == 0) {
+						N = figure[i].name;
+					} else {
+						N = '';
+					}
+
+					// Additional Notes:
+					if (j == 0) {
+						nM = figure[i].man.note;
+					} else {
+						nM = '';
+					}
+
+					// When lady's last step of a figure ends with 'OP on L side', 
+					// and if the man's first step of the next figure was meant to be 'LF fwd', 
+					// change it to 'LF fwd in CBMP, OP on L side'.
+					if (j == 0 && figure[i].man.feet_positions[0] == 'LF fwd' && i > 0){
+
+						if (figure[i - 1].lady.feet_positions[figure[i - 1].lady.feet_positions.length - 1] == 'LF fwd in CBMP, OP on L side'){
+
+							figure[i].man.feet_positions[j] = 'LF fwd in CBMP, OP on L side'
+						}
+					}
+
+					// Dealing with 'extra' steps
+					if (j == lnth - 1 && TM[j] == 1){
+
+						if (i != figure.length - 1){
+
+							figure[i + 1].man.feet_positions[0] = figure[i].man.feet_positions[j];
+							figure[i + 1].man.CBM[0] = figure[i].man.CBM[j];
+							figure[i + 1].man.sway[0] = figure[i].man.sway[j];
+							if (figure[i].man.amount_of_turn[j] != 'nil'){
+								figure[i + 1].man.amount_of_turn[0] = figure[i].man.amount_of_turn[j];
+							}
+						}
+					} else {
+
+						// Array to go into the table:
+						A[index] = { name: N, step_no: index + 1, fig_step_no: j + 1,
+							feet_positions: figure[i].man.feet_positions[j], alignment: figure[i].man.alignment[j],
+							amount_of_turn: figure[i].man.amount_of_turn[j], rise_and_fall: figure[i].man.rise_and_fall[j], 
+							footwork: figure[i].man.footwork[j], CBM: figure[i].man.CBM[j], sway: figure[i].man.sway[j],
+							timing: TM[j], note: nM}
+						index++;
+					}
 				}
+			}
+		} else {
 
-				if (figure[i].lady.timing == undefined){
-					TL[j] = (j+1) - sub;
-				} else {
-					TL[j] = figure[i].lady.timing[j];
+			for (var i = 0; i < figure.length; i++){
+				
+				lnth = figure[i].lady.feet_positions.length;
+
+				for (var j = 0; j < lnth; j++) {
+
+					// Timing:
+					var sub = (Math.floor(j/3))*3;
+
+					if (figure[i].lady.timing == undefined){
+						TL[j] = (j+1) - sub;
+					} else {
+						TL[j] = figure[i].lady.timing[j];
+					}
+
+					// Name:
+					if (j == 0) {
+						N = figure[i].name;
+					} else {
+						N = '';
+					}
+
+					// Additional Notes:
+					if (j == 0) {
+						nL = figure[i].lady.note;
+					} else {
+						nL = '';
+					}
+
+					// When a 'Turning Lock to R' occurs straight after a 'Natural Spin Turn',
+					// the Lady doesn't brush to LF in the 'Natural Spin Turn'
+					if (figure[i].name == 'Natural Spin Turn (overturned)' && i < figure.length - 1){
+
+						if (figure[i + 1].name == 'Turning Lock to R'){
+
+							if (j == 0){
+								nL = 'The rise is taken from the ball of LF on step 5.'
+							}
+
+							if (j == lnth - 1) {
+
+								figure[i].lady.feet_positions[j] = 'RF diag fwd'
+							}
+						}
+					}
+
+					// Dealing with 'extra' steps
+					if (j == lnth - 1 && TL[j] == 1){
+
+						if (i != figure.length - 1){
+
+							figure[i + 1].lady.feet_positions[0] = figure[i].lady.feet_positions[j];
+							figure[i + 1].lady.CBM[0] = figure[i].lady.CBM[j];
+							figure[i + 1].lady.sway[0] = figure[i].lady.sway[j];
+							if (figure[i].lady.amount_of_turn[j] != 'nil'){
+								figure[i + 1].lady.amount_of_turn[0] = figure[i].lady.amount_of_turn[j];
+							}
+						}
+					} else {
+
+						// Array to go into the table:
+						A[index] = { name: N, step_no: index + 1, fig_step_no: j + 1,
+								feet_positions: figure[i].lady.feet_positions[j], alignment: figure[i].lady.alignment[j],
+								amount_of_turn: figure[i].lady.amount_of_turn[j], rise_and_fall: figure[i].lady.rise_and_fall[j], 
+								footwork: figure[i].lady.footwork[j], CBM: figure[i].lady.CBM[j], sway: figure[i].lady.sway[j],
+								timing: TL[j], note: nL}
+						index++;
+					}
 				}
-
-				// Name:
-				if (j == 0) {
-					N = figure[i].name;
-				} else {
-					N = '';
-				}
-
-				// Additional Notes:
-				if (j == 0) {
-					nM = figure[i].man.note;
-					nL = figure[i].lady.note;
-				} else {
-					nM = '';
-					nL = '';
-				}
-
-				// Array to go into the table:
-				A[index] = { name: N, step_no: index + 1, fig_step_no: j + 1,
-						man: { feet_positions: figure[i].man.feet_positions[j], alignment: figure[i].man.alignment[j],
-						amount_of_turn: figure[i].man.amount_of_turn[j], rise_and_fall: figure[i].man.rise_and_fall[j], 
-						footwork: figure[i].man.footwork[j], CBM: figure[i].man.CBM[j], sway: figure[i].man.sway[j],
-						timing: TM[j], note: nM},
-						lady: { feet_positions: figure[i].lady.feet_positions[j], alignment: figure[i].lady.alignment[j],
-						amount_of_turn: figure[i].lady.amount_of_turn[j], rise_and_fall: figure[i].lady.rise_and_fall[j], 
-						footwork: figure[i].lady.footwork[j], CBM: figure[i].lady.CBM[j], sway: figure[i].lady.sway[j],
-						timing: TL[j], note: nL}}
-				index++;
 			}
 		}
 		return A;
@@ -266,6 +372,9 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.F = 0
 	$scope.id = 'none'
 	$scope.searchFor = ''
+	$scope.prevRole = 'man'
+	$scope.roleID = 'man'
+	$scope.B = []
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -437,7 +546,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   			}
   		}
 
-  		// Check if the user is allowed to access this button:
+  		// Check if the user is allowed to access this button
   		access = DetailService.allow(nms);
 
   		// Retrieve data from the database
@@ -451,8 +560,11 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     			A = json.data;
     			// alert($scope.X)
 
+    			// Order the figures based on the order in Routine Skeleton, i.e. Same order as 'nms'
+    			$scope.B = DetailService.orderList(A, nms)
+
     			// Change the data to be step by step, rather than figure by figure
-    			$scope.X = DetailService.getDetailsList(A);
+    			$scope.X = DetailService.getDetailsList($scope.B, $scope.roleID);
 
   			}, function errorCallback(err) {
     			console.log(err)
@@ -460,6 +572,21 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		}
 
   		// Populate the table with the data retrieved using ng-repeat (done in html)
+  	}
+
+  	$scope.changeRole = function (role) {
+
+  		$scope.roleID = role;
+
+  		// Change the button's appearance
+  		document.getElementById(role).className = 'roleSelected';
+  		if ($scope.prevRole != role){
+  			document.getElementById($scope.prevRole).className = 'topButtons';
+  		}
+		$scope.prevRole = role;
+
+  		// Change the table display
+  		$scope.X = DetailService.getDetailsList($scope.B, $scope.roleID);
   	}
 
   	$scope.noDetail = function () {
