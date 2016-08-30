@@ -65,21 +65,22 @@
             Number of Steps:
           </div>
           <input type="number" class="numberInput" id="numIn2" min="1" max="50"></input> -->
-          <div class="checkBoxes">
+          <!-- <div class="checkBoxes">
             <input class="checkBoxFig" type="checkbox" id="check1" value="Syl"> Syllabus Figures</input><br>
             <input class="checkBoxFig" type="checkbox" id="check2" value="User"> User Created Figures</input>
-          </div>
+          </div> -->
 
           <div class="difButtonGroup">
-            <input class="difficultyButton" id="difBut1" type="button" value="S" ng-click="setDifficulty('difBut1')"></input>
-            <input class="difficultyButton" id="difBut2" type="button" value="A" ng-click="setDifficulty('difBut2')"></input><br>
-            <input class="difficultyButton" id="difBut3" type="button" value="L" ng-click="setDifficulty('difBut3')"></input>
-            <input class="difficultyButton" id="difBut4" type="button" value="F" ng-click="setDifficulty('difBut4')"></input>
+            <div id="difText">Difficulty:</div>
+            <input class="difficultyButton" id="difBut1" type="button" value="1" ng-click="setDifficulty('difBut1')"></input>
+            <input class="difficultyButton" id="difBut2" type="button" value="2" ng-click="setDifficulty('difBut2')"></input>
+            <input class="difficultyButton" id="difBut3" type="button" value="3" ng-click="setDifficulty('difBut3')"></input>
+            <input class="difficultyButton" id="difBut4" type="button" value="4" ng-click="setDifficulty('difBut4')"></input>
           </div>
 
           <input type="text" placeholder="Search..." id="textSearch" ng-model="searchFor"></input>
-          <input class="goButton" id="go" type="button" value="GO" ng-click="go()"></input>
-          <input class="goButton" id="clr" type="button" value="CLEAR" ng-click="clear()"></input>
+          <input class="goButton" id="go" type="button" value="Go" ng-click="go()"></input>
+          <input class="goButton" id="clr" type="button" value="Clear" ng-click="clear()"></input>
 
         </div>
 
@@ -96,7 +97,6 @@
 
           <input class="addFigureButton" id="adFig" type="button" value="+" anotherfig></input>
           <input class="addFigureButton" id="subFig" type="button" value="-" ng-click="deleteFig()"></input>
-          <br><br>
           <input class="figureButtons" id="startFigure" type="button" value="Starting Figure" ng-click="getFigs('startFigure')"></input>
 
         </div>
@@ -121,7 +121,7 @@
         <!-- <div id="danceDuration">
           Duration of dance: 00m 00s
         </div> -->
-        <button id="seeDetailButton" ng-click="seeDetail()">See Routine Details...</button>
+        <button id="seeDetailButton" ng-click="seeDetail()">Routine Details</button>
         <button id="exitButton" ng-click="dispIndex()">Exit</button>
       </div>
 
@@ -276,32 +276,30 @@
     <br>
     <table id="detTable">
       <tr>
-        <th class="longCol">Step Number</th>
-        <th class="longCol">Name</th>
-        <th class="longCol">Figure Step Number</th>
-        <th class="longCol">Timing</th>
-        <th class="longCol">Foot Position</th>
-        <th class="longCol">Alignment</th>
-        <th class="longCol">Amount of Turn</th>
-        <th class="longCol">Rise and Fall</th>
-        <th class="longCol">Footwork</th>
-        <th class="longCol">CBM</th>
-        <th class="longCol">Sway</th>
-        <th class="longColol">Additional Notes</th>
+        <th id="table2">Name</th>
+        <th id="table3">Step #</th>
+        <th id="table4">Count</th>
+        <th id="table5">Foot Position</th>
+        <th id="table6">Alignment</th>
+        <th id="table7">Turn</th>
+        <th id="table8">Rise and Fall</th>
+        <th id="table9">Footwork</th>
+        <th id="table10">CBM</th>
+        <th id="table11">Sway</th>
+        <th id="table12">Additional Notes</th>
       </tr>
       <tr ng-repeat="x in X" id="detRow">
-        <td class="longCol">{{x.step_no}}</td>
-        <td class="longCol">{{x.name}}</td>
-        <td class="longCol">{{x.fig_step_no}}</td>
-        <td class="longCol">{{x.timing}}</td>
-        <td class="longCol">{{x.feet_positions}}</td>
-        <td class="longCol">{{x.alignment}}</td>
-        <td class="longCol">{{x.amount_of_turn}}</td>
-        <td class="longCol">{{x.rise_and_fall}}</td>
-        <td class="longCol">{{x.footwork}}</td>
-        <td class="longCol">{{x.CBM}}</td>
-        <td class="longCol">{{x.sway}}</td>
-        <td class="longCol">{{x.note}}</td>
+        <td style="display:{{x.hide}};text-align: left;" rowspan="{{x.amount}}">{{x.name}}</td>
+        <td>{{x.fig_step_no}}</td>
+        <td>{{x.timing}}</td>
+        <td>{{x.feet_positions}}</td>
+        <td>{{x.alignment}}</td>
+        <td>{{x.amount_of_turn}}</td>
+        <td>{{x.rise_and_fall}}</td>
+        <td>{{x.footwork}}</td>
+        <td>{{x.CBM}}</td>
+        <td>{{x.sway}}</td>
+        <td style="display:{{x.hide}};text-align: left;" rowspan="{{x.amount}}">{{x.note}}</td>
       </tr>
     </table>
 

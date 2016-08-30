@@ -77,10 +77,9 @@ p {
 	float: left;
 	width: 195px;
 }
-.diffButtonGroup {
-	display: inline-block;
-	float: left;
-	width: 60px;
+.difButtonGroup {
+	text-align: center;
+	margin-bottom: 5px;
 }
 #textInstructions {
 	display: inline-block;
@@ -91,6 +90,10 @@ p {
 .numberInput {
 	max-width: 30px;
 }
+#difText {
+	display: inline-block;
+	padding-right: 5px;
+}
 .difficultyButton {
 	background-color: white;
 	color: #18366b;
@@ -99,6 +102,11 @@ p {
 	margin-bottom: 2px;
 	border: 2px solid #18366b;
 	border-radius: 4px;
+}
+.difficultyButton:hover {
+	background-color: #18366b;
+	color: white;
+	border: 2px solid white;
 }
 .diffBtnsSelected {
 	background-color: #18366b;
@@ -110,9 +118,14 @@ p {
 	border-radius: 4px;
 }
 #textSearch {
-	width:105px;
+	width:112px;
 	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
+	background-color: white;
+	color: #18366b;
+	border: 2px solid #18366b;
+	border-radius: 4px;
+	padding-left: 5px;
 }
 .goButton {
 	background-color: white;
@@ -121,10 +134,15 @@ p {
 	border: 2px solid #18366b;
 	border-radius: 4px;
 }
+.goButton:hover {
+	background-color: #18366b;
+	color: white;
+	border: 2px solid white;
+}
 #figureList {
-	display: block;
+	display: none;
 	max-width: 259px;
-	max-height: 288px;
+	max-height: 320px;
 	line-height: 25px;
 	list-style-type: none;
 /*	text-transform: uppercase;*/
@@ -134,6 +152,8 @@ p {
 	padding: 0;
 	cursor: pointer;
 	overflow-x: auto;
+	border: 2px solid #18366b;
+	border-radius: 4px;
 }
 #figure {
 	padding-left: 5px;
@@ -160,7 +180,7 @@ p {
 	height: 20px; 
 }
 #figureBlocks {
-	padding-top: 3px;
+	padding-top: 2px;
 }
 .figureButtons {
 	background-color: white;
@@ -168,9 +188,14 @@ p {
 	display: inline-block;
 	width: 250px;
 	white-space: normal;
-	margin-bottom: 20px;
+	margin-bottom: 13px;
 	border: 2px solid #18366b;
 	border-radius: 4px;
+}
+.figureButtons:hover {
+	background-color: #18366b;
+	color: white;
+	border: 2px solid white;
 }
 .addFigureButton {
 	background-color: white;
@@ -178,13 +203,19 @@ p {
 	width: 30px;
 	border: 2px solid #18366b;
 	border-radius: 4px;
+	margin-bottom: 12px;
+}
+.addFigureButton:hover {
+	background-color: #18366b;
+	color: white;
+	border: 2px solid white;
 }
 .answerBtnsSelected {
 	background-color: #18366b;
 	color: white;
 	width: 250px;
 	white-space: normal;
-	margin-bottom: 20px;
+	margin-bottom: 13px;
 	border: 2px solid white;
 	border-radius: 4px;
 }
@@ -198,14 +229,12 @@ p {
 	border: 2px solid #18366b;
 	border-radius: 4px;
 }
-#optionButton, #optionButtonLast, #seeDetailButton {
+#seeDetailButton {
 	display: inline-block;
-	margin: 4px;
+	margin-top: 2px;
 	width: 250px;
 	vertical-align: middle;
-}
-#optionButtonLast, #seeDetailButton {
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 #selectTempo {
 	border: 1px solid #18366b;
@@ -220,11 +249,10 @@ p {
 	margin-right: 12px;
 	margin-left: 12px;
 }
-#startMetronome, #exitButton, #nextButton {
+#exitButton {
 	display: inline-block;
 	width: 250px;
-	margin: 4px;
-	/*margin-top: 14px;*/
+	margin-bottom: 2px;
 }
 #danceDuration {
 	display: inline-block;
@@ -232,6 +260,17 @@ p {
 	margin-top: 14px;
 	background-color: #ddf;
 	padding: 10px 0px;
+}
+#seeDetailButton, #exitButton {
+	background-color: white;
+	color: #18366b;
+	border: 2px solid #18366b;
+	border-radius: 4px;
+}
+#seeDetailButton:hover, #exitButton:hover {
+	background-color: #18366b;
+	color: white;
+	border: 2px solid white;
 }
 
 /* SECTION 4: Create Figure 1 (Hidden) */
@@ -380,17 +419,62 @@ p {
 	border-radius: 4px;
 }
 #detTable {
-	width: 1100px;
+	/*width: 1000px;*/
 	margin: auto;
 	text-align: center;
 	background-color: #B7C3FF;
 }
+table {
+    /*border-collapse: collapse;*/
+    border-spacing: 0;
+    border-radius: 4px;
+}
 table, th, td {
-    border: 1px solid gray;
+    border: 1px solid #18366b;
+    /*border-radius: 4px;*/
 }
 th, td {
-	padding:5px;
+    padding: 8px;
+/*    text-align: left;*/
+    font-size: 12px;
 }
-.longCol {
+td {
+	background-color: #E6EAFF;
+	height: 50px;
+}
+th {
+	height: 50px;
+}
+#table2 {
+	width: 100px;
+}
+#table3 {
+	width: 36px;
+}
+#table4 {
+	width: 36px;
+}
+#table5 {
+	width: 90px;
+}
+#table6 {
+	width: 70px;
+}
+#table7 {
+	width: 70px;
+}
+#table8 {
+	width: 70px;
+}
+#table9 {
+	width: 30px;
+}
+#table10 {
+	width: 36px;
+}
+#table11 {
+	width: 36px;
+}
+#table12 {
 	width: 100px;
 }

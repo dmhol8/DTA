@@ -72,11 +72,14 @@ myApp.service('FigService', function($http) {
 	var baseUrl = 'http://localhost:8080/';
 
 	this.getFigNames = function (id, prevID, prevName, nextName, diff) {
+
+		// Button appearance
 		if (prevID != "" && prevID != id) {
 			document.getElementById(prevID).className = 'figureButtons';
 		}
 		document.getElementById(id).className = 'answerBtnsSelected';
 
+		// Retrieve information from server
 		var url = baseUrl + "getFigNames"
     	return $http.post(url, {prevName, nextName, diff})
 	}
@@ -208,6 +211,7 @@ myApp.service('DetailService', function() {
 		var TM = [];
 		var TL = [];
 		var index = 0;
+		var merger = [];
 
 		if (role == 'man'){
 
@@ -221,18 +225,38 @@ myApp.service('DetailService', function() {
 					var sub = (Math.floor(j/3))*3;
 
 					if (figure[i].man.timing == undefined){
+
+						// Catering for merged cells in figures with an extra step
+						if ((lnth - ((Math.floor(lnth/3))*3)) == 1){
+							var lnthAm = lnth - 1;
+						} else {
+							var lnthAm = lnth;
+						}
+
+						// If there's no timing defined, let it be the usual '1, 2, 3' waltz timing
 						TM[j] = (j+1) - sub;
 					} else {
+
+						// Catering for merged cells in figures with an extra step
+						if(figure[i].man.timing[lnth - 1] == '1'){
+							var lnthAm = lnth - 1;
+						} else {
+							var lnthAm = lnth;
+						}
+
+						// Set the timing to the defined data (most likely not '1, 2, 3' timing)
 						TM[j] = figure[i].man.timing[j];
 					}
 
 					// Name:
 					if (j == 0) {
 						N = figure[i].name;
+						hidden = 'table-cell'
 					} else {
 						N = '';
+						hidden = 'none'
 					}
-
+					
 					// Additional Notes:
 					if (j == 0) {
 						nM = figure[i].man.note;
@@ -270,7 +294,7 @@ myApp.service('DetailService', function() {
 							feet_positions: figure[i].man.feet_positions[j], alignment: figure[i].man.alignment[j],
 							amount_of_turn: figure[i].man.amount_of_turn[j], rise_and_fall: figure[i].man.rise_and_fall[j], 
 							footwork: figure[i].man.footwork[j], CBM: figure[i].man.CBM[j], sway: figure[i].man.sway[j],
-							timing: TM[j], note: nM}
+							timing: TM[j], note: nM, amount: lnthAm, hide: hidden}
 						index++;
 					}
 				}
@@ -287,8 +311,26 @@ myApp.service('DetailService', function() {
 					var sub = (Math.floor(j/3))*3;
 
 					if (figure[i].lady.timing == undefined){
+
+						// Catering for merged cells in figures with an extra step
+						if ((lnth - ((Math.floor(lnth/3))*3)) == 1){
+							var lnthAm = lnth - 1;
+						} else {
+							var lnthAm = lnth;
+						}
+
+						// If there's no timing defined, let it be the usual '1, 2, 3' waltz timing
 						TL[j] = (j+1) - sub;
 					} else {
+
+						// Catering for merged cells in figures with an extra step
+						if(figure[i].lady.timing[lnth - 1] == '1'){
+							var lnthAm = lnth - 1;
+						} else {
+							var lnthAm = lnth;
+						}
+
+						// Set the timing to the defined data (most likely not '1, 2, 3' timing)
 						TL[j] = figure[i].lady.timing[j];
 					}
 
@@ -302,8 +344,10 @@ myApp.service('DetailService', function() {
 					// Additional Notes:
 					if (j == 0) {
 						nL = figure[i].lady.note;
+						hidden = 'table-cell'
 					} else {
 						nL = '';
+						hidden = 'none'
 					}
 
 					// When a 'Turning Lock to R' occurs straight after a 'Natural Spin Turn',
@@ -342,7 +386,7 @@ myApp.service('DetailService', function() {
 								feet_positions: figure[i].lady.feet_positions[j], alignment: figure[i].lady.alignment[j],
 								amount_of_turn: figure[i].lady.amount_of_turn[j], rise_and_fall: figure[i].lady.rise_and_fall[j], 
 								footwork: figure[i].lady.footwork[j], CBM: figure[i].lady.CBM[j], sway: figure[i].lady.sway[j],
-								timing: TL[j], note: nL}
+								timing: TL[j], note: nL, amount: lnthAm, hide: hidden}
 						index++;
 					}
 				}
@@ -483,7 +527,11 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	}
 
     	$scope.names = IdService.removeDups(A)
-    	// alert($scope.names)
+    	if ($scope.names != ''){
+    		document.getElementById("figureList").style.display = "block";
+    	} else {
+    		document.getElementById("figureList").style.display = "none";
+    	}
   	}
 
   	$scope.setDifficulty = function (diff) {
@@ -587,6 +635,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   		// Change the table display
   		$scope.X = DetailService.getDetailsList($scope.B, $scope.roleID);
+
   	}
 
   	$scope.noDetail = function () {
@@ -600,8 +649,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.dispCreateFig = function () {
     	VisibilityService.visCreateFig()
-    	document.getElementById("check1").disabled = true;
-    	document.getElementById("check2").disabled = true;
     	document.getElementById("go").disabled = true;
     	document.getElementById("clr").disabled = true;
     	document.getElementById("numIn3").disabled = true;
@@ -623,8 +670,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.dispNoCreateFig = function () {
     	VisibilityService.visNoCreateFig()
-		document.getElementById("check1").disabled = false;
-    	document.getElementById("check2").disabled = false;
     	document.getElementById("go").disabled = false;
     	document.getElementById("clr").disabled = false;
     	document.getElementById("numIn3").disabled = false;
@@ -642,8 +687,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	}
 
   	window.onload = function() {
-  		document.getElementById("check1").disabled = false;
-    	document.getElementById("check2").disabled = false;
     	document.getElementById("go").disabled = false;
     	document.getElementById("clr").disabled = false;
     	document.getElementById("numIn3").disabled = false;
