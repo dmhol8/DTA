@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.3",
-    "jqlite": "^0.2.39"
+    "jqlite": "^0.2.39",
+    "jspdf-autotable": "^2.0.33"
   }
 }

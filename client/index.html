@@ -8,29 +8,32 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular/jqlite.js"></script>
+  <script src="node_modules/jsPDF-1.2.60/dist/jspdf.min.js"></script>
+  <script src="node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.js"></script>
   <script src="index.js"></script>
-  <title>Dance Teaching Aid</title>
+  <title>Dance Designer</title>
 
 </head>
 
 <body ng-controller="myController">
 
-  <br>
-  <h1 id="mainHeading">Dance Teaching Aid</h1>
-  <br>
+  <div id="mainHeading">
+    <img src="dd1.png" alt="Dance Design Logo" width="480" height="204"> 
+  </div>
 
   <!-- SECTION A: Introduction -->
   <div id="introPage">
 
-    <p>This interactive website is designed to help teachers create a ballroom dance routine in a more efficient manner than is possible with the existing recourses. Once you finish making a routine you will be able to see all the technical details in tabular form. This website's main focus is on syllabus figures, but there's also an option for account holders to add their own figures into the mix! Happy dance-making!</p>
+    <div id="danceForm">
+    <p>This interactive website is designed to help teachers create a ballroom dance routine in a more efficient manner than is possible with the existing recourses. Once you finish making a routine you will be able to see all the technical details in tabular form. This website's main focus is on syllabus figures, but there's also an option for account holders to add their own figures into the mix! Happy dance-making!</p><br>
 
-    <div id="logInButtons">
+    <!-- <div id="logInButtons">
       <button ng-click="signUp()" id="button1">Sign Up</button>
       <button ng-click="logIn()" id="button1">Log In</button>
-    </div>
+    </div> -->
 
-    <div id="danceForm">
-      Select a dance:&nbsp
+    
+      <!-- Select a dance:&nbsp
       <select ng-model="danceSelect" id="selectDanceType" name="dance">
         <option value="waltz">Waltz</option>
         <option value="foxtrot">Foxtrot</option>
@@ -42,7 +45,7 @@
         <option value="jive">Jive</option>
         <option value="samba">Samba</option>
         <option value="pasoDoble">Paso Doble</option>
-      </select>
+      </select> -->
       <button id="submitDanceType" ng-click="dispMain()">Begin</button>
     </div>
 
@@ -270,13 +273,14 @@
     <div id="groupDetButtons">
         <input type="button" class="roleSelected" id="man" value="Man" ng-click="changeRole('man')"></input>
         <input type="button" class="topButtons" id="lady" value="Lady" ng-click="changeRole('lady')"></input>
+        <input type="button" class="topButtons" ng-click="printPdf()" value="Print"></input>
         <input type="button" class="topButtons" ng-click="noDetail()" value="Back"></input>
     </div>
 
     <br>
     <table id="detTable">
       <tr>
-        <th id="table2">Name</th>
+        <th id="table2">Figure Name</th>
         <th id="table3">Step #</th>
         <th id="table4">Count</th>
         <th id="table5">Foot Position</th>
