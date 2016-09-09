@@ -197,6 +197,34 @@ app.post('/getFigDetails', function (req, res) {
 	});	
 })
 
+var seeVisual = function(db, data, callback) {
+	var cursor = db.collection('figures').find({difficulty: 'Student Teacher'}, {_id: 0, name: 1, precede: 1, follow: 1});
+	AA = [];
+	cursor.each(function(err, doc) {
+      	assert.equal(err, null);
+      	if (doc != null) {
+      		var BB = doc
+      		AA = AA.concat(BB)
+      	} else {
+      		callback(AA)
+      	}
+    })
+}
+
+app.post('/seeVis', function (req, res) {
+	
+ 	MongoClient.connect(url, function(err, db) {
+  		assert.equal(null, err);
+ 
+ 		console.log('I just read stuff from the database')
+ 		var data = seeVisual(db, req.body, function(A) {
+ 			console.log(A)
+ 			res.send(A)
+ 		});
+  		
+	});	
+})
+
 app.use(bodyParser.json())
 
 app.use(express.static('../client'))

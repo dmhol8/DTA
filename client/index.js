@@ -1,7 +1,5 @@
 var myApp = angular.module('myApp',[])
 
-
-
 myApp.directive("anotherfig", function($compile){
 	return function(scope, element, attrs){
 		element.bind("click", function(){
@@ -91,6 +89,11 @@ myApp.service('FigService', function($http) {
 	this.getFigDetails = function (names) {
 		var url = baseUrl + "getFigDetails"
 		return $http.post(url, {names})
+	}
+
+	this.seeVis = function () {
+		var url = baseUrl + "seeVis"
+		return $http.post(url)
 	}
 })
 
@@ -525,7 +528,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	if ($scope.searchFor != ''){
     		A = IdService.searchNames( A, $scope.searchFor )
     	}
-
     	$scope.names = IdService.removeDups(A)
     	if ($scope.names != ''){
     		document.getElementById("figureList").style.display = "block";
@@ -643,49 +645,101 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		document.getElementById("mainPage").style.display = "block";
   	}
 
+  	$scope.noNet = function () {
+  		document.getElementById("myNet").style.display = "none";
+  		document.getElementById("mainPage").style.display = "block";
+  	}
+
   	$scope.printPdf = function () {
 
   		window.print();
-		// var doc = new jsPDF('landscape', 'pt', 'a4');
+  	}
 
-        // // source can be HTML-formatted string, or a reference
-        // // to an actual DOM element from which the text will be scraped.
-        // source = angular.element(document.querySelector("#detailPage")).html();
+  	$scope.seeVisual = function () {
 
+  		document.getElementById("mainPage").style.display = "none";
+  		document.getElementById("myNet").style.display = "block";
+  		
+  		// Get JSON object
+  		FigService.seeVis()
+  		.then(function successCallback(json) {
 
-        // // we support special element handlers. Register them with jQuery-style 
-        // // ID selector for either ID or node name. ("#iAmID", "div", "span" etc.)
-        // // There is no support for any other type of selectors 
-        // // (class, of compound) at this time.
-        // specialElementHandlers = {
-        //     // element with id of "bypass" - jQuery style selector
-        //     '#bypassme': function (element, renderer) {
-        //         // true = "handled elsewhere, bypass text extraction"
-        //         return true
-        //     }
-        // };
-        // margins = {
-        //     top: 40,
-        //     bottom: 40,
-        //     left: 40,
-        //     width: 580
-        // };
-        // // all coords and widths are in jsPDF instance's declared units
-        // // 'inches' in this case
-        // pdf.fromHTML(
-        // source, // HTML string or DOM elem ref.
-        // margins.left, // x coord
-        // margins.top, { // y coord
-        //     'width': margins.width, // max width of content on PDF
-        //     'elementHandlers': specialElementHandlers
-        // },
+			V = json.data;
 
-        // function (dispose) {
-        //     // dispose: object with X, Y of the last line add to the PDF 
-        //     //          this allow the insertion of new lines after html
-        //     pdf.save('Test.pdf');
-        // }, margins);
+			// Create an array with nodes and edges
+	  		var nodeArray = [];
+	  		var edgeArray = [];
 
+	  		for (var i = 0; i < V.length; i++){
+
+	  			// Nodes
+	  			var currentNode = {id: i + 1, label: V[i].name, x: (Math.floor((i*100)/600))*300, y: ((i*100)%600)};
+	  			nodeArray = nodeArray.concat(currentNode);
+
+	  			// Edges
+	  			for (var j = 0; j < V.length; j++){
+		    		for (var k = 0; k < V[j].precede.length; k++){
+		    			if (V[i].name == V[j].precede[k]){
+		    				var currentEdge = {from: i + 1, to: j + 1};
+		    				edgeArray = edgeArray.concat(currentEdge);
+		    			}
+		    		}
+		    		// for (var k = 0; k < V[j].follow.length; k++){
+		    		// 	if (V[i].name == V[j].follow[k]){
+		    		// 		var currentEdge = {from: j + 1, to: i + 1};
+		    		// 		edgeArray = edgeArray.concat(currentEdge);
+		    		// 	}
+		    		// }
+		    	}
+	  		}
+
+		    var nodes = new vis.DataSet(nodeArray);
+		    var edges = new vis.DataSet(edgeArray);
+
+		    // create a network
+		    var container = document.getElementById('myNetwork');
+
+		    // provide the data in the vis format
+		    var data = {
+		        nodes: nodes,
+		        edges: edges
+		    };
+		    var options = {
+		    	edges: {
+		    		arrows: {
+		    			to: {enabled: true, scaleFactor:0.5}
+		    		},
+		    		smooth: {
+		    			type: 'curvedCW'
+		    		}
+		    	},
+		    	physics: {
+		    		enabled: false
+		    	},
+		    	nodes: {
+		    		color: {
+				      border: '#18366b',
+				      background: '#acc4ec',
+				      highlight: {
+				        border: '#18366b',
+				        background: 'white'
+				      }
+				    },
+				    shape: 'box',
+				    shapeProperties: {
+				    	borderRadius: 4
+				    },
+				    labelHighlightBold: false
+		    	}
+		    };
+
+		    // initialize your network!
+		    var network = new vis.Network(container, data, options);
+
+		}, function errorCallback(err) {
+
+			console.log(err)
+		});
   	}
 
   	function error (err) {

@@ -5,12 +5,17 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="node_modules/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular/jqlite.js"></script>
   <script src="node_modules/jsPDF-1.2.60/dist/jspdf.min.js"></script>
   <script src="node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.js"></script>
+  <script src="node_modules/vis/dist/vis.js"></script> 
   <script src="index.js"></script>
+
   <title>Dance Designer</title>
 
 </head>
@@ -54,6 +59,7 @@
   <!-- SECTION B: Main Page-->
   <div id="mainPage">
 
+  <div id="bluBar">
     <div id="groupedSections">
 
       <!-- SECTION 1: Figure Selection -->
@@ -125,6 +131,7 @@
           Duration of dance: 00m 00s
         </div> -->
         <button id="seeDetailButton" ng-click="seeDetail()">Routine Details</button>
+        <button id="seeNetwork" ng-click="seeVisual()">Dance Visualisation</button>
         <button id="exitButton" ng-click="dispIndex()">Exit</button>
       </div>
 
@@ -162,6 +169,7 @@
 
       </div>
 
+    </div>
     </div>
 
     <!-- SECTION 5: Create Figure 2 (Hidden)-->
@@ -268,6 +276,7 @@
 
   </div>
 
+  <!-- SECTION 6: Routine Details (Hidden)-->
   <div id="detailPage">
 
     <div id="groupDetButtons">
@@ -307,6 +316,15 @@
       </tr>
     </table>
 
+  </div>
+
+  <!-- SECTION 7: Dance Visualisation (Hidden)-->
+  <div id="myNet">
+    <div id="groupDetButtons">Waltz Network: Difficulty Level 1<br>
+      <input type="button" class="topButtons" ng-click="printPdf()" value="Print"></input>
+      <input type="button" class="topButtons" ng-click="noNet()" value="Back"></input>
+    </div><br>
+    <div id="myNetwork"></div>
   </div>
 
 </body>
