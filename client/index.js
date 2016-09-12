@@ -648,6 +648,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	$scope.noNet = function () {
   		document.getElementById("myNet").style.display = "none";
   		document.getElementById("mainPage").style.display = "block";
+  		$scope.network.destroy();
   	}
 
   	$scope.printPdf = function () {
@@ -734,7 +735,8 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 		    };
 
 		    // initialize your network!
-		    var network = new vis.Network(container, data, options);
+		    $scope.network = new vis.Network(container, data, options);
+		    
 
 		}, function errorCallback(err) {
 
