@@ -132,6 +132,21 @@
         </div> -->
         <button id="seeDetailButton" ng-click="seeDetail()">Routine Details</button>
         <button id="seeNetwork" ng-click="seeVisual()">Dance Visualisation</button>
+        
+        Select Tempo:
+        <select ng-model="danceTempo" id="selectTempo">
+          <option value="84">84</option>
+          <option value="85">85</option>
+          <option value="86">86</option>
+          <option value="87">87</option>
+          <option value="88">88</option>
+          <option value="89">89</option>
+          <option value="90">90</option>
+        </select>bpm<br>
+
+        Dance Duration:
+        <div id="danceDuration">00m 00s</div> 
+
         <button id="exitButton" ng-click="dispIndex()">Exit</button>
       </div>
 
@@ -322,9 +337,13 @@
   <div id="myNet">
     <div id="groupDetButtons">Waltz Network: Difficulty Level 1<br>
       <input type="button" class="topButtons" ng-click="printPdf()" value="Print"></input>
+      <!-- <input type="button" class="topButtons" ng-click="seeDetails2()" value="Details"></input> -->
       <input type="button" class="topButtons" ng-click="noNet()" value="Back"></input>
     </div><br>
     <div id="myNetwork"></div>
+    <!-- <ul id="historyBlock">
+      <li ng-repeat="x in items" id="itemBlock">{{'hi'}}</li>
+    </ul> -->
   </div>
 
 </body>

@@ -422,6 +422,8 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.prevRole = 'man'
 	$scope.roleID = 'man'
 	$scope.B = []
+	$scope.items = []
+	$scope.danceTempo = "87"
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -524,6 +526,11 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	function loadSuccess (json) {
     	A = json.data;
+
+    	// Extract Names
+  //   	for (var j = 0; j < A.length; j++){
+		// 	AA[j] = {name: A[j].name};
+		// }
 
     	if ($scope.searchFor != ''){
     		A = IdService.searchNames( A, $scope.searchFor )
@@ -732,17 +739,32 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 				    },
 				    labelHighlightBold: false
 		    	}
+		    	// interaction: {
+		    	// 	multiselect: true
+		    	// }
 		    };
 
 		    // initialize your network!
 		    $scope.network = new vis.Network(container, data, options);
 		    
+		 //    $scope.network.on('selectNode', function(){
+		 //    	var selId = $scope.network.getSelectedNodes();
+		 //    	selId = Number(selId);
+  	// 			var item1 = data.nodes.get(selId);
+  	// 			item = item1.label;
+  	// 			$scope.items = $scope.items.concat(item);
+  	// 			alert($scope.items);
+			// })
 
 		}, function errorCallback(err) {
 
 			console.log(err)
 		});
   	}
+
+  	// $scope.seeDetails2 = function () {
+  	// 	alert($scope.network.getSelectedNodes());
+  	// }
 
   	function error (err) {
     	console.log(err)

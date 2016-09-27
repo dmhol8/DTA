@@ -9,6 +9,7 @@ var app = express()
 var url = 'mongodb://localhost:27017/dance';
 
 app.use(bodyParser.json())
+app.set('port', (process.env.PORT || 5000));
 
 var findFigureNames = function(db, data, callback) {
 
