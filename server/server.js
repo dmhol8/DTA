@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.set('port', (process.env.PORT || 5000));
 
 app.set('client', __dirname + '/client');
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
   response.render('index');
