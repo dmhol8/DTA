@@ -9,9 +9,7 @@ var app = express()
 var url = 'mongodb://localhost:27017/dance';
 
 app.use(bodyParser.json())
-app.set('port', (process.env.PORT || 5000));
 
-app.set('client', __dirname + '/client');
 
 app.get('/', function(request, response) {
   response.render('index');
