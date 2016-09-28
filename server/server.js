@@ -230,4 +230,4 @@ app.use(bodyParser.json())
 
 app.use(express.static('../client'))
 
-app.listen(3000)
+app.listen(process.env.PORT || 5000)
