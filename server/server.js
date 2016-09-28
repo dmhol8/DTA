@@ -10,9 +10,8 @@ var url = 'mongodb://localhost:27017/dance';
 
 app.use(bodyParser.json())
 
-
 app.get('/', function(request, response) {
-  response.render('index');
+
 });
 
 var findFigureNames = function(db, data, callback) {
