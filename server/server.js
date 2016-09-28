@@ -230,4 +230,4 @@ app.use(bodyParser.json())
 
 app.use(express.static('../client'))
 
-app.listen(8080)
+app.listen(3000)
