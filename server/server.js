@@ -11,6 +11,13 @@ var url = 'mongodb://localhost:27017/dance';
 app.use(bodyParser.json())
 app.set('port', (process.env.PORT || 5000));
 
+app.set('client', __dirname + '/client');
+app.set('view engine', 'html');
+
+app.get('/', function(request, response) {
+  response.render('index');
+});
+
 var findFigureNames = function(db, data, callback) {
 
 	var A = [];
