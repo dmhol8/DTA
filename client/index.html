@@ -66,18 +66,6 @@
       <div id="figureSelection"> 
 
         <div id="search">
-          <!-- <div id="textInstructions">
-            Number of Bars:
-          </div>
-          <input type="number" class="numberInput" id="numIn1" min="1" max="25"></input> -->
-          <!-- <div id="textInstructions">
-            Number of Steps:
-          </div>
-          <input type="number" class="numberInput" id="numIn2" min="1" max="50"></input> -->
-          <!-- <div class="checkBoxes">
-            <input class="checkBoxFig" type="checkbox" id="check1" value="Syl"> Syllabus Figures</input><br>
-            <input class="checkBoxFig" type="checkbox" id="check2" value="User"> User Created Figures</input>
-          </div> -->
 
           <div class="difButtonGroup">
             <div id="difText">Difficulty:</div>
@@ -102,12 +90,11 @@
       <!-- SECTION 2: The Routine Skeleton -->
       <div id="routineSkeleton">
 
+        <input class="addFigureButton" id="adFig" type="button" value="+" anotherfig></input>
+        <input class="addFigureButton" id="subFig" type="button" value="-" ng-click="deleteFig()"></input>
+        
         <div id="figureBlocks">
-
-          <input class="addFigureButton" id="adFig" type="button" value="+" anotherfig></input>
-          <input class="addFigureButton" id="subFig" type="button" value="-" ng-click="deleteFig()"></input>
           <input class="figureButtons" id="startFigure" type="button" value="Starting Figure" ng-click="getFigs('startFigure')"></input>
-
         </div>
 
       </div>
@@ -115,37 +102,26 @@
       <!-- SECTION 3: Options -->
       <div id="options">
 
-        
-        <!-- <button id="optionButton">Log In</button>
-        <button id="optionButton">Sign Up</button>
-        <button id="optionButtonLast">Randomise</button> -->
-        <!-- <button id="optionButtonLast" ng-click="dispFig()">Create Figure</button> -->
-
-        <!-- <div id="selectTempo">
-          Select Tempo<br>
-          120<input type="range" name="tempo" id="tempoSlider" min="120" max="128"></input>128
-        </div> -->
-
-        <!-- <button id="startMetronome">Start Metronome</button> -->
-        <!-- <div id="danceDuration">
-          Duration of dance: 00m 00s
-        </div> -->
         <button id="seeDetailButton" ng-click="seeDetail()">Routine Details</button>
         <button id="seeNetwork" ng-click="seeVisual()">Dance Visualisation</button>
         
-        Select Tempo:
-        <select ng-model="danceTempo" id="selectTempo">
-          <option value="84">84</option>
-          <option value="85">85</option>
-          <option value="86">86</option>
-          <option value="87">87</option>
-          <option value="88">88</option>
-          <option value="89">89</option>
-          <option value="90">90</option>
-        </select>bpm<br>
+        <div id="danceTime1">
+          Select Tempo:
+          <select ng-model="danceTempo" id="selectTempo" ng-change="tempoChange()">
+            <option value="84">84</option>
+            <option value="85">85</option>
+            <option value="86">86</option>
+            <option value="87">87</option>
+            <option value="88">88</option>
+            <option value="89">89</option>
+            <option value="90">90</option>
+          </select>bpm<br>
+        </div>
 
-        Dance Duration:
-        <div id="danceDuration">00m 00s</div> 
+        <div id="danceTime2">
+          Dance Duration:
+          <div id="danceDuration">0m 0s</div> 
+        </div>
 
         <button id="exitButton" ng-click="dispIndex()">Exit</button>
       </div>

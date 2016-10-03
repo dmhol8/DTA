@@ -67,7 +67,7 @@ myApp.service('VisibilityService', function() {
 
 myApp.service('FigService', function($http) {
 
-	var baseUrl = 'http://localhost:8080/';
+	var baseUrl = 'http://localhost:5000/';
 
 	this.getFigNames = function (id, prevID, prevName, nextName, diff) {
 
@@ -94,6 +94,60 @@ myApp.service('FigService', function($http) {
 	this.seeVis = function () {
 		var url = baseUrl + "seeVis"
 		return $http.post(url)
+	}
+})
+
+myApp.service('TimeService', function($http) {
+
+	var baseUrl = 'http://localhost:5000/';
+
+	this.findTime = function (name) {
+		var url = baseUrl + "findTime"
+		return $http.post(url, {name})
+	}
+
+	this.toBars = function (feet_positions) {
+
+		// Calculate the number of steps in the figure
+		var numSteps = feet_positions.length;
+
+		// Good for syllabus Waltz figures, but not other dances
+		var numBars = Math.floor(numSteps/3);
+		return numBars
+	}
+
+	this.toTime = function (bars, tempo) {
+
+		// Turn the bars into beats, for Waltz there are 3 beats in each bar
+		var beats = bars*3;
+
+		// Calculate time, in minutes
+		var time = beats/tempo;
+
+		return time
+	}
+
+	this.displayTime = function (time) {
+
+		// Calculate time, in minutes and seconds
+		var timeM = Math.floor(time);
+		var timeS = Math.round((time - timeM)*60);
+
+		// Place into div element
+		document.getElementById("danceDuration").innerHTML = timeM + "m " + timeS + "s ";
+	}
+
+	this.alterTime = function (time, newTempo, oldTempo, oldTime) {
+
+		// Change the total time
+		var newTime = (time*oldTempo)/newTempo;
+
+		// Change all the old times
+		for (i = 0; i < oldTime.length; i++){
+			oldTime[i] = (oldTime[i]*oldTempo)/newTempo;
+		}
+
+		return [newTime, oldTime]
 	}
 })
 
@@ -151,6 +205,13 @@ myApp.service('IdService', function() {
 			}
 		}
 		return done;
+	}
+
+	this.getFigNum = function (id) {
+		if (id == "startFigure") {
+			return 0
+		}
+		return Number(id.substr(7))
 	}
 })
 
@@ -399,7 +460,7 @@ myApp.service('DetailService', function() {
 	}
 })
 
-myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService, DiffService, DetailService) {
+myApp.controller('myController', function($scope, NumberService, VisibilityService, FigService, IdService, DiffService, DetailService, TimeService) {
 
 	$scope.danceSelect = "waltz"
 	$scope.numSteps = 4
@@ -424,6 +485,9 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.B = []
 	$scope.items = []
 	$scope.danceTempo = "87"
+	$scope.oldTempo = "87"
+	$scope.totalTime = 0
+	$scope.oldTime = []
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -487,7 +551,48 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.placeFigs = function (name) {
   		$scope.name = name;
-  		FigService.placeFigNames( $scope.name , $scope.id )
+  		var prevValue = document.getElementById($scope.id).value;
+  		FigService.placeFigNames( $scope.name , $scope.id );
+
+  		// Find the timing of the figure that was clicked
+  		TimeService.findTime( $scope.name )
+  		.then(function successCallback(json) {
+
+  			// Save the feet_positions data as timingData, we can extract timing from this instead (because not all figures have timing in the database)
+    		var timingData = json.data;
+
+    		// Convert the feet_positions data into number of bars
+    		var numBars = TimeService.toBars(timingData);
+
+    		// Convert the number of bars into minutes and seconds
+    		var timeAdded = TimeService.toTime(numBars, $scope.danceTempo);
+    		
+    		// Add this time to the total time
+    		$scope.totalTime = $scope.totalTime + timeAdded;
+
+    		// Get figure number based on id number
+    		var figNum = IdService.getFigNum ( $scope.id );
+
+    		// Check if there is a previous time designated to this button ID, if so, subtract the previous time
+    		if ((prevValue != 'New Figure')&&(prevValue != 'Starting Figure')){
+    			$scope.totalTime = $scope.totalTime - $scope.oldTime[figNum];
+    		}
+
+    		// Save the added time in array
+    		$scope.oldTime[figNum] = timeAdded;
+
+    		// Place this time in the display
+    		TimeService.displayTime ( $scope.totalTime )
+
+  			}, function errorCallback(err) {
+    			console.log(err)
+  			});
+  	}
+
+  	$scope.tempoChange = function () {
+  		[$scope.totalTime, $scope.oldTime] = TimeService.alterTime ( $scope.totalTime , $scope.danceTempo , $scope.oldTempo , $scope.oldTime );
+  		TimeService.displayTime ( $scope.totalTime );
+  		$scope.oldTempo = $scope.danceTempo;
   	}
 
   	$scope.go = function () {
@@ -506,9 +611,24 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   	$scope.deleteFig = function () {
   		if ($scope.count != 0) {
+
   			var vId = '#nextFig'+$scope.count
   			var aId = 'nextFig'+$scope.count
+  			var thisValue = document.getElementById(aId).value;
+
+  			// Update the dance duration
+  			if ((thisValue != 'New Figure')&&(thisValue != 'Starting Figure')){
+  				$scope.totalTime = $scope.totalTime - $scope.oldTime[$scope.count];
+  				$scope.oldTime[$scope.count] = 0;
+
+  				// Place the updated time in the display
+    			TimeService.displayTime ( $scope.totalTime )
+  			}
+
+  			// Remove the last figure on the list
   			angular.element(document.querySelector(vId)).remove()
+
+  			// If the element deleted is the current element, change the ID to the previous figure
   			if ($scope.id == aId) {
   				if ($scope.count == 1) {
   					$scope.id = 'startFigure'

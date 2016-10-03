@@ -225,6 +225,35 @@ app.post('/seeVis', function (req, res) {
 	});	
 })
 
+var findTime = function(db, data, callback) {
+	var cursor = db.collection('figures').find({name: data.name}, {_id: 0, "man.feet_positions": 1});
+	AA = [];
+	cursor.each(function(err, doc) {
+      	assert.equal(err, null);
+      	if (doc != null) {
+      		console.log(doc.man)
+      		var tm = doc.man.feet_positions
+      		AA = AA.concat(tm)
+      	} else {
+      		callback(AA)
+      	}
+    })
+}
+
+app.post('/findTime', function (req, res) {
+	
+ 	MongoClient.connect(url, function(err, db) {
+  		assert.equal(null, err);
+ 
+ 		console.log('I just read stuff from the database')
+ 		var data = findTime(db, req.body, function(A) {
+ 			console.log(A)
+ 			res.send(A)
+ 		});
+  		
+	});	
+})
+
 app.use(bodyParser.json())
 
 app.use(express.static('../client'))

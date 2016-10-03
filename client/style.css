@@ -1,5 +1,6 @@
 body {
-	font-family: Helvetica;
+	font-family: "Ubuntu";
+	font-size: 15px;
 /*	background-color: #E6EAFF;*/
 	
 }
@@ -34,6 +35,8 @@ p {
 	text-align: center;
 }
 #button1, #submitDanceType {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: white;
 	color: black;
 	width: 80px;
@@ -110,6 +113,8 @@ p {
 	padding-right: 5px;
 }
 .difficultyButton {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: white;
 	color: black;
 	width: 30px;
@@ -124,6 +129,8 @@ p {
 	border: 2px solid white;
 }
 .diffBtnsSelected {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: #18366b;
 	color: white;
 	width: 30px;
@@ -133,6 +140,8 @@ p {
 	border-radius: 4px;
 }
 #textSearch {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	width:112px;
 	margin-top: 5px;
 	margin-bottom: 8px;
@@ -143,6 +152,8 @@ p {
 	padding-left: 5px;
 }
 .goButton {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: white;
 	color: black;
 	width: 65px;
@@ -186,7 +197,6 @@ p {
 	width: 260px;
 	height: 400px;
 	margin-left: 20px;
-	overflow-x: auto;
 	border: 2px solid #18366b;
 	border-radius: 4px;
 }
@@ -196,8 +206,12 @@ p {
 }
 #figureBlocks {
 	padding-top: 2px;
+	height: 360px;
+	overflow-x: auto;
 }
 .figureButtons {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: white;
 	color: black;
 	display: inline-block;
@@ -213,12 +227,15 @@ p {
 	border: 2px solid white;
 }
 .addFigureButton {
+	margin-top: 2px;
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: white;
 	color: black;
 	width: 30px;
 	border: 2px solid #18366b;
 	border-radius: 4px;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 .addFigureButton:hover {
 	background-color: #18366b;
@@ -226,6 +243,8 @@ p {
 	border: 2px solid white;
 }
 .answerBtnsSelected {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: #18366b;
 	color: white;
 	width: 250px;
@@ -245,18 +264,23 @@ p {
 	border-radius: 4px;
 }
 #seeDetailButton, #seeNetwork {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	display: inline-block;
-	margin-top: 2px;
 	width: 250px;
 	vertical-align: middle;
 	margin-bottom: 12px;
 }
+#seeDetailButton {
+	margin-top: 2px;
+}
 #selectTempo {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	background-color: white;
 	color: black;
 	border: 2px solid #18366b;
 	border-radius: 4px;
-	margin-bottom: 12px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -268,15 +292,29 @@ p {
 	margin-left: 12px;
 }
 #exitButton {
+	font-family: "Ubuntu";
+	font-size: 15px;
 	display: inline-block;
 	width: 250px;
 	margin-bottom: 2px;
+}
+#danceTime1, #danceTime2 {
+	font-family: "Ubuntu";
+	font-size: 15px;
+	display: inline-block;
+	width: 245px;
+	border: 2px solid #18366b;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	padding: 15px 0 15px 0;
+}
+#danceTime2 {
+	padding: 18px 0 18px 0;
 }
 #danceDuration {
 	display: inline-block;
 	color: black;
 	margin-left: 5px;
-	margin-bottom: 12px;
 }
 #seeDetailButton, #exitButton, #seeNetwork {
 	background-color: white;
