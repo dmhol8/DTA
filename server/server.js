@@ -21,8 +21,6 @@ var findFigureNames = function(db, data, callback) {
 	var Z = [];
 	var Y = [];
 	var X = [];
-	// console.log(data.prevName);
-	// console.log(data.nextName);
 	var cursor2 = null; 
 	var cursor3 = null;
 
@@ -52,7 +50,6 @@ var findFigureNames = function(db, data, callback) {
    	cursor.each(function(err, doc) {
       	assert.equal(err, null);
       	if (doc != null) {
-      		// console.dir(doc);
       		var B = doc.name
       		A = A.concat(B)
       	} else {
@@ -67,7 +64,6 @@ var findFigureNames = function(db, data, callback) {
 	      				cursor5.each(function(err, doc4) {
       						assert.equal(err, null);
       						if (doc4 != null) {
-								// console.dir(doc4);
       							X = doc4.name
       							C = C.concat(X)
 
@@ -82,7 +78,6 @@ var findFigureNames = function(db, data, callback) {
 					      				cursor4.each(function(err, doc3) {
 				      						assert.equal(err, null);
 				      						if (doc3 != null) {
-												// console.dir(doc3);
 				      							D = doc3.name
 				      							Y = Y.concat(D)
 
@@ -115,7 +110,6 @@ var findFigureNames = function(db, data, callback) {
 	      				cursor4.each(function(err, doc3) {
       						assert.equal(err, null);
       						if (doc3 != null) {
-								// console.dir(doc3);
       							D = doc3.name
       							Y = Y.concat(D)
 
@@ -137,7 +131,6 @@ var findFigureNames = function(db, data, callback) {
 	      				cursor4.each(function(err, doc3) {
       						assert.equal(err, null);
       						if (doc3 != null) {
-								// console.dir(doc3);
       							D = doc3.name
       							Y = Y.concat(D)
 
@@ -162,9 +155,9 @@ app.post('/getFigNames', function (req, res) {
  	MongoClient.connect(url, function(err, db) {
   		assert.equal(null, err);
  
- 		console.log('I just read stuff from the database')
+ 		// console.log('I just read stuff from the database')
  		var data = findFigureNames(db, req.body, function(A) {
- 			console.log(A)
+ 			// console.log(A)
  			res.send(A)
  		});
   		
@@ -190,9 +183,9 @@ app.post('/getFigDetails', function (req, res) {
  	MongoClient.connect(url, function(err, db) {
   		assert.equal(null, err);
  
- 		console.log('I just read stuff from the database')
+ 		// console.log('I just read stuff from the database')
  		var data = findFigureDetails(db, req.body, function(A) {
- 			console.log(A)
+ 			// console.log(A)
  			res.send(A)
  		});
   		
@@ -218,9 +211,9 @@ app.post('/seeVis', function (req, res) {
  	MongoClient.connect(url, function(err, db) {
   		assert.equal(null, err);
  
- 		console.log('I just read stuff from the database')
+ 		// console.log('I just read stuff from the database')
  		var data = seeVisual(db, req.body, function(A) {
- 			console.log(A)
+ 			// console.log(A)
  			res.send(A)
  		});
   		
@@ -233,7 +226,7 @@ var findTime = function(db, data, callback) {
 	cursor.each(function(err, doc) {
       	assert.equal(err, null);
       	if (doc != null) {
-      		console.log(doc.man)
+      		// console.log(doc.man)
       		var tm = doc.man.feet_positions
       		AA = AA.concat(tm)
       	} else {
@@ -247,9 +240,9 @@ app.post('/findTime', function (req, res) {
  	MongoClient.connect(url, function(err, db) {
   		assert.equal(null, err);
  
- 		console.log('I just read stuff from the database')
+ 		// console.log('I just read stuff from the database')
  		var data = findTime(db, req.body, function(A) {
- 			console.log(A)
+ 			// console.log(A)
  			res.send(A)
  		});
   		

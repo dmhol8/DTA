@@ -54,15 +54,15 @@ myApp.service('VisibilityService', function() {
 	// 	// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
 	// }
 
-	// this.visCreateFig = function () {
-	// 	document.getElementById("figDetailBox").style.display = "block";
-	// 	// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
-	// }
+	this.visCreateFig = function () {
+		document.getElementById("figDetailBox").style.display = "block";
+		// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
+	}
 
-	// this.visNoCreateFig = function () {
-	// 	document.getElementById("figDetailBox").style.display = "none";
-	// 	// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
-	// }
+	this.visNoCreateFig = function () {
+		document.getElementById("figDetailBox").style.display = "none";
+		// document.getElementById("state").innerHTML = sessionStorage.getItem('pageState');
+	}
 })
 
 myApp.service('FigService', function($http, $location) {
@@ -512,15 +512,15 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
     	// .then(saveSuccess, error)    
   	}	
 
-  	// $scope.dispFig = function () {
-   //  	VisibilityService.visFig()
-   //  	// .then(saveSuccess, error)    
-  	// }	
+  	$scope.dispFig = function () {
+    	VisibilityService.visFig()
+    	// .then(saveSuccess, error)    
+  	}	
 
-  	// $scope.dispOpt = function () {
-   //  	VisibilityService.visOpt()
-   //  	// .then(saveSuccess, error)    
-  	// }
+  	$scope.dispOpt = function () {
+    	VisibilityService.visOpt()
+    	// .then(saveSuccess, error)    
+  	}
 
   	$scope.getFigs = function (oneId) {
   		$scope.id = oneId;
@@ -726,15 +726,14 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   		// Retrieve data from the database
   		if (access) {
-  			alert('1')
+
   			document.getElementById("mainPage").style.display = "none";
   			document.getElementById("detailPage").style.display = "block";
-  			alert('2')
 
   			FigService.getFigDetails(nms)
   			.then(function successCallback(json) {
     			A = json.data;
-    			alert($scope.X)
+    			// alert($scope.X)
 
     			// Order the figures based on the order in Routine Skeleton, i.e. Same order as 'nms'
     			$scope.B = DetailService.orderList(A, nms)
@@ -837,7 +836,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 		    			to: {enabled: true, scaleFactor:0.5}
 		    		},
 		    		smooth: {
-		    			type: 'discrete'
+		    			type: 'curvedCW'
 		    		}
 		    	},
 		    	physics: {
@@ -890,7 +889,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   	}
 
   // 	$scope.dispCreateFig = function () {
-  //   	// VisibilityService.visCreateFig()
+  //   	VisibilityService.visCreateFig()
   //   	document.getElementById("go").disabled = true;
   //   	document.getElementById("clr").disabled = true;
   //   	document.getElementById("numIn3").disabled = true;
@@ -910,30 +909,30 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   //   	// .then(saveSuccess, error)    
   // 	}	
 
-  	// $scope.dispNoCreateFig = function () {
-   //  	// VisibilityService.visNoCreateFig()
-   //  	document.getElementById("go").disabled = false;
-   //  	document.getElementById("clr").disabled = false;
-   //  	document.getElementById("numIn3").disabled = false;
-   //  	document.getElementById("numIn4").disabled = false;
-   //  	document.getElementById("numIn5").disabled = false; 
-   //  	document.getElementById("difBut1").disabled = false;
-   //  	document.getElementById("difBut2").disabled = false;
-   //  	document.getElementById("difBut3").disabled = false;
-   //  	document.getElementById("difBut4").disabled = false;   	
-   //  	document.getElementById("textSearch").disabled = false;
-   //  	document.getElementById("startFigure").disabled = false;
-   //  	document.getElementById("nextButton").disabled = false;
-   //  	document.getElementById("backButton").disabled = false;
-   //  	// .then(saveSuccess, error)    
-  	// }
+  // 	$scope.dispNoCreateFig = function () {
+  //   	VisibilityService.visNoCreateFig()
+  //   	document.getElementById("go").disabled = false;
+  //   	document.getElementById("clr").disabled = false;
+  //   	document.getElementById("numIn3").disabled = false;
+  //   	document.getElementById("numIn4").disabled = false;
+  //   	document.getElementById("numIn5").disabled = false; 
+  //   	document.getElementById("difBut1").disabled = false;
+  //   	document.getElementById("difBut2").disabled = false;
+  //   	document.getElementById("difBut3").disabled = false;
+  //   	document.getElementById("difBut4").disabled = false;   	
+  //   	document.getElementById("textSearch").disabled = false;
+  //   	document.getElementById("startFigure").disabled = false;
+  //   	document.getElementById("nextButton").disabled = false;
+  //   	document.getElementById("backButton").disabled = false;
+  //   	// .then(saveSuccess, error)    
+  // 	}
 
   	window.onload = function() {
     	// document.getElementById("go").disabled = false;
     	// document.getElementById("clr").disabled = false;
-		// document.getElementById("numIn3").disabled = false;
-		// document.getElementById("numIn4").disabled = false;
-		// document.getElementById("numIn5").disabled = false; 
+    	// document.getElementById("numIn3").disabled = false;
+    	// document.getElementById("numIn4").disabled = false;
+    	// document.getElementById("numIn5").disabled = false; 
     	// document.getElementById("difBut1").disabled = false;
     	// document.getElementById("difBut2").disabled = false;
     	// document.getElementById("difBut3").disabled = false;
@@ -950,7 +949,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	    }
 	    else if (pageState == "C") {
 	    	VisibilityService.visMain();
-	    	// VisibilityService.visFig();
+	    	VisibilityService.visFig();
 	    }
 	}
 })
