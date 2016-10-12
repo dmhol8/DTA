@@ -12,7 +12,11 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "mongodb": "^2.2.5"
+    "jqlite": "^0.2.39",
+    "jspdf-autotable": "^2.0.33",
+    "mongodb": "^2.2.5",
+    "angular": "^1.5.3",
+    "vis": "^4.16.1"
   },
   "engines": {
     "node": "4.4.7"
