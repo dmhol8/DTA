@@ -65,9 +65,8 @@ myApp.service('VisibilityService', function() {
 	}
 })
 
-myApp.service('FigService', function($http) {
+myApp.service('FigService', function($http, $location) {
 
-	var baseUrl = 'http://localhost:5000/';
 
 	this.getFigNames = function (id, prevID, prevName, nextName, diff) {
 
@@ -78,7 +77,7 @@ myApp.service('FigService', function($http) {
 		document.getElementById(id).className = 'answerBtnsSelected';
 
 		// Retrieve information from server
-		var url = baseUrl + "getFigNames"
+		var url = "getFigNames"
     	return $http.post(url, {prevName, nextName, diff})
 	}
 
@@ -87,22 +86,21 @@ myApp.service('FigService', function($http) {
 	}
 
 	this.getFigDetails = function (names) {
-		var url = baseUrl + "getFigDetails"
+		var url = "getFigDetails"
 		return $http.post(url, {names})
 	}
 
 	this.seeVis = function () {
-		var url = baseUrl + "seeVis"
+		var url = "seeVis"
 		return $http.post(url)
 	}
 })
 
-myApp.service('TimeService', function($http) {
+myApp.service('TimeService', function($http, $location) {
 
-	var baseUrl = 'http://localhost:5000/';
 
 	this.findTime = function (name) {
-		var url = baseUrl + "findTime"
+		var url = "findTime"
 		return $http.post(url, {name})
 	}
 
