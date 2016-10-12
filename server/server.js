@@ -10,7 +10,7 @@ var url = process.env.MONGODB_URI || 'mongodb://localhost:27017/dance';
 
 app.use(bodyParser.json())
 
-console.log(__dirname);
+// console.log(__dirname);
 
 var findFigureNames = function(db, data, callback) {
 
