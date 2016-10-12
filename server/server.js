@@ -258,6 +258,6 @@ app.post('/findTime', function (req, res) {
 
 app.use(bodyParser.json())
 
-app.use('/', express.static('../client'))
+app.use('/', express.static(__dirname+'/client'))
 
 app.listen(process.env.PORT || 5000)
