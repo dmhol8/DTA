@@ -6,7 +6,7 @@ var ObjectId = require('mongodb').ObjectID
 
 var app = express()
 
-var url = 'mongodb://localhost:27017/dance';
+var url = process.env.MONGODB_URI || 'mongodb://localhost:27017/dance';
 
 app.use(bodyParser.json())
 
