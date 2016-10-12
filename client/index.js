@@ -801,7 +801,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	  		for (var i = 0; i < V.length; i++){
 
 	  			// Nodes
-	  			var currentNode = {id: i + 1, label: V[i].name, x: (Math.floor((i*100)/600))*300, y: ((i*100)%600)};
+	  			var currentNode = {id: i + 1, label: V[i].name, x: (Math.floor((i*100)/600))*350, y: ((i*100)%600)};
 	  			nodeArray = nodeArray.concat(currentNode);
 
 	  			// Edges
@@ -838,7 +838,7 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 		    			to: {enabled: true, scaleFactor:0.5}
 		    		},
 		    		smooth: {
-		    			type: 'curvedCW'
+		    			type: 'discrete'
 		    		}
 		    	},
 		    	physics: {
