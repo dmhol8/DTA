@@ -488,6 +488,8 @@ table {
     /*border-collapse: collapse;*/
     border-spacing: 0;
     border-radius: 4px;
+    width: 100%;
+    max-width: 1500px;
 }
 table, th, td {
     border: 1px solid #18366b;
@@ -506,37 +508,37 @@ th {
 	height: 50px;
 }
 #table2 {
-	width: 100px;
+	width: 15%;
 }
 #table3 {
-	width: 36px;
+	width: 5%;
 }
 #table4 {
-	width: 36px;
+	width: 5%;
 }
 #table5 {
-	width: 90px;
+	width: 13%;
 }
 #table6 {
-	width: 70px;
+	width: 10%;
 }
 #table7 {
-	width: 70px;
+	width: 10%;
 }
 #table8 {
-	width: 70px;
+	width: 10%;
 }
 #table9 {
-	width: 30px;
+	width: 7%;
 }
 #table10 {
-	width: 36px;
+	width: 5%;
 }
 #table11 {
-	width: 36px;
+	width: 5%;
 }
 #table12 {
-	width: 100px;
+	width: 15%;
 }
 #myNet {
 	display: none;
