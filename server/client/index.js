@@ -4,7 +4,7 @@ myApp.directive("anotherfig", function($compile){
 	return function(scope, element, attrs){
 		element.bind("click", function(){
 			scope.count++;
-			exp = "getFigs('nextFig"+scope.count+"')"
+			exp = "getFigs('nextFig"+scope.count+"')";
 
 			angular.element(document.querySelector('#figureBlocks')).append($compile("<input class='figureButtons' id='nextFig"
 				+scope.count+
@@ -20,7 +20,7 @@ myApp.service('NumberService', function() {
 		for (i = 1; i < steps+1; i++){
 			text += "<option>" + i + "</option>";
 		}
-		return text
+		return text;
 	}
 })
 
@@ -77,8 +77,8 @@ myApp.service('FigService', function($http, $location) {
 		document.getElementById(id).className = 'answerBtnsSelected';
 
 		// Retrieve information from server
-		var url = "getFigNames"
-    	return $http.post(url, {prevName, nextName, diff})
+		var url = "getFigNames";
+    	return $http.post(url, {prevName, nextName, diff});
 	}
 
 	this.placeFigNames = function (name, id) {
@@ -86,13 +86,13 @@ myApp.service('FigService', function($http, $location) {
 	}
 
 	this.getFigDetails = function (names) {
-		var url = "getFigDetails"
-		return $http.post(url, {names})
+		var url = "getFigDetails";
+		return $http.post(url, {names});
 	}
 
 	this.seeVis = function () {
-		var url = "seeVis"
-		return $http.post(url)
+		var url = "seeVis";
+		return $http.post(url);
 	}
 })
 
@@ -100,8 +100,8 @@ myApp.service('TimeService', function($http, $location) {
 
 
 	this.findTime = function (name) {
-		var url = "findTime"
-		return $http.post(url, {name})
+		var url = "findTime";
+		return $http.post(url, {name});
 	}
 
 	this.toBars = function (feet_positions) {
@@ -111,7 +111,7 @@ myApp.service('TimeService', function($http, $location) {
 
 		// Good for syllabus Waltz figures, but not other dances
 		var numBars = Math.floor(numSteps/3);
-		return numBars
+		return numBars;
 	}
 
 	this.toTime = function (bars, tempo) {
@@ -122,7 +122,7 @@ myApp.service('TimeService', function($http, $location) {
 		// Calculate time, in minutes
 		var time = beats/tempo;
 
-		return time
+		return time;
 	}
 
 	this.displayTime = function (time) {
@@ -145,7 +145,7 @@ myApp.service('TimeService', function($http, $location) {
 			oldTime[i] = (oldTime[i]*oldTempo)/newTempo;
 		}
 
-		return [newTime, oldTime]
+		return [newTime, oldTime];
 	}
 })
 
@@ -157,14 +157,14 @@ myApp.service('IdService', function() {
 		}
 		var s = id;
 		var index = 7;
-		chr = s.substr(7)
+		chr = s.substr(7);
 		return s.substr(0, index) + (chr - 1);
 	}
 
 	this.getNextId = function (id) {
 		var s = id;
 		var index = 7;
-		chr = s.substr(7)
+		chr = s.substr(7);
 		return s.substr(0, index) + (Number(chr) + 1);
 	}
 
@@ -207,9 +207,9 @@ myApp.service('IdService', function() {
 
 	this.getFigNum = function (id) {
 		if (id == "startFigure") {
-			return 0
+			return 0;
 		}
-		return Number(id.substr(7))
+		return Number(id.substr(7));
 	}
 })
 
@@ -222,16 +222,16 @@ myApp.service('DiffService', function() {
 			diff = ['Student Teacher','Associate','Licentiate','Fellow'];
 		} else {
 			if (S) {
-				diff = ['Student Teacher']
+				diff = ['Student Teacher'];
 			}
 			if (A) {
-				diff = diff.concat(['Associate'])
+				diff = diff.concat(['Associate']);
 			}
 			if (L) {
-				diff = diff.concat(['Licentiate'])
+				diff = diff.concat(['Licentiate']);
 			}
 			if (F) {
-				diff = diff.concat(['Fellow'])
+				diff = diff.concat(['Fellow']);
 			}
 		}
 		return diff;
@@ -313,10 +313,10 @@ myApp.service('DetailService', function() {
 					// Name:
 					if (j == 0) {
 						N = figure[i].name;
-						hidden = 'table-cell'
+						hidden = 'table-cell';
 					} else {
 						N = '';
-						hidden = 'none'
+						hidden = 'none';
 					}
 					
 					// Additional Notes:
@@ -333,7 +333,7 @@ myApp.service('DetailService', function() {
 
 						if (figure[i - 1].lady.feet_positions[figure[i - 1].lady.feet_positions.length - 1] == 'LF fwd in CBMP, OP on L side'){
 
-							figure[i].man.feet_positions[j] = 'LF fwd in CBMP, OP on L side'
+							figure[i].man.feet_positions[j] = 'LF fwd in CBMP, OP on L side';
 						}
 					}
 
@@ -356,7 +356,7 @@ myApp.service('DetailService', function() {
 							feet_positions: figure[i].man.feet_positions[j], alignment: figure[i].man.alignment[j],
 							amount_of_turn: figure[i].man.amount_of_turn[j], rise_and_fall: figure[i].man.rise_and_fall[j], 
 							footwork: figure[i].man.footwork[j], CBM: figure[i].man.CBM[j], sway: figure[i].man.sway[j],
-							timing: TM[j], note: nM, amount: lnthAm, hide: hidden}
+							timing: TM[j], note: nM, amount: lnthAm, hide: hidden};
 						index++;
 					}
 				}
@@ -406,10 +406,10 @@ myApp.service('DetailService', function() {
 					// Additional Notes:
 					if (j == 0) {
 						nL = figure[i].lady.note;
-						hidden = 'table-cell'
+						hidden = 'table-cell';
 					} else {
 						nL = '';
-						hidden = 'none'
+						hidden = 'none';
 					}
 
 					// When a 'Turning Lock to R' occurs straight after a 'Natural Spin Turn',
@@ -419,12 +419,12 @@ myApp.service('DetailService', function() {
 						if (figure[i + 1].name == 'Turning Lock to R'){
 
 							if (j == 0){
-								nL = 'The rise is taken from the ball of LF on step 5.'
+								nL = 'The rise is taken from the ball of LF on step 5.';
 							}
 
 							if (j == lnth - 1) {
 
-								figure[i].lady.feet_positions[j] = 'RF diag fwd'
+								figure[i].lady.feet_positions[j] = 'RF diag fwd';
 							}
 						}
 					}
@@ -448,7 +448,7 @@ myApp.service('DetailService', function() {
 								feet_positions: figure[i].lady.feet_positions[j], alignment: figure[i].lady.alignment[j],
 								amount_of_turn: figure[i].lady.amount_of_turn[j], rise_and_fall: figure[i].lady.rise_and_fall[j], 
 								footwork: figure[i].lady.footwork[j], CBM: figure[i].lady.CBM[j], sway: figure[i].lady.sway[j],
-								timing: TL[j], note: nL, amount: lnthAm, hide: hidden}
+								timing: TL[j], note: nL, amount: lnthAm, hide: hidden};
 						index++;
 					}
 				}
