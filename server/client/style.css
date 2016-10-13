@@ -1,6 +1,6 @@
 body {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 /*	background-color: #E6EAFF;*/
 	
 }
@@ -35,8 +35,8 @@ p {
 	text-align: center;
 }
 #button1, #submitDanceType {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	width: 80px;
@@ -113,8 +113,8 @@ p {
 	padding-right: 5px;
 }
 .difficultyButton {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	width: 30px;
@@ -129,8 +129,8 @@ p {
 	border: 2px solid white;
 }
 .diffBtnsSelected {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: #18366b;
 	color: white;
 	width: 30px;
@@ -140,8 +140,8 @@ p {
 	border-radius: 4px;
 }
 #textSearch {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	width:112px;
 	margin-top: 5px;
 	margin-bottom: 8px;
@@ -152,8 +152,8 @@ p {
 	padding-left: 5px;
 }
 .goButton {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	width: 65px;
@@ -210,8 +210,8 @@ p {
 	overflow-x: auto;
 }
 .figureButtons {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	display: inline-block;
@@ -228,8 +228,8 @@ p {
 }
 .addFigureButton {
 	margin-top: 2px;
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	width: 30px;
@@ -243,8 +243,8 @@ p {
 	border: 2px solid white;
 }
 .answerBtnsSelected {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: #18366b;
 	color: white;
 	width: 250px;
@@ -264,8 +264,8 @@ p {
 	border-radius: 4px;
 }
 #seeDetailButton, #seeNetwork {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	display: inline-block;
 	width: 250px;
 	vertical-align: middle;
@@ -275,8 +275,8 @@ p {
 	margin-top: 2px;
 }
 #selectTempo {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	background-color: white;
 	color: black;
 	border: 2px solid #18366b;
@@ -292,15 +292,15 @@ p {
 	margin-left: 12px;
 }
 #exitButton {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	display: inline-block;
 	width: 250px;
 	margin-bottom: 2px;
 }
 #danceTime1, #danceTime2 {
-	font-family: "Ubuntu";
-	font-size: 15px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px;
 	display: inline-block;
 	width: 245px;
 	border: 2px solid #18366b;
