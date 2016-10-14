@@ -558,7 +558,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 
   			// Save the feet_positions data as timingData, we can extract timing from this instead (because not all figures have timing in the database)
     		var timingData = json.data;
-    		alert(timingData)
 
     		// Convert the feet_positions data into number of bars
     		var numBars = TimeService.toBars(timingData);
