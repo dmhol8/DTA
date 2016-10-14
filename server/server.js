@@ -226,7 +226,7 @@ var findTime = function(db, data, callback) {
 	cursor.each(function(err, doc) {
       	assert.equal(err, null);
       	if (doc != null) {
-      		// console.log(doc.man)
+      		console.log(doc.man)
       		var tm = doc.man.feet_positions
       		AA = AA.concat(tm)
       	} else {
