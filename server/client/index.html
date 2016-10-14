@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html ng-app="myApp" lang="en-US">
 
 <head>
@@ -37,6 +37,8 @@
 
       <button id="submitDanceType" ng-click="dispMain()">Begin</button>
     </div>
+
+<!--     <p id="credits">Created by Dustin Hollis<br>Email: dustin.hollis@live.com.au</p><br> -->
 
   </div>
 
@@ -260,6 +262,7 @@
         <input type="button" class="roleSelected" id="man" value="Man" ng-click="changeRole('man')"></input>
         <input type="button" class="topButtons" id="lady" value="Lady" ng-click="changeRole('lady')"></input>
         <input type="button" class="topButtons" ng-click="printPdf()" value="Print"></input>
+        <input type="button" class="topButtons" id="vidID" ng-click="noVids()" value="Video"></input>
         <input type="button" class="topButtons" ng-click="noDetail()" value="Back"></input>
     </div>
 
@@ -277,6 +280,7 @@
         <th id="table10">CBM</th>
         <th id="table11">Sway</th>
         <th id="table12">Additional Notes</th>
+        <th class="table13">Video</th>
       </tr>
       <tr ng-repeat="x in X" id="detRow">
         <td style="display:{{x.hide}};text-align: left;" rowspan="{{x.amount}}">{{x.name}}</td>
@@ -290,6 +294,7 @@
         <td>{{x.CBM}}</td>
         <td>{{x.sway}}</td>
         <td style="display:{{x.hide}};text-align: left;" rowspan="{{x.amount}}">{{x.note}}</td>
+        <td class="{{x.class}}" style="display:{{x.hide}};text-align: left;" rowspan="{{x.amount}}"><iframe width="320" height="180" ng-src="{{x.video}}" frameborder="0" allowfullscreen></iframe></td>
       </tr>
     </table>
 
