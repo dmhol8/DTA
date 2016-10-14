@@ -223,6 +223,7 @@ app.post('/seeVis', function (req, res) {
 var findTime = function(db, data, callback) {
 	var cursor = db.collection('figures').find({name: data.name}, {_id: 0, "man.feet_positions": 1});
 	AA = [];
+	console.log('here')
 	cursor.each(function(err, doc) {
       	assert.equal(err, null);
       	if (doc != null) {
