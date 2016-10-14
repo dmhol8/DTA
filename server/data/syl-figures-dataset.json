@@ -10,8 +10,7 @@
     "footwork": ["HT", "T", "TH"],
     "CBM": ["sl", "no", "no"],
     "sway": ["S", "R", "R"],
-    "note": "Although the amount of turn is given as 'nil', a very slight turn to R may be made.",
-    "video": "https://www.youtube.com/embed/XmZrpsNRdl0?rel=0&amp;showinfo=0<br>"
+    "note": "Although the amount of turn is given as 'nil', a very slight turn to R may be made."
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side and slightly back", "LF closes to RF"],
@@ -39,8 +38,7 @@
     "footwork": ["HT", "T", "TH"],
     "CBM": ["sl", "no", "no"],
     "sway": ["S", "L", "L"],
-    "note": "Although the amount of turn is given as 'nil', a very slight turn to L may be made.",
-    "video": "https://www.youtube.com/embed/Rv-TsG1gtOk?rel=0&amp;showinfo=0<br>"
+    "note": "Although the amount of turn is given as 'nil', a very slight turn to L may be made."
     },
   "lady": {
     "feet_positions": ["RF back", "LF to side and slightly back", "RF closes to LF"],
@@ -68,8 +66,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["HT", "T", "TH", "TH", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
-    "sway": ["S", "R", "R", "S", "L", "L"],
-    "video": "https://www.youtube.com/embed/was8AuxhMWk?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF"],
@@ -96,8 +93,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
     "footwork": ["HT", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/yhb1KqrZ-6k?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
@@ -124,8 +120,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
     "footwork": ["HT", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/-XOu01pH_Ao?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
@@ -152,8 +147,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
     "footwork": ["HT", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/xGMX9bXgRfI?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF"],
@@ -178,8 +172,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["HT", "T", "TH", "TH", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
-    "sway": ["S", "R", "R", "S", "L", "L"],
-    "video": "https://www.youtube.com/embed/7JikjKbt0Dw?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R", "S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF to side", "RF closes to LF"],
@@ -206,8 +199,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"],
-    "video": "https://www.youtube.com/embed/DUJ0xjgFfqk?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
@@ -232,8 +224,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"],
-    "video": "https://www.youtube.com/embed/Ka5sSKYjzqI?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
@@ -258,8 +249,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"],
-    "video": "https://www.youtube.com/embed/_Z7WIiia7Rs?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["RF fwd", "LF to side", "RF closes to LF"],
@@ -286,8 +276,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3", "Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["HT", "T", "TH", "TH", "T", "TH"],
     "CBM": ["yes", "no", "no", "yes", "no", "no"],
-    "sway": ["S", "L", "L", "S", "R", "R"],
-    "video": "https://www.youtube.com/embed/dWtlBB0-ArU?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "L", "L", "S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["RF back", "LF to side", "RF closes to LF", "LF fwd", "RF to side", "LF closes to RF"],
@@ -315,8 +304,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
     "footwork": ["HT", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"],
-    "video": "https://www.youtube.com/embed/KwDVWjBlpsM?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
@@ -344,8 +332,7 @@
     "rise_and_fall": ["Com to rise e/o 1", "Cont to rise on 2-3", "Lower e/o 3"],
     "footwork": ["HT", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "L", "L"],
-    "video": "https://www.youtube.com/embed/5xsCsQC8lyI?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "L", "L"]
     },
   "lady": {
     "feet_positions": ["RF back", "LF to side", "RF closes to LF"],
@@ -370,8 +357,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/zSU2zLCG6-M?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
@@ -398,8 +384,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/nRlrSIcyfAM?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
@@ -425,8 +410,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/aoUJDGZLebo?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
@@ -453,8 +437,7 @@
     "rise_and_fall": ["Com to rise e/o 4 NFR", "Cont to rise on 5-6", "Lower e/o 6"],
     "footwork": ["TH", "T", "TH"],
     "CBM": ["yes", "no", "no"],
-    "sway": ["S", "R", "R"],
-    "video": "https://www.youtube.com/embed/EeSy2sHB-fA?rel=0&amp;showinfo=0<br>"
+    "sway": ["S", "R", "R"]
     },
   "lady": {
     "feet_positions": ["LF fwd", "RF to side", "LF closes to RF"],
@@ -480,8 +463,7 @@
     "footwork": ["HT", "T", "TH", "THT", "HT", "TH"],
     "CBM": ["yes", "no", "no", "yes", "yes", "no"],
     "sway": ["S", "R", "R", "S", "S", "S"],
-    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn.",
-    "video": "https://www.youtube.com/embed/haQChnQf5mw?rel=0&amp;showinfo=0<br>"
+    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
@@ -512,8 +494,7 @@
     "footwork": ["HT", "T", "TH", "THT", "HT", "TH"],
     "CBM": ["yes", "no", "no", "yes", "yes", "no"],
     "sway": ["S", "R", "R", "S", "S", "S"],
-    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn.",
-    "video": "https://www.youtube.com/embed/S5d8vb25Vts?rel=0&amp;showinfo=0<br>"
+    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
@@ -542,8 +523,7 @@
     "footwork": ["HT", "T", "TH", "THT", "HT", "TH"],
     "CBM": ["yes", "no", "no", "yes", "yes", "no"],
     "sway": ["S", "R", "R", "S", "S", "S"],
-    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn.",
-    "video": "https://www.youtube.com/embed/V9PS68HlZFY?rel=0&amp;showinfo=0<br>"
+    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
@@ -573,8 +553,7 @@
     "footwork": ["HT", "T", "TH", "THT", "HT", "TH"],
     "CBM": ["yes","no","no", "yes", "yes", "no"],
     "sway": ["S", "R", "R", "S", "S", "S"],
-    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn.",
-    "video": "https://www.youtube.com/embed/N7RQLPjlNI4?rel=0&amp;showinfo=0<br>"
+    "note": "Although the footwork on step 4 is THT the heel is in contact with the floor during the actual turn."
     },
   "lady": {
     "feet_positions": ["LF back", "RF to side", "LF closes to RF", "RF fwd", "LF back and slightly to side", "RF diag fwd having brushed to LF"],
@@ -604,8 +583,7 @@
     "footwork": ["HT", "T", "TH"],
     "CBM": ["sl", "no", "no"],
     "sway": ["S", "L", "L"],
-    "note": "The position of step 2 is consistent with step 2 of a Closed Change.",
-    "video": "https://www.youtube.com/embed/z4q3gG5aiIs?rel=0&amp;showinfo=0<br>"
+    "note": "The position of step 2 is consistent with step 2 of a Closed Change."
     },
   "lady": {
     "feet_positions": ["RF back", "LF diag back", "RF crosses behind LF in PP"],
@@ -716,8 +694,7 @@
     "footwork": ["HT", "T", "T", "TH", "H"],
     "CBM": ["sl", "no", "no", "no", "yes"],
     "sway": ["S", "S", "S", "S", "S"],
-    "timing": ["1", "2", "&", "3", "1"],
-    "video": "https://www.youtube.com/embed/2k1WVgd6c6k?rel=0&amp;showinfo=0<br>"
+    "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
     "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],
@@ -749,8 +726,7 @@
     "footwork": ["HT", "T", "T", "TH", "H"],
     "CBM": ["sl", "no", "no", "no", "yes"],
     "sway": ["S", "S", "S", "S", "S"],
-    "timing": ["1", "2", "&", "3", "1"],
-    "video": "https://www.youtube.com/embed/72MqTu0Q8pQ?rel=0&amp;showinfo=0<br>"
+    "timing": ["1", "2", "&", "3", "1"]
     },
   "lady": {
     "feet_positions": ["LF fwd and across in PP and CBMP", "RF to side", "LF closes to RF", "RF to side and slightly back", "LF back in CBMP"],

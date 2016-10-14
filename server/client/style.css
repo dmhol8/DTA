@@ -56,11 +56,6 @@ p {
 	border: 2px solid #18366b;
 	border-radius: 4px;
 }
-/*#credits {
-	position: absolute;
-    left: 50%;
-    bottom: 10px;
-}*/
 
 /* SECTION B: Main Page */
 #mainPage {
@@ -466,15 +461,6 @@ p {
 	border: 2px solid white;
 }
 .roleSelected {
-	display: inline-block;
-	background-color: #18366b;
-	color: white;
-	width: 65px;
-	margin: 5px;
-	border: 2px solid white;
-	border-radius: 4px;
-}
-.vidIDSelected {
 	display: inline-block;
 	background-color: #18366b;
 	color: white;

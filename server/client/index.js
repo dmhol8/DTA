@@ -238,7 +238,7 @@ myApp.service('DiffService', function() {
 	}
 })
 
-myApp.service('DetailService', function($sce) {
+myApp.service('DetailService', function() {
 
 	this.allow = function (names) {
 
@@ -314,22 +314,9 @@ myApp.service('DetailService', function($sce) {
 					if (j == 0) {
 						N = figure[i].name;
 						hidden = 'table-cell';
-						cls = 'table13'
 					} else {
 						N = '';
 						hidden = 'none';
-						cls = 'table14'
-					}
-
-					// Video:
-					if (j == 0) {
-						if (figure[i].man.video == undefined){
-							vid = '';
-						} else {
-							vid = $sce.trustAsResourceUrl(figure[i].man.video);
-						}
-					} else {
-						vid = '';
 					}
 					
 					// Additional Notes:
@@ -369,7 +356,7 @@ myApp.service('DetailService', function($sce) {
 							feet_positions: figure[i].man.feet_positions[j], alignment: figure[i].man.alignment[j],
 							amount_of_turn: figure[i].man.amount_of_turn[j], rise_and_fall: figure[i].man.rise_and_fall[j], 
 							footwork: figure[i].man.footwork[j], CBM: figure[i].man.CBM[j], sway: figure[i].man.sway[j],
-							timing: TM[j], note: nM, amount: lnthAm, hide: hidden, class: cls, video: vid};
+							timing: TM[j], note: nM, amount: lnthAm, hide: hidden};
 						index++;
 					}
 				}
@@ -416,25 +403,12 @@ myApp.service('DetailService', function($sce) {
 						N = '';
 					}
 
-					// Video:
-					if (j == 0) {
-						if (figure[i].man.video == undefined){
-							vid = '';
-						} else {
-							vid = $sce.trustAsResourceUrl(figure[i].man.video);
-						}
-					} else {
-						vid = '';
-					}
-
 					// Additional Notes:
 					if (j == 0) {
 						nL = figure[i].lady.note;
 						hidden = 'table-cell';
-						cls = 'table13'
 					} else {
 						nL = '';
-						cls = 'table14'
 						hidden = 'none';
 					}
 
@@ -474,7 +448,7 @@ myApp.service('DetailService', function($sce) {
 								feet_positions: figure[i].lady.feet_positions[j], alignment: figure[i].lady.alignment[j],
 								amount_of_turn: figure[i].lady.amount_of_turn[j], rise_and_fall: figure[i].lady.rise_and_fall[j], 
 								footwork: figure[i].lady.footwork[j], CBM: figure[i].lady.CBM[j], sway: figure[i].lady.sway[j],
-								timing: TL[j], note: nL, amount: lnthAm, hide: hidden, class: cls, video: vid};
+								timing: TL[j], note: nL, amount: lnthAm, hide: hidden};
 						index++;
 					}
 				}
@@ -512,7 +486,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 	$scope.oldTempo = "87"
 	$scope.totalTime = 0
 	$scope.oldTime = []
-	$scope.vidToggle = 0
 
 	$scope.numberStepsList = function () {
     	NumberService.numberList( $scope.numSteps )
@@ -790,56 +763,17 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		// Change the table display
   		$scope.X = DetailService.getDetailsList($scope.B, $scope.roleID);
 
-  		// Toggle video display to default
-  		$scope.vidToggle = 0;
-  		document.getElementById("vidID").className = 'topButtons';
-  		var nv = document.getElementsByClassName("table13");
-		for (var i = 0; i < nv.length; i++) {
-    		nv[i].style.display = "table-cell";
-		}
   	}
 
   	$scope.noDetail = function () {
   		document.getElementById("detailPage").style.display = "none";
   		document.getElementById("mainPage").style.display = "block";
-  		
-  		// Toggle video display to default
-  		$scope.vidToggle = 0;
-  		document.getElementById("vidID").className = 'topButtons';
-  		var nv = document.getElementsByClassName("table13");
-		for (var i = 0; i < nv.length; i++) {
-    		nv[i].style.display = "table-cell";
-		}
   	}
 
   	$scope.noNet = function () {
   		document.getElementById("myNet").style.display = "none";
   		document.getElementById("mainPage").style.display = "block";
   		$scope.network.destroy();
-  	}
-
-  	$scope.noVids = function () {
-
-  		// Change the button and video appearance
-  		if ($scope.vidToggle == 0){
-  			document.getElementById("vidID").className = 'vidIDSelected';
-
-  			var nv = document.getElementsByClassName("table13");
-			for (var i = 0; i < nv.length; i++) {
-    			nv[i].style.display = "none";
-			}
-
-  			$scope.vidToggle = 1;
-  		} else {
-  			document.getElementById("vidID").className = 'topButtons';
-
-			var nv = document.getElementsByClassName("table13");
-			for (var i = 0; i < nv.length; i++) {
-    			nv[i].style.display = "table-cell";
-			}
-
-  			$scope.vidToggle = 0;
-  		}
   	}
 
   	$scope.printPdf = function () {
