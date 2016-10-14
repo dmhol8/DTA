@@ -226,13 +226,13 @@ var findTime = function(db, data, callback) {
 	console.log('here')
 	cursor.each(function(err, doc) {
       	assert.equal(err, null);
-      	if (doc != null) {
-      		console.log(doc.man)
-      		var tm = doc.man.feet_positions
-      		AA = AA.concat(tm)
-      	} else {
-      		callback(AA)
-      	}
+      	// if (doc != null) {
+      	// 	console.log(doc.man)
+      		var AA = doc.man.feet_positions;
+      	// 	AA = AA.concat(tm)
+      	// } else {
+      		callback(AA);
+      	// }
     })
 }
 
