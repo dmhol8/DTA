@@ -922,10 +922,11 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 				    	borderRadius: 4
 				    },
 				    labelHighlightBold: false
+		    	},
+		    	interaction: {
+		    		zoomView: false,
+		    		dragNodes: false
 		    	}
-		    	// interaction: {
-		    	// 	multiselect: true
-		    	// }
 		    };
 
 		    // initialize your network!
