@@ -924,7 +924,6 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
 				    labelHighlightBold: false
 		    	},
 		    	interaction: {
-		    		zoomView: false,
 		    		dragNodes: false
 		    	}
 		    };

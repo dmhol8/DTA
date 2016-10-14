@@ -558,8 +558,9 @@ th {
 	display: none;
 }
 #myNetwork {
-	width: 80%;
-	height: 800px;
+	width: 1300px;
+	max-width: 80%;
+	height: 600px;
 	border: 2px solid #18366b;
 	border-radius: 4px;
 	text-align: center;
