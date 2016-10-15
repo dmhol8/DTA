@@ -287,7 +287,7 @@ p {
 	max-height: 365px;
 	text-align: left;
 	font-family: Verdana, sans-serif;
-	font-size: 11px;
+	font-size: 12px;
 	overflow-x: auto;
 }
 #seeDetailButton, #seeNetwork, #helpButton, #aboutButton, #backHelpButton {
