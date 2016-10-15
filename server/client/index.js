@@ -776,6 +776,16 @@ myApp.controller('myController', function($scope, NumberService, VisibilityServi
   		// Populate the table with the data retrieved using ng-repeat (done in html)
   	}
 
+  	$scope.seeHelp = function () {
+  		document.getElementById("options").style.display = "none";
+  		document.getElementById("helpBox").style.display = "inline-block";
+  	}
+
+  	$scope.noHelp = function () {
+  		document.getElementById("helpBox").style.display = "none";
+  		document.getElementById("options").style.display = "inline-block";
+  	}
+
   	$scope.changeRole = function (role) {
 
   		$scope.roleID = role;

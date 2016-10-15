@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="shortcut icon" href="dd2.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" rel="stylesheet" type="text/css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
@@ -91,7 +92,6 @@
       <div id="options">
 
         <button id="seeDetailButton" ng-click="seeDetail()">Routine Details</button>
-        <button id="seeNetwork" ng-click="seeVisual()">Dance Visualisation</button>
         
         <div id="danceTime1">
           Select Tempo:
@@ -111,7 +111,24 @@
           <div id="danceDuration">0m 0s</div> 
         </div>
 
+        <button id="helpButton" ng-click="seeHelp()">Help</button>
+        <button id="seeNetwork" ng-click="seeVisual()">Network Diagram</button>
+        <!-- <button id="aboutButton" ng-click="seeAbout()">About the Site</button> -->
         <button id="exitButton" ng-click="dispIndex()">Exit</button>
+      </div>
+
+      <div id="helpBox">
+        <div id="words">
+          1. Click 'Starting Figure' to begin creating your routine.<br><br>
+          2. To limit the figures to a certain difficulty, press the difficulty buttons '1', '2', '3' and '4' in any combination.<br><br>
+          3. To search for a figure, type in the search box and press 'Go'. Press 'Clear' to clear this search.<br><br>
+          4. Select a figure from the list that appears in the left box. This figure is added into your routine.<br><br>
+          5. Click the '+' button to add another figure. Click the '-' button if you want to remove the last figure of your routine.<br><br>
+          6. Click on 'New Figure'. The list on the left will be updated to only show the figures that are allowed to go after the previous figure in the sequence.<br><br>
+          7. Continue this pattern until you've created your routine. As you do so, the 'Dance Duration' will be updated on the right to show you how long the routine is.<br><br>
+          8. Press 'Routine Details' to see the step-by-step details of the routine. This can only be pressed once a routine is complete (no 'New Figure' boxes left-over).<br><br>
+        </div>
+        <button id="backHelpButton" ng-click="noHelp()">Back</button>
       </div>
 
       <!-- SECTION 4: Create Figure 1 (Hidden)-->
@@ -280,7 +297,7 @@
         <th id="table10">CBM</th>
         <th id="table11">Sway</th>
         <th id="table12">Additional Notes</th>
-        <th class="table13">Video</th>
+        <th class="table13">Video<br><p id="smallText">[These are only shown for the basic figures. Press the 'Video' button to toggle this column on/off]</p></th>
       </tr>
       <tr ng-repeat="x in X" id="detRow">
         <td style="display:{{x.hide}};text-align: left;" rowspan="{{x.amount}}">{{x.name}}</td>
@@ -302,10 +319,13 @@
 
   <!-- SECTION 7: Dance Visualisation (Hidden)-->
   <div id="myNet">
-    <div id="groupDetButtons">Waltz Network: Difficulty Level 1<br>
+    <div id="groupDetButtons"><div id="titleword">Waltz Network: Difficulty Level 1</div>
       <input type="button" class="topButtons" ng-click="printPdf()" value="Print"></input>
       <input type="button" class="topButtons" ng-click="noNet()" value="Back"></input>
     </div><br>
+
+    <div id="descBlock">This network diagram is a visualisation of some of the basic figures and how they can interact with each other to produce valid figure combinations.</div>
+    <br><br>
     <div id="myNetwork"></div>
   </div>
 
