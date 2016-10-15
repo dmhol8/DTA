@@ -276,15 +276,19 @@ p {
 }
 #helpBox {
 	display: none;
-	font-size: 11px;
 	height: 400px;
 	width: 260px;
 	margin-left: 20px;
 	border: 2px solid #18366b;
 	border-radius: 4px;
+	position: relative;
 }
 #words {
+	max-height: 365px;
 	text-align: left;
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	overflow-x: auto;
 }
 #seeDetailButton, #seeNetwork, #helpButton, #aboutButton, #backHelpButton {
 	font-family: Verdana, sans-serif;
@@ -295,7 +299,9 @@ p {
 	margin-bottom: 12px;
 }
 #backHelpButton {
-	margin-top: 15px;
+	position: absolute;
+    bottom: 0px;
+    left: 15px;
 }
 #seeDetailButton {
 	margin-top: 2px;
